@@ -1,6 +1,6 @@
-import {createFont, GenericFont} from 'tamagui';
-import {createInterFont} from '@tamagui/font-inter';
-import {createSilkscreenFont} from '@tamagui/font-silkscreen';
+import { createFont, GenericFont } from 'tamagui'
+import { createInterFont } from '@tamagui/font-inter'
+import { createSilkscreenFont } from '@tamagui/font-silkscreen'
 
 const genericFontSizes = {
   1: 10,
@@ -19,38 +19,36 @@ const genericFontSizes = {
   14: 92,
   15: 114,
   16: 124,
-} as const;
+} as const
 
-export function createGenericFont<
-  A extends GenericFont<keyof typeof genericFontSizes>,
->(
+export function createGenericFont<A extends GenericFont<keyof typeof genericFontSizes>>(
   family: string,
   font: Partial<A> = {},
   {
-    sizeLineHeight = val => val * 1.35,
+    sizeLineHeight = (val) => val * 1.35,
   }: {
-    sizeLineHeight?: (val: number) => number;
-  } = {},
+    sizeLineHeight?: (val: number) => number
+  } = {}
 ): A {
-  const size = font.size || genericFontSizes;
+  const size = font.size || genericFontSizes
   return createFont({
     family,
     size,
     lineHeight: Object.fromEntries(
-      Object.entries(size).map(([k, v]) => [k, sizeLineHeight(+v)]),
+      Object.entries(size).map(([k, v]) => [k, sizeLineHeight(+v)])
     ) as typeof size,
-    weight: {0: '300'},
-    letterSpacing: {4: 0},
+    weight: { 0: '300' },
+    letterSpacing: { 4: 0 },
     ...(font as any),
-  });
+  })
 }
 
 const systemFamily =
   process.env.TAMAGUI_TARGET === 'native'
     ? 'Inter-Medium'
-    : '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
+    : '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
 
-const silkscreenFont = createSilkscreenFont();
+const silkscreenFont = createSilkscreenFont()
 const headingFont = createInterFont(
   {
     size: {
@@ -84,13 +82,13 @@ const headingFont = createInterFont(
     },
     // for native
     face: {
-      700: {normal: 'Inter-Bold'},
-      800: {normal: 'Inter-Bold'},
-      900: {normal: 'Inter-Bold'},
+      700: { normal: 'Inter-Bold' },
+      800: { normal: 'Inter-Bold' },
+      900: { normal: 'Inter-Bold' },
     },
   },
-  {sizeLineHeight: size => Math.round(size * 1.1 + (size < 30 ? 10 : 5))},
-);
+  { sizeLineHeight: (size) => Math.round(size * 1.1 + (size < 30 ? 10 : 5)) }
+)
 
 const bodyFont = createInterFont(
   {
@@ -101,14 +99,14 @@ const bodyFont = createInterFont(
     },
     // for native
     face: {
-      900: {normal: 'Inter-Bold'},
+      900: { normal: 'Inter-Bold' },
     },
   },
   {
-    sizeSize: size => Math.round(size),
-    sizeLineHeight: size => Math.round(size * 1.1 + (size >= 12 ? 8 : 4)),
-  },
-);
+    sizeSize: (size) => Math.round(size),
+    sizeLineHeight: (size) => Math.round(size * 1.1 + (size >= 12 ? 8 : 4)),
+  }
+)
 
 const monoFont = createGenericFont(
   '"ui-monospace", "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace',
@@ -136,9 +134,9 @@ const monoFont = createGenericFont(
     },
   },
   {
-    sizeLineHeight: x => x * 1.5,
-  },
-);
+    sizeLineHeight: (x) => x * 1.5,
+  }
+)
 
 export default {
   // noto: notoFont as any,
@@ -146,5 +144,4 @@ export default {
   body: bodyFont,
   mono: monoFont,
   silkscreen: silkscreenFont,
-};
-
+}

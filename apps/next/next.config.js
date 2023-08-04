@@ -51,7 +51,7 @@ const plugins = [
       }
     },
     excludeReactNativeWebExports: ['Switch', 'ProgressBar', 'Picker', 'CheckBox', 'Touchable'],
-    
+
     // adds mini-css-extract and css-minimizer-plugin, can fix issues with unique configurations
     enableCSSOptimizations: false,
     // disable tamagui config to make fonts easier to import
@@ -93,17 +93,20 @@ module.exports = function () {
       legacyBrowsers: false,
     },
     output: 'export',
-    webpack: (config, {isServer}) => {
-      config.module.rules.push({
-        test: /\.(png|svg|jpg|jpeg|gif|ogg|mp3|wav)$/i,
-        type: 'asset/source',
-      },{
-        test: /\.(otf|ttf|eot|woff|woff2)$/i,
-        type: 'asset/resource',
-        generator: {
-          filename: 'fonts/[hash][ext][query]'
+    webpack: (config, { isServer }) => {
+      config.module.rules.push(
+        {
+          test: /\.(png|svg|jpg|jpeg|gif|ogg|mp3|wav)$/i,
+          type: 'asset/source',
         },
-      },);
+        {
+          test: /\.(otf|ttf|eot|woff|woff2)$/i,
+          type: 'asset/resource',
+          generator: {
+            filename: 'fonts/[hash][ext][query]',
+          },
+        }
+      )
 
       if (process.env.DEBUG) {
         console.debug(`Webpack rules for ${isServer ? 'server' : 'client'}:`, config.module.rules)

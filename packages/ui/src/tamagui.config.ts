@@ -4,7 +4,7 @@ import { themes, tokens } from '@tamagui/themes'
 
 import { animations } from './animations'
 import fonts from './fonts'
-import {media} from './mediaQueries'
+import { media } from './mediaQueries'
 
 export const config = createTamagui({
   defaultFont: 'body',

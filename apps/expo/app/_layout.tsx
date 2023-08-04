@@ -16,7 +16,8 @@ export default function HomeLayout() {
   return (
     <Provider>
       <ThemeProvider value={scheme === 'dark' ? DarkTheme : DefaultTheme}>
-        <Stack screenOptions={{
+        <Stack
+          screenOptions={{
             headerTitleStyle: {
               fontFamily: '$silkscreen',
             },
