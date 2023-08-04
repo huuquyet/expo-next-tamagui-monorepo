@@ -44,3 +44,9 @@ thumbs.db
 
 # turbo build log
 **/.turbo/*
+
+# IDE
+.vscode
+.idea
+package-lock.json
+yarn.lock

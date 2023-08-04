@@ -1,3 +1,5 @@
+import { Children } from 'react'
+import { AppRegistry } from 'react-native'
 import NextDocument, {
   DocumentContext,
   DocumentInitialProps,
@@ -6,8 +8,6 @@ import NextDocument, {
   Main,
   NextScript,
 } from 'next/document'
-import { Children } from 'react'
-import { AppRegistry } from 'react-native'
 
 import Tamagui from '../tamagui.config'
 
@@ -40,7 +40,7 @@ export default class Document extends NextDocument {
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         </Head>

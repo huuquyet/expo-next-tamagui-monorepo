@@ -1,3 +1,7 @@
+import React, { useState } from 'react'
+import { useLink } from 'solito/link'
+import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
+
 import {
   Anchor,
   Button,
@@ -9,9 +13,6 @@ import {
   XStack,
   YStack,
 } from '@my/ui'
-import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
-import React, { useState } from 'react'
-import { useLink } from 'solito/link'
 
 export function HomeScreen() {
   const linkProps = useLink({
@@ -21,7 +22,7 @@ export function HomeScreen() {
   return (
     <YStack f={1} jc="center" ai="center" p="$4" space>
       <YStack space="$4" maw={600}>
-        <H1 ta="center">Welcome to Tamagui.</H1>
+        <H1 ta="center" fontFamily="$silkscreen">Welcome to Tamagui.</H1>
         <Paragraph ta="center">
           Here's a basic starter to show navigating from one screen to another. This screen uses the
           same code on Next.js and React Native.

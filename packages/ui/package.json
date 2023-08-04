@@ -18,14 +18,18 @@
   },
   "dependencies": {
     "@tamagui/animations-react-native": "latest",
+    "@tamagui/config": "latest",
     "@tamagui/font-inter": "latest",
+    "@tamagui/font-silkscreen": "latest",
     "@tamagui/react-native-media-driver": "latest",
     "@tamagui/shorthands": "latest",
     "@tamagui/themes": "latest",
     "@tamagui/toast": "latest",
+    "expo-constants": "^14.4.2",
     "tamagui": "latest"
   },
   "devDependencies": {
-    "@tamagui/build": "latest"
+    "@tamagui/build": "latest",
+    "@tamagui/web": "latest"
   }
 }
