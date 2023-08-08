@@ -3,7 +3,7 @@ import { Provider } from 'react-redux'
 
 import { ToastViewport } from './ToastViewport'
 import config from '../tamagui.config'
-import { store } from '../features/store/store'
+import { store } from '../features/store/initializeStore'
 import { CustomToast, TamaguiProvider, TamaguiProviderProps, ToastProvider } from '@my/ui'
 
 export function AppProvider({ children, ...rest }: Omit<TamaguiProviderProps, 'config'>) {
