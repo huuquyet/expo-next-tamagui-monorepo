@@ -21,7 +21,7 @@
     "check-deps": "check-dependency-version-consistency ."
   },
   "devDependencies": {
-    "@babel/runtime": "^7.22.6",
+    "@babel/runtime": "^7.22.10",
     "@manypkg/cli": "^0.21.0",
     "check-dependency-version-consistency": "^4.1.0",
     "eslint": "^8.46.0",
@@ -33,7 +33,7 @@
   "resolutions": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-native-svg": "13.10.0",
+    "react-native-svg": "13.11.0",
     "react-native-web": "^0.19.7",
     "react-refresh": "^0.14.0"
   },

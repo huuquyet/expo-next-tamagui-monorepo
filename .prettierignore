@@ -1,5 +1,6 @@
 .yarn
 apps/expo/android/
 apps/next/public/
+apps/next/out/
 packages/ui/dist/
 packages/ui/types/
