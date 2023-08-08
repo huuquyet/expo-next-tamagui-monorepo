@@ -3,7 +3,7 @@ import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native
 import { useFonts } from 'expo-font'
 import { Stack } from 'expo-router'
 
-import { AppProvider } from 'app/provider'
+import { Provider } from 'app/provider'
 import { tamaguiFonts } from './tamaguiFonts.native'
 
 export default function HomeLayout() {
@@ -14,7 +14,7 @@ export default function HomeLayout() {
     return null
   }
   return (
-    <AppProvider>
+    <Provider>
       <ThemeProvider value={scheme === 'dark' ? DarkTheme : DefaultTheme}>
         <Stack
           screenOptions={{
@@ -24,6 +24,6 @@ export default function HomeLayout() {
           }}
         />
       </ThemeProvider>
-    </AppProvider>
+    </Provider>
   )
 }

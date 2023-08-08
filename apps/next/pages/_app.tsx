@@ -11,7 +11,7 @@ import '@tamagui/font-inter/css/900.css'
 import '@tamagui/font-silkscreen/css/400.css'
 import 'raf/polyfill'
 
-import { AppProvider } from 'app/provider'
+import { Provider } from 'app/provider'
 
 if (process.env.NODE_ENV === 'production') {
   require('../public/tamagui.css')
@@ -41,9 +41,9 @@ function ThemeProvider({ children }: { children: React.ReactNode }) {
         setTheme(next as any)
       }}
     >
-      <AppProvider disableRootThemeClass defaultTheme={theme}>
+      <Provider disableRootThemeClass defaultTheme={theme}>
         {children}
-      </AppProvider>
+      </Provider>
     </NextThemeProvider>
   )
 }

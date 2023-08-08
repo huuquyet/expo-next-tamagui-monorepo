@@ -5909,6 +5909,7 @@ __metadata:
     expo-linking: ^5.0.2
     react-native-safe-area-context: ^4.7.1
     react-redux: ^8.1.2
+    redux-logger: ^3.0.6
     solito: ^4.0.1
   languageName: unknown
   linkType: soft
@@ -7493,6 +7494,13 @@ __metadata:
   dependencies:
     mimic-response: ^3.1.0
   checksum: d377cf47e02d805e283866c3f50d3d21578b779731e8c5072d6ce8c13cc31493db1c2f6784da9d1d5250822120cefa44f1deab112d5981015f2e17444b763812
+  languageName: node
+  linkType: hard
+
+"deep-diff@npm:^0.3.5":
+  version: 0.3.8
+  resolution: "deep-diff@npm:0.3.8"
+  checksum: 8a0fb6cbe468e50211836f8daa1c14798b2d7436bfbcb7d8eb0902e0d61bf1dfd48d5b9edd46a10596182b90ad25f87461b8e55111ff9257b6067ad0676f79c9
   languageName: node
   linkType: hard
 
@@ -14243,16 +14251,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-svg@npm:13.10.0":
-  version: 13.10.0
-  resolution: "react-native-svg@npm:13.10.0"
+"react-native-svg@npm:13.11.0":
+  version: 13.11.0
+  resolution: "react-native-svg@npm:13.11.0"
   dependencies:
     css-select: ^5.1.0
     css-tree: ^1.1.3
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 5b71a69f779eb0c8139b716f76736a798c99d85cd5f1741bdc54cf46bfc032505df7b81a92c76859d09317fe5787dc31aabee8a79e67db083442d00af1600f26
+  checksum: b6969e8a425a9f05ca368ba6fb7ea2c1dd759e1659b9270b967555a77ac82df91d287689c963b295b8281a713044c49090435a04742c20203469605a16b38821
   languageName: node
   linkType: hard
 
@@ -14528,6 +14536,15 @@ __metadata:
     source-map: ~0.6.1
     tslib: ^2.0.1
   checksum: 03cc7f57562238ba258d468be67bf7446ce7a707bc87a087891dad15afead46c36e9aaeedf2130e2ab5a465244a9c62bfd4127849761cf8f4085abe2f3e5f485
+  languageName: node
+  linkType: hard
+
+"redux-logger@npm:^3.0.6":
+  version: 3.0.6
+  resolution: "redux-logger@npm:3.0.6"
+  dependencies:
+    deep-diff: ^0.3.5
+  checksum: c40f63c44c6475cf6374ae0eaa810d913f142614cb80692a0beacaf135c5dc3eb3e2cdd4296f01446ba48cb69b82e81363b84d829f1f6659382c991022a814ac
   languageName: node
   linkType: hard
 
