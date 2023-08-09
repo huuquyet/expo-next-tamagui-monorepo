@@ -1,4 +1,3 @@
-import React from 'react'
 import { createParam } from 'solito'
 import { useLink } from 'solito/link'
 import { ChevronLeft } from '@tamagui/lucide-icons'

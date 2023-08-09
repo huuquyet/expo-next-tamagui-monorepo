@@ -1,4 +1,3 @@
-import React from 'react'
 import { useLink } from 'solito/link'
 
 import { SheetDemo } from './sheet'
