@@ -13,6 +13,7 @@ import { Button, H1, Input, Text, XStack, YStack } from '@my/ui'
 export function Counter() {
   const dispatch = useDispatch()
   const count = useSelector(selectCount)
+  const status = useSelector((state) => state.counter.status)
   const [incrementAmount, setIncrementAmount] = useState('2')
 
   return (
@@ -46,7 +47,11 @@ export function Counter() {
           >
             Add Amount
           </Button>
-          <Button size="$6" onPress={() => dispatch(incrementAsync(Number(incrementAmount) || 0))}>
+          <Button
+            size="$6"
+            disabled={status !== 'idle'}
+            onPress={() => dispatch(incrementAsync(Number(incrementAmount) || 0))}
+          >
             Add Async
           </Button>
           <Button
