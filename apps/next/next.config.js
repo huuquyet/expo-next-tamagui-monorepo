@@ -92,7 +92,6 @@ module.exports = function () {
       scrollRestoration: true,
       legacyBrowsers: false,
     },
-    output: 'export',
     webpack: (config, { isServer }) => {
       config.module.rules.push(
         {
@@ -102,9 +101,6 @@ module.exports = function () {
         {
           test: /\.(otf|ttf|eot|woff|woff2)$/i,
           type: 'asset/resource',
-          generator: {
-            filename: 'fonts/[hash][ext][query]',
-          },
         }
       )
 

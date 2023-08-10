@@ -1,6 +1,5 @@
 'use client'
 
-import React from 'react'
 import { StyleSheet } from 'react-native'
 import { useServerInsertedHTML } from 'next/navigation'
 import { createTamagui, TamaguiProvider as TamaguiProviderOG } from 'tamagui'
