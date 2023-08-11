@@ -13,29 +13,16 @@
     "web:extract": "DISABLE_EXTRACTION=false yarn workspace next-app dev",
     "web:prod": "yarn workspace next-app build",
     "web:prod:serve": "yarn workspace next-app serve",
-    "fix": "manypkg fix",
-    "postinstall": "yarn check-deps && yarn build",
+    "postinstall": "yarn build",
     "build": "yarn workspaces foreach --exclude next-app run build",
     "upgrade:tamagui": "yarn up '*tamagui*'@latest '@tamagui/*'@latest react-native-web-lite@latest",
-    "upgrade:tamagui:canary": "yarn up '*tamagui*'@canary '@tamagui/*'@canary react-native-web-lite@canary",
-    "check-deps": "check-dependency-version-consistency ."
+    "upgrade:tamagui:canary": "yarn up '*tamagui*'@canary '@tamagui/*'@canary react-native-web-lite@canary"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.22.10",
-    "@manypkg/cli": "^0.21.0",
-    "check-dependency-version-consistency": "^4.1.0",
-    "eslint": "^8.46.0",
-    "node-gyp": "^9.4.0",
+    "eslint": "^8.47.0",
     "prettier": "^3.0.1",
     "turbo": "^1.10.12",
     "typescript": "^5.1.6"
-  },
-  "resolutions": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-native-svg": "13.11.0",
-    "react-native-web": "^0.19.7",
-    "react-refresh": "^0.14.0"
   },
   "packageManager": "yarn@3.6.1"
 }

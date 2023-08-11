@@ -35,7 +35,7 @@ export function Counter() {
           size="$8"
           ta="center"
           value={incrementAmount}
-          keyboardType="numeric"
+          inputMode="numeric"
           onChangeText={setIncrementAmount}
         />
         <YStack space="$4">

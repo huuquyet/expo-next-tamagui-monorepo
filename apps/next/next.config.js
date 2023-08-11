@@ -10,31 +10,6 @@ const boolVals = {
 const disableExtraction =
   boolVals[process.env.DISABLE_EXTRACTION] ?? process.env.NODE_ENV === 'development'
 
-console.log(`
-
-Welcome to Tamagui!
-
-You can update this monorepo to the latest Tamagui release just by running:
-
-yarn upgrade:tamagui
-
-We've set up a few things for you.
-
-See the "excludeReactNativeWebExports" setting in next.config.js, which omits these
-from the bundle: Switch, ProgressBar Picker, CheckBox, Touchable. To save more,
-you can add ones you don't need like: AnimatedFlatList, FlatList, SectionList,
-VirtualizedList, VirtualizedSectionList.
-
-Even better, enable "useReactNativeWebLite" and you can remove the
-excludeReactNativeWebExports setting altogether and get tree-shaking and
-concurrent mode support as well.
-
-🐣
-
-Remove this log in next.config.js.
-
-`)
-
 const plugins = [
   withTamagui({
     config: './tamagui.config.ts',
@@ -44,13 +19,12 @@ const plugins = [
     logTimings: true,
     disableExtraction,
     // experiment - reduced bundle size react-native-web
-    useReactNativeWebLite: false,
+    useReactNativeWebLite: true,
     shouldExtract: (path) => {
       if (path.includes(join('packages', 'app'))) {
         return true
       }
     },
-    excludeReactNativeWebExports: ['Switch', 'ProgressBar', 'Picker', 'CheckBox', 'Touchable'],
 
     // adds mini-css-extract and css-minimizer-plugin, can fix issues with unique configurations
     enableCSSOptimizations: false,

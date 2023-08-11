@@ -8,10 +8,12 @@
 
 # expo
 **/.expo/*
+**/android/
+**/ios/
 
 # next.js
 **/.next/*
-/out/
+**/out/
 
 # tamagui
 **/.tamagui/*
@@ -33,6 +35,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+**/.vercel/
 
 # typescript
 *.tsbuildinfo
