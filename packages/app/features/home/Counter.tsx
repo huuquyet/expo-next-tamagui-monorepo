@@ -7,7 +7,7 @@ import {
   selectCount,
   incrementAsync,
   incrementIfOddAsync,
-} from '../store'
+} from '../../redux'
 import { Button, H1, Input, Text, XStack, YStack } from '@my/ui'
 
 export function Counter() {

@@ -1,6 +1,14 @@
+# yarn
 .yarn
-apps/expo/android/
-apps/next/public/
-apps/next/out/
-packages/ui/dist/
-packages/ui/types/
+
+# expo
+**/android/
+**/ios/
+
+# next
+**/public/
+**/out/
+
+# tamagui
+**/dist/
+**/types/

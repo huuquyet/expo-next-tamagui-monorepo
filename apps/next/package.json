@@ -19,6 +19,7 @@
     "vercel": "latest"
   },
   "devDependencies": {
+    "@expo/next-adapter": "^5.0.2",
     "@tamagui/next-plugin": "latest",
     "eslint-config-next": "^13.4.13"
   }
