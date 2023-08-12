@@ -1,6 +1,6 @@
 import { Children } from 'react'
 import { AppRegistry } from 'react-native'
-import NextDocument, {
+import Document, {
   DocumentContext,
   DocumentInitialProps,
   Head,
@@ -11,33 +11,32 @@ import NextDocument, {
 
 import Tamagui from '../tamagui.config'
 
-export default class Document extends NextDocument {
-  static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
-    AppRegistry.registerComponent('Main', () => Main)
-    const page = await ctx.renderPage()
+export async function getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
+  AppRegistry.registerComponent('Main', () => Main)
+  // @ts-ignore
+  const { getStyleElement } = AppRegistry.getApplication('Main')
+  const page = await ctx.renderPage()
 
-    // @ts-ignore
-    const { getStyleElement } = AppRegistry.getApplication('Main')
+  /**
+   * Note: be sure to keep tamagui styles after react-native-web styles like it is here!
+   * So Tamagui styles can override the react-native-web styles.
+   */
+  const styles = [
+    getStyleElement(),
+    <style
+      key="tamagui-css"
+      dangerouslySetInnerHTML={{
+        __html: Tamagui.getCSS({
+          exclude: process.env.NODE_ENV === 'development' ? null : 'design-system',
+        }),
+      }}
+    />,
+  ]
 
-    /**
-     * Note: be sure to keep tamagui styles after react-native-web styles like it is here!
-     * So Tamagui styles can override the react-native-web styles.
-     */
-    const styles = [
-      getStyleElement(),
-      <style
-        key="tamagui-css"
-        dangerouslySetInnerHTML={{
-          __html: Tamagui.getCSS({
-            exclude: process.env.NODE_ENV === 'development' ? null : 'design-system',
-          }),
-        }}
-      />,
-    ]
+  return { ...page, styles: Children.toArray(styles) }
+}
 
-    return { ...page, styles: Children.toArray(styles) }
-  }
-
+class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
@@ -52,3 +51,7 @@ export default class Document extends NextDocument {
     )
   }
 }
+
+MyDocument.getInitialProps = getInitialProps
+
+export default MyDocument

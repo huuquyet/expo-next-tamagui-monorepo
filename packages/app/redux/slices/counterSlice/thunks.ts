@@ -2,8 +2,8 @@
 import { fetchIdentityCount } from './fetchIdentityCount'
 import { selectCount } from './selectors'
 import { counterSlice } from './counterSlice'
-import { createAppAsyncThunk } from '../../store/createAppAsyncThunk'
-import type { ReduxThunkAction } from '../../store'
+import { createAppAsyncThunk } from '../../createAppAsyncThunk'
+import type { ReduxThunkAction } from '../..'
 
 // The function below is called a thunk and allows us to perform async logic. It
 // can be dispatched like a regular action: `dispatch(incrementAsync(10))`. This

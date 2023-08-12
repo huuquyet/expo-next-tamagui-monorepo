@@ -7,7 +7,7 @@ import {
   selectCount,
   incrementAsync,
   incrementIfOddAsync,
-} from '../store'
+} from '../../redux'
 import { Button, H1, Input, Text, XStack, YStack } from '@my/ui'
 
 export function Counter() {
@@ -35,7 +35,7 @@ export function Counter() {
           size="$8"
           ta="center"
           value={incrementAmount}
-          keyboardType="numeric"
+          inputMode="numeric"
           onChangeText={setIncrementAmount}
         />
         <YStack space="$4">

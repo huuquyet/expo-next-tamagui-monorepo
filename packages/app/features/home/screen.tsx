@@ -1,7 +1,7 @@
 import { useLink } from 'solito/link'
 
 import { SheetDemo } from './sheet'
-import { Anchor, Button, H1, Paragraph, Separator, XStack, YStack } from '@my/ui'
+import { Anchor, Button, H1, Paragraph, Separator, Text, XStack, YStack } from '@my/ui'
 
 export function HomeScreen() {
   const linkProps = useLink({
@@ -37,7 +37,7 @@ export function HomeScreen() {
         </Paragraph>
       </YStack>
 
-      <XStack>
+      <XStack space="$4" ai="center">
         <Button {...linkProps}>Link to user</Button>
       </XStack>
 

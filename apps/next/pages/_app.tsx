@@ -9,6 +9,7 @@ import '@tamagui/font-inter/css/800.css'
 import '@tamagui/font-inter/css/900.css'
 import '@tamagui/font-silkscreen/css/400.css'
 import 'raf/polyfill'
+import 'setimmediate'
 
 import { Provider } from 'app/provider'
 
