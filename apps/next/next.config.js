@@ -48,7 +48,6 @@ let nextConfig = {
     'expo-constants',
     'expo-linking',
     'expo-modules-core',
-    'moti',
     'react-native-web',
     'solito',
   ],

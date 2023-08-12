@@ -21,6 +21,7 @@
   "devDependencies": {
     "@expo/next-adapter": "^5.0.2",
     "@tamagui/next-plugin": "latest",
+    "@types/react": "18.2.20",
     "eslint-config-next": "^13.4.13"
   }
 }

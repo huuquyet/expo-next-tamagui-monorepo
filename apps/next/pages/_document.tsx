@@ -1,14 +1,21 @@
 import { Children } from 'react'
 import { AppRegistry } from 'react-native'
-import NextDocument, { Head, Html, Main, NextScript } from 'next/document'
+import Document, {
+  DocumentContext,
+  DocumentInitialProps,
+  Head,
+  Html,
+  Main,
+  NextScript,
+} from 'next/document'
 
 import Tamagui from '../tamagui.config'
 
-export async function getInitialProps({ renderPage }: any ) {
+export async function getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
   AppRegistry.registerComponent('Main', () => Main)
   // @ts-ignore
   const { getStyleElement } = AppRegistry.getApplication('Main')
-  const page = await renderPage()
+  const page = await ctx.renderPage()
 
   /**
    * Note: be sure to keep tamagui styles after react-native-web styles like it is here!
@@ -29,7 +36,7 @@ export async function getInitialProps({ renderPage }: any ) {
   return { ...page, styles: Children.toArray(styles) }
 }
 
-export class Document extends NextDocument {
+class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
@@ -45,6 +52,6 @@ export class Document extends NextDocument {
   }
 }
 
-Document.getInitialProps = getInitialProps
+MyDocument.getInitialProps = getInitialProps
 
-export default Document
+export default MyDocument

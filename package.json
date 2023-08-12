@@ -24,5 +24,9 @@
     "turbo": "^1.10.12",
     "typescript": "^5.1.6"
   },
+  "nohoist": [
+    "**/expo-router",
+    "**/expo-router/**"
+  ],
   "packageManager": "yarn@3.6.1"
 }

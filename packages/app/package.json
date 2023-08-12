@@ -10,7 +10,6 @@
     "@my/ui": "*",
     "@reduxjs/toolkit": "^1.9.5",
     "@tamagui/lucide-icons": "latest",
-    "moti": "latest",
     "react-redux": "^8.1.2",
     "solito": "^4.0.1"
   },
