@@ -8637,7 +8637,6 @@ __metadata:
     react-native-screens: ~3.22.1
     react-native-svg: 13.9.0
     react-native-web: ^0.19.7
-    typescript: ^5.1.6
   languageName: unknown
   linkType: soft
 
