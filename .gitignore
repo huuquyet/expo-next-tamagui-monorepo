@@ -1,4 +1,8 @@
+# dependencies
 **/node_modules
+/.pnp
+.pnp.js
+
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
@@ -34,7 +38,6 @@ yarn-error.log*
 .env.production.local
 
 # vercel
-.vercel
 **/.vercel/
 
 # typescript
@@ -49,5 +52,4 @@ thumbs.db
 **/.turbo/*
 
 # IDE
-.vscode
 .idea

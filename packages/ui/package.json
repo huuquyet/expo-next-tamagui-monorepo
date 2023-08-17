@@ -29,6 +29,7 @@
     "tamagui": "latest"
   },
   "devDependencies": {
-    "@tamagui/build": "latest"
+    "@tamagui/build": "latest",
+    "expo-constants": "~14.4.2"
   }
 }
