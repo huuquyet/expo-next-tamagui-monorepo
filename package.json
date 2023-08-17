@@ -8,7 +8,7 @@
   "scripts": {
     "native": "cd apps/expo && yarn start",
     "watch": "yarn workspaces foreach -pi run watch",
-    "vercel:install": "yarn set version stable && yarn install",
+    "vercel:install": "yarn set version berry && yarn install",
     "web": "yarn build && cd apps/next && yarn next",
     "web:extract": "DISABLE_EXTRACTION=false yarn workspace next-app dev",
     "web:prod": "yarn workspace next-app build",
@@ -20,13 +20,9 @@
   },
   "devDependencies": {
     "eslint": "^8.47.0",
-    "prettier": "^3.0.1",
+    "prettier": "^3.0.2",
     "turbo": "^1.10.12",
     "typescript": "^5.1.6"
   },
-  "nohoist": [
-    "**/expo-router",
-    "**/expo-router/**"
-  ],
   "packageManager": "yarn@3.6.1"
 }
