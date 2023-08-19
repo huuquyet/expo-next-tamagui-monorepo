@@ -4,9 +4,15 @@ import { createSlice, type PayloadAction } from '@reduxjs/toolkit'
 /* Instruments */
 import { incrementAsync } from './thunks'
 
+/* Types */
+interface CounterSliceState {
+  value: number
+  loading: 'idle' | 'loading' | 'failed'
+}
+
 const initialState: CounterSliceState = {
   value: 0,
-  status: 'idle',
+  loading: 'idle',
 }
 
 export const counterSlice = createSlice({
@@ -34,17 +40,13 @@ export const counterSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(incrementAsync.pending, (state) => {
-        state.status = 'loading'
+        state.loading = 'loading'
       })
       .addCase(incrementAsync.fulfilled, (state, action) => {
-        state.status = 'idle'
+        state.loading = 'idle'
         state.value += action.payload
       })
   },
 })
 
-/* Types */
-export interface CounterSliceState {
-  value: number
-  status: 'idle' | 'loading' | 'failed'
-}
+export const { increment, decrement, incrementByAmount } = counterSlice.actions
