@@ -1,15 +1,18 @@
 import { useColorScheme } from 'react-native'
-import { Provider as ReduxProvider } from 'react-redux'
 
 import { ToastViewport } from './ToastViewport'
-import config from '../tamagui.config'
-import { reduxStore } from '../redux'
+import config from 'app/tamagui.config'
+import { StoreProvider, initializeStore } from 'app/zustand'
 import { CustomToast, TamaguiProvider, TamaguiProviderProps, ToastProvider } from '@my/ui'
 
 export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'config'>) {
   const scheme = useColorScheme()
+
+  const zustandStore = initializeStore()
+  const storeProps = JSON.parse(JSON.stringify(zustandStore.getState()))
+
   return (
-    <ReduxProvider store={reduxStore}>
+    <StoreProvider {...storeProps}>
       <TamaguiProvider
         config={config}
         disableInjectCSS
@@ -32,6 +35,6 @@ export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'conf
           <ToastViewport />
         </ToastProvider>
       </TamaguiProvider>
-    </ReduxProvider>
+    </StoreProvider>
   )
 }

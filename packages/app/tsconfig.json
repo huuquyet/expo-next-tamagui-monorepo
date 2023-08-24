@@ -1,0 +1,8 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "composite": true,
+    "jsx": "react-jsx",
+    "noEmit": true
+  }
+}
