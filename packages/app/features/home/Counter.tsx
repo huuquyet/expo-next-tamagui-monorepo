@@ -1,18 +1,34 @@
-import { useState } from 'react'
-
-import {
-  decrement,
-  increment,
-  incrementAsync,
-  incrementByAmount,
-  incrementIfOddAsync,
-  useBoundStore,
-} from 'app/zustand'
+import { useStore } from 'app/zustand'
 import { Button, H1, Input, Text, XStack, YStack } from '@my/ui'
 
+const useCounter = () => {
+  return useStore((store) => ({
+    count: store.count,
+    amount: store.amount,
+    loading: store.loading,
+    setAmount: store.setAmount,
+    increment: store.increment,
+    decrement: store.decrement,
+    reset: store.reset,
+    incrementByAmount: store.incrementByAmount,
+    incrementAsync: store.incrementAsync,
+    incrementIfOddAsync: store.incrementIfOddAsync,
+  }))
+}
+
 export function Counter() {
-  const [incrementAmount, setIncrementAmount] = useState(2)
-  const [count, loading] = useBoundStore((state) => [state.value, state.loading])
+  const {
+    count,
+    amount,
+    loading,
+    setAmount,
+    increment,
+    decrement,
+    reset,
+    incrementByAmount,
+    incrementAsync,
+    incrementIfOddAsync,
+  } = useCounter()
 
   return (
     <YStack space="$4" p="$4" ai="center">
@@ -28,26 +44,25 @@ export function Counter() {
           -
         </Button>
       </XStack>
+      <Button size="$6" onPress={() => reset()}>
+        Reset
+      </Button>
       <XStack space="$4" ai="center">
         <Input
           size="$8"
           ta="center"
-          value={`${incrementAmount}`}
+          value={`${amount}`}
           inputMode="numeric"
-          onChangeText={(e) => setIncrementAmount(Number(e) || 0)}
+          onChangeText={(e) => setAmount(Number(e) || 0)}
         />
-        <YStack space="$4">
-          <Button size="$6" onPress={() => incrementByAmount(incrementAmount)}>
+        <YStack space="$2">
+          <Button size="$6" onPress={() => incrementByAmount(amount)}>
             Add Amount
           </Button>
-          <Button
-            size="$6"
-            disabled={loading !== 'idle'}
-            onPress={() => incrementAsync(incrementAmount)}
-          >
+          <Button size="$6" disabled={loading !== 'idle'} onPress={() => incrementAsync(amount)}>
             Add Async
           </Button>
-          <Button size="$6" onPress={() => incrementIfOddAsync(incrementAmount)}>
+          <Button size="$6" onPress={() => incrementIfOddAsync(amount)}>
             Add If Odd
           </Button>
         </YStack>
