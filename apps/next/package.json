@@ -31,7 +31,7 @@
     "@tamagui/font-silkscreen": "latest",
     "@tamagui/next-plugin": "latest",
     "@tamagui/polyfill-dev": "latest",
-    "@types/react": "^18.2.20",
+    "@types/react": "^18.2.21",
     "eslint-config-next": "^13.4.19"
   }
 }
