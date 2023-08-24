@@ -82,8 +82,7 @@ export const initializeStore = (preloadedState: Partial<StoreInterface> = {}) =>
           incrementIfOddAsync: (by: number) => {
             const current = get().count
             if (current % 2 === 1) {
-              // incrementByAmount(by)
-              set({ count: get().count + by })
+              get().incrementByAmount(by)
             }
           },
         }),
