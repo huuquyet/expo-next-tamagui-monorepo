@@ -1,6 +1,6 @@
 import { type PropsWithChildren, useRef } from 'react'
-import type { StoreType } from './store'
-import { initializeStore, Provider } from './store'
+
+import { initializeStore, Provider, type StoreType } from './store'
 
 export const StoreProvider = ({ children, ...props }: PropsWithChildren) => {
   const storeRef = useRef<StoreType>()

@@ -1,6 +1,8 @@
 import { createContext, useContext } from 'react'
-import { createStore, useStore as useZustandStore } from 'zustand'
+import { createStore } from 'zustand'
+import { useStoreWithEqualityFn } from 'zustand/traditional'
 import { devtools, persist } from 'zustand/middleware'
+import { shallow } from 'zustand/shallow'
 
 import { fetchIdentityCount } from './fetchIdentityCount'
 
@@ -37,7 +39,7 @@ export const useStore = <T>(selector: (state: StoreInterface) => T) => {
 
   if (!store) throw new Error('Store is missing the provider')
 
-  return useZustandStore(store, selector)
+  return useStoreWithEqualityFn(store, selector, shallow)
 }
 
 export const initializeStore = (preloadedState: Partial<StoreInterface> = {}) => {
@@ -87,7 +89,30 @@ export const initializeStore = (preloadedState: Partial<StoreInterface> = {}) =>
           },
         }),
         { name: 'zustand' }
-      )
+      ),
+      { enabled: false }
     )
   )
+}
+
+export const useClock = () => {
+  return useStore((store) => ({
+    lastUpdate: store.lastUpdate,
+    tick: store.tick,
+  }))
+}
+
+export const useCounter = () => {
+  return useStore((store) => ({
+    count: store.count,
+    amount: store.amount,
+    loading: store.loading,
+    setAmount: store.setAmount,
+    increment: store.increment,
+    decrement: store.decrement,
+    reset: store.reset,
+    incrementByAmount: store.incrementByAmount,
+    incrementAsync: store.incrementAsync,
+    incrementIfOddAsync: store.incrementIfOddAsync,
+  }))
 }

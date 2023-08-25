@@ -1,20 +1,5 @@
-import { useStore } from 'app/zustand'
+import { useCounter } from 'app/zustand'
 import { Button, H1, Input, Text, XStack, YStack } from '@my/ui'
-
-const useCounter = () => {
-  return useStore((store) => ({
-    count: store.count,
-    amount: store.amount,
-    loading: store.loading,
-    setAmount: store.setAmount,
-    increment: store.increment,
-    decrement: store.decrement,
-    reset: store.reset,
-    incrementByAmount: store.incrementByAmount,
-    incrementAsync: store.incrementAsync,
-    incrementIfOddAsync: store.incrementIfOddAsync,
-  }))
-}
 
 export function Counter() {
   const {
