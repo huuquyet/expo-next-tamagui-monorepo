@@ -1,9 +1,10 @@
 import { createContext, useContext } from 'react'
 import { createStore } from 'zustand'
 import { useStoreWithEqualityFn } from 'zustand/traditional'
-import { devtools, persist } from 'zustand/middleware'
+import { devtools, persist, createJSONStorage } from 'zustand/middleware'
 import { shallow } from 'zustand/shallow'
 
+import { storage } from './appStorage'
 import { fetchIdentityCount } from './fetchIdentityCount'
 
 interface StoreInterface {
@@ -88,7 +89,7 @@ export const initializeStore = (preloadedState: Partial<StoreInterface> = {}) =>
             }
           },
         }),
-        { name: 'zustand' }
+        { name: 'zustand', storage: createJSONStorage(() => storage) }
       ),
       { enabled: false }
     )
