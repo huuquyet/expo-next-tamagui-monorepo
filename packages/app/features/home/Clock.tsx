@@ -1,16 +1,9 @@
-import { useStore, useInterval } from 'app/zustand'
+import { useClock, useInterval } from 'app/zustand'
 import { H2 } from '@my/ui'
-
-const useClock = () => {
-  return useStore((store) => ({
-    lastUpdate: store.lastUpdate,
-    tick: store.tick,
-  }))
-}
 
 const formatTime = (time: number) => {
   // cut off except hh:mm:ss
-  return new Date(time).toJSON().slice(11, 19)
+  return new Date(time).toLocaleTimeString()
 }
 
 export function Clock() {
@@ -21,5 +14,9 @@ export function Clock() {
     tick(Date.now())
   }, 1000)
 
-  return <H2 ta="center">{formatTime(lastUpdate)}</H2>
+  return (
+    <H2 ta="center" suppressHydrationWarning>
+      {formatTime(lastUpdate)}
+    </H2>
+  )
 }

@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
         <meta name="description" content="Tamagui, Solito, Expo & Next.js" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ThemeProvider>
+      <ThemeProvider {...pageProps.initialZustandState}>
         <Component {...pageProps} />
       </ThemeProvider>
     </>

@@ -1,16 +1,16 @@
 {
   "name": "@my/ui",
-  "version": "0.1.1",
-  "sideEffects": [
-    "*.css"
-  ],
+  "version": "0.2.1",
   "private": true,
-  "types": "./types/index",
   "main": "src/index.tsx",
+  "types": "./types/index",
   "module:jsx": "src",
   "files": [
     "types",
     "dist"
+  ],
+  "sideEffects": [
+    "*.css"
   ],
   "scripts": {
     "build": "tamagui-build",

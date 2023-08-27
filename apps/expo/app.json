@@ -3,7 +3,7 @@
     "name": "[yourprojectsname]",
     "slug": "[yourprojectsname]",
     "scheme": "[yourprojectsname]",
-    "version": "1.0.0",
+    "version": "0.2.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
@@ -35,10 +35,6 @@
         "projectId": "[your_project_id]"
       }
     },
-    "plugins": [
-      [
-        "expo-router",
-      ]
-    ]
+    "plugins": [["expo-router"]]
   }
 }

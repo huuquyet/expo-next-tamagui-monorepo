@@ -2,17 +2,14 @@ import { useColorScheme } from 'react-native'
 
 import { ToastViewport } from './ToastViewport'
 import config from 'app/tamagui.config'
-import { StoreProvider, initializeStore } from 'app/zustand'
+import { StoreProvider } from 'app/zustand'
 import { CustomToast, TamaguiProvider, TamaguiProviderProps, ToastProvider } from '@my/ui'
 
 export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'config'>) {
   const scheme = useColorScheme()
 
-  const zustandStore = initializeStore()
-  const storeProps = JSON.parse(JSON.stringify(zustandStore.getState()))
-
   return (
-    <StoreProvider {...storeProps}>
+    <StoreProvider>
       <TamaguiProvider
         config={config}
         disableInjectCSS
