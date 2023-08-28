@@ -2847,14 +2847,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-async-storage/async-storage@npm:^1.19.3":
-  version: 1.19.3
-  resolution: "@react-native-async-storage/async-storage@npm:1.19.3"
+"@react-native-async-storage/async-storage@npm:~1.18.2":
+  version: 1.18.2
+  resolution: "@react-native-async-storage/async-storage@npm:1.18.2"
   dependencies:
     merge-options: ^3.0.4
   peerDependencies:
     react-native: ^0.0.0-0 || 0.60 - 0.72 || 1000.0.0
-  checksum: d849e5c8bb08d2130d95cc246749dae820cc1996b6b31defa063a1b67070524d72aed5a0e57ce2fafe3c3726712c09a5a3babaed1358182060ce7cfd8bd2c1a3
+  checksum: bdbcd2e4785a1348657302fa48f4073d980d3b3626fc2ea1e8ec3013825d0013a49d0805a3fd1e98c0b8b12eb1273ef03fb842686ce740d25331398deb2691c4
   languageName: node
   linkType: hard
 
@@ -5381,7 +5381,7 @@ __metadata:
   resolution: "app@workspace:packages/app"
   dependencies:
     "@my/ui": "*"
-    "@react-native-async-storage/async-storage": ^1.19.3
+    "@react-native-async-storage/async-storage": ~1.18.2
     "@tamagui/lucide-icons": latest
     react: ^18.2.0
     react-native: ^0.72.4
@@ -8115,7 +8115,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.22.11
     "@my/ui": "*"
-    "@react-native-async-storage/async-storage": ^1.19.3
+    "@react-native-async-storage/async-storage": ~1.18.2
     "@react-navigation/native": ^6.1.7
     "@tamagui/babel-plugin": latest
     "@tamagui/font-inter": latest

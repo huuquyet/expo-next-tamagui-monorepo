@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.22.11",
-    "@react-native-async-storage/async-storage": "^1.19.3",
+    "@react-native-async-storage/async-storage": "~1.18.2",
     "@tamagui/babel-plugin": "latest",
     "@tamagui/font-inter": "latest",
     "@tamagui/font-silkscreen": "latest",

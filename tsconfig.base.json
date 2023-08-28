@@ -5,7 +5,6 @@
     "baseUrl": ".",
     "downlevelIteration": true,
     "esModuleInterop": true,
-    "experimentalDecorators": true,
     "importHelpers": true,
     "incremental": true,
     "jsx": "react-jsx",
