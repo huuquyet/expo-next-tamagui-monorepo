@@ -12,7 +12,7 @@
     "@my/ui": "*",
     "@react-navigation/native": "^6.1.7",
     "app": "*",
-    "expo": "^49.0.8",
+    "expo": "^49.0.9",
     "expo-constants": "~14.4.2",
     "expo-font": "~11.4.0",
     "expo-linking": "^5.0.2",
