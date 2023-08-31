@@ -2847,14 +2847,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-async-storage/async-storage@npm:^1.19.3":
-  version: 1.19.3
-  resolution: "@react-native-async-storage/async-storage@npm:1.19.3"
+"@react-native-async-storage/async-storage@npm:~1.18.2":
+  version: 1.18.2
+  resolution: "@react-native-async-storage/async-storage@npm:1.18.2"
   dependencies:
     merge-options: ^3.0.4
   peerDependencies:
     react-native: ^0.0.0-0 || 0.60 - 0.72 || 1000.0.0
-  checksum: d849e5c8bb08d2130d95cc246749dae820cc1996b6b31defa063a1b67070524d72aed5a0e57ce2fafe3c3726712c09a5a3babaed1358182060ce7cfd8bd2c1a3
+  checksum: bdbcd2e4785a1348657302fa48f4073d980d3b3626fc2ea1e8ec3013825d0013a49d0805a3fd1e98c0b8b12eb1273ef03fb842686ce740d25331398deb2691c4
   languageName: node
   linkType: hard
 
@@ -5381,7 +5381,7 @@ __metadata:
   resolution: "app@workspace:packages/app"
   dependencies:
     "@my/ui": "*"
-    "@react-native-async-storage/async-storage": ^1.19.3
+    "@react-native-async-storage/async-storage": ~1.18.2
     "@tamagui/lucide-icons": latest
     react: ^18.2.0
     react-native: ^0.72.4
@@ -8115,7 +8115,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.22.11
     "@my/ui": "*"
-    "@react-native-async-storage/async-storage": ^1.19.3
+    "@react-native-async-storage/async-storage": ~1.18.2
     "@react-navigation/native": ^6.1.7
     "@tamagui/babel-plugin": latest
     "@tamagui/font-inter": latest
@@ -8123,7 +8123,7 @@ __metadata:
     app: "*"
     babel-plugin-module-resolver: ^5.0.0
     babel-plugin-transform-inline-environment-variables: ^0.4.4
-    expo: ^49.0.8
+    expo: ^49.0.9
     expo-constants: ~14.4.2
     expo-font: ~11.4.0
     expo-linking: ^5.0.2
@@ -8179,7 +8179,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-file-system@npm:~15.4.0, expo-file-system@npm:~15.4.3":
+"expo-file-system@npm:~15.4.0":
   version: 15.4.3
   resolution: "expo-file-system@npm:15.4.3"
   dependencies:
@@ -8187,6 +8187,17 @@ __metadata:
   peerDependencies:
     expo: "*"
   checksum: 43a697089dce00ecaf0d43d684da0d8cec1356ee787bf8aa798a0668930f0f08b2d080f534371bd020b7d8cd4a3ece2760eeb5854febf2e4757142f090db25c0
+  languageName: node
+  linkType: hard
+
+"expo-file-system@npm:~15.4.4":
+  version: 15.4.4
+  resolution: "expo-file-system@npm:15.4.4"
+  dependencies:
+    uuid: ^3.4.0
+  peerDependencies:
+    expo: "*"
+  checksum: d1bd26c05195c563300649c2ce6c1e8631e5fc928628bc6386cc57a6a47cec1b327333f75111ce7e943e95756f36d78e7201013fc494ef190342b528dd29f3bf
   languageName: node
   linkType: hard
 
@@ -8253,13 +8264,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-modules-core@npm:1.5.10":
-  version: 1.5.10
-  resolution: "expo-modules-core@npm:1.5.10"
+"expo-modules-core@npm:1.5.11":
+  version: 1.5.11
+  resolution: "expo-modules-core@npm:1.5.11"
   dependencies:
     compare-versions: ^3.4.0
     invariant: ^2.2.4
-  checksum: b8189a2758897c60c63eb803aaab6525d135d694680b6aab043ff477a25f46a21373b2fa80ffea0b7504e3f3989b9ad0e9683a92db1c7bc1c09cef0bcfbd1c55
+  checksum: 85a48a6d1983671458a37ddece9e151ff8179814dd368d67b39dcf34fcdc6b44419d045ac8efcdd8179848d826b67678ce706f5533314ff8ab84537befcf7915
   languageName: node
   linkType: hard
 
@@ -8268,7 +8279,7 @@ __metadata:
   resolution: "expo-next-tamagui-monorepo@workspace:."
   dependencies:
     eslint: ^8.48.0
-    prettier: ^3.0.2
+    prettier: ^3.0.3
     turbo: ^1.10.13
     typescript: ^5.2.2
   languageName: unknown
@@ -8342,9 +8353,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo@npm:^49.0.8":
-  version: 49.0.8
-  resolution: "expo@npm:49.0.8"
+"expo@npm:^49.0.9":
+  version: 49.0.9
+  resolution: "expo@npm:49.0.9"
   dependencies:
     "@babel/runtime": ^7.20.0
     "@expo/cli": 0.10.11
@@ -8355,11 +8366,11 @@ __metadata:
     expo-application: ~5.3.0
     expo-asset: ~8.10.1
     expo-constants: ~14.4.2
-    expo-file-system: ~15.4.3
+    expo-file-system: ~15.4.4
     expo-font: ~11.4.0
     expo-keep-awake: ~12.3.0
     expo-modules-autolinking: 1.5.1
-    expo-modules-core: 1.5.10
+    expo-modules-core: 1.5.11
     fbemitter: ^3.0.0
     invariant: ^2.2.4
     md5-file: ^3.2.3
@@ -8368,7 +8379,7 @@ __metadata:
     uuid: ^3.4.0
   bin:
     expo: bin/cli
-  checksum: fc5f6112e3be7cd400755c3ab814de010a8f389e451aff0a452c16f2f9f292f60ac23ca148df29a81bf388cfb9d55457d7d0eacc6f97a10c28f7932132210990
+  checksum: b1fd9a8b9a8010e7bfa4848cb111df0d159c01f0a64e2b11c8728b82be329585dcc28e0020320bbce25a13833a4c04bc4073558a6186cb11d2310a7d64a4d0db
   languageName: node
   linkType: hard
 
@@ -12533,12 +12544,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "prettier@npm:3.0.2"
+"prettier@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "prettier@npm:3.0.3"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 118b59ddb6c80abe2315ab6d0f4dd1b253be5cfdb20622fa5b65bb1573dcd362e6dd3dcf2711dd3ebfe64aecf7bdc75de8a69dc2422dcd35bdde7610586b677a
+  checksum: e10b9af02b281f6c617362ebd2571b1d7fc9fb8a3bd17e371754428cda992e5e8d8b7a046e8f7d3e2da1dcd21aa001e2e3c797402ebb6111b5cd19609dd228e0
   languageName: node
   linkType: hard
 
