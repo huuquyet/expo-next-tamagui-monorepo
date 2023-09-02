@@ -8131,7 +8131,7 @@ __metadata:
     expo-splash-screen: ^0.20.5
     expo-status-bar: ~1.6.0
     expo-system-ui: ~2.4.0
-    metro-minify-terser: ^0.78.1
+    metro-minify-terser: ^0.79.0
     react: ^18.2.0
     react-dom: ^18.2.0
     react-native: ^0.72.4
@@ -10945,12 +10945,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"metro-minify-terser@npm:^0.78.1":
-  version: 0.78.1
-  resolution: "metro-minify-terser@npm:0.78.1"
+"metro-minify-terser@npm:^0.79.0":
+  version: 0.79.0
+  resolution: "metro-minify-terser@npm:0.79.0"
   dependencies:
     terser: ^5.15.0
-  checksum: c4b0ef25ef587578865503412515a9fc8d7f127be8e96eb0af0fbc505c2854c427a292a5cde7e4b1317da50bf2739c4a2b512e12c1d4274c767dbc5211a46f2a
+  checksum: 752d4512f3f033b20c935a1ba6269cdf4496d4d022b31fcda0226c252d39a93e78bfd528055534b76fdcca55835d70027d78036be5c616177b6f22681c345519
   languageName: node
   linkType: hard
 
