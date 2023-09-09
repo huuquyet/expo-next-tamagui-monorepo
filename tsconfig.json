@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "forceConsistentCasingInFileNames": true,
     "noUncheckedIndexedAccess": true,
     "paths": {
       "app/*": ["./packages/app/*"],

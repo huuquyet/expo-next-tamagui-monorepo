@@ -1,7 +1,6 @@
 {
   "extends": "../../tsconfig",
   "compilerOptions": {
-    "forceConsistentCasingInFileNames": true,
     "noEmit": true
   }
 }
