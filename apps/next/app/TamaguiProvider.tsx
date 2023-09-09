@@ -10,17 +10,6 @@ import '@tamagui/polyfill-dev'
 
 import Tamagui from '../tamagui.config'
 
-const config = createTamagui({
-  ...configBase,
-  themeClassNameOnRoot: false,
-})
-
-export type Conf = typeof config
-
-declare module 'tamagui' {
-  interface TamaguiCustomConfig extends Conf {}
-}
-
 export const TamaguiProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useRootTheme()
 
@@ -36,7 +25,7 @@ export const TamaguiProvider = ({ children }: { children: React.ReactNode }) => 
         setTheme(next as any)
       }}
     >
-      <TamaguiProviderOG config={config} themeClassNameOnRoot defaultTheme={theme}>
+      <TamaguiProviderOG config={Tamagui} themeClassNameOnRoot defaultTheme={theme}>
         {children}
       </TamaguiProviderOG>
     </NextThemeProvider>

@@ -17,7 +17,7 @@
     "watch": "tamagui-build --watch"
   },
   "dependencies": {
-    "@tamagui/animations-react-native": "latest",
+    "@tamagui/animations-moti": "latest",
     "@tamagui/config": "latest",
     "@tamagui/font-inter": "latest",
     "@tamagui/font-silkscreen": "latest",
@@ -26,6 +26,7 @@
     "@tamagui/themes": "latest",
     "@tamagui/toast": "latest",
     "burnt": "^0.11.7",
+    "react-native-reanimated": "~3.3.0",
     "tamagui": "latest"
   },
   "devDependencies": {

@@ -1,30 +1,19 @@
-import { useColorScheme } from 'react-native'
-
 import { ToastViewport } from './ToastViewport'
 import config from 'app/tamagui.config'
 import { StoreProvider } from 'app/zustand'
 import { CustomToast, TamaguiProvider, TamaguiProviderProps, ToastProvider } from '@my/ui'
 
 export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'config'>) {
-  const scheme = useColorScheme()
-
   return (
     <StoreProvider>
-      <TamaguiProvider
-        config={config}
-        disableInjectCSS
-        defaultTheme={scheme === 'dark' ? 'dark' : 'light'}
-        {...rest}
-      >
+      <TamaguiProvider config={config} disableInjectCSS {...rest}>
         <ToastProvider
           swipeDirection="horizontal"
           duration={6000}
-          native={
-            [
-              /* uncomment the next line to do native toasts on mobile. NOTE: it'll require you making a dev build and won't work with Expo Go */
-              // 'mobile'
-            ]
-          }
+          native={[
+            /* uncomment the next line to do native toasts on mobile. NOTE: it'll require you making a dev build and won't work with Expo Go */
+            'mobile',
+          ]}
         >
           {children}
 
