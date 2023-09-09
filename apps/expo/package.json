@@ -1,6 +1,6 @@
 {
   "name": "expo-app",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": "index.js",
   "private": true,
   "scripts": {
@@ -30,13 +30,13 @@
     "react-native-web": "^0.19.8"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.11",
+    "@babel/core": "^7.22.17",
     "@react-native-async-storage/async-storage": "~1.18.2",
     "@tamagui/babel-plugin": "latest",
     "@tamagui/font-inter": "latest",
     "@tamagui/font-silkscreen": "latest",
     "babel-plugin-module-resolver": "^5.0.0",
     "babel-plugin-transform-inline-environment-variables": "^0.4.4",
-    "metro-minify-terser": "^0.78.1"
+    "metro-minify-terser": "^0.79.0"
   }
 }

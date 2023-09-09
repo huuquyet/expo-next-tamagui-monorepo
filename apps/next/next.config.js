@@ -30,6 +30,9 @@ const plugins = [
     enableCSSOptimizations: false,
     // disable tamagui config to make fonts easier to import
     disableFontSupport: false,
+    // set to false if you never call addTheme or updateTheme
+    // when combined with outputCSS this saves you 1Kb more bundle size
+    doesMutateThemes: false, // default true
   }),
 ]
 
