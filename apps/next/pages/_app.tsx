@@ -24,6 +24,13 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
         <title>Tamagui Example App</title>
         <meta name="description" content="Tamagui, Solito, Expo & Next.js" />
         <link rel="icon" href="/favicon.ico" />
+        <script
+          key="tamagui-animations-mount"
+          dangerouslySetInnerHTML={{
+            // avoid flash of animated things on enter
+            __html: `document.documentElement.classList.add('t_unmounted')`,
+          }}
+        />
       </Head>
       <ThemeProvider {...pageProps.initialZustandState}>
         <Component {...pageProps} />
