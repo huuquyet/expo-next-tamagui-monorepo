@@ -32,7 +32,7 @@ module.exports = function (api) {
             ],
           ]),
       // NOTE: this is only necessary if you are using reanimated for animations
-      'react-native-reanimated/plugin',
+      // 'react-native-reanimated/plugin',
       // NOTE: this is required to pass the right environment
       [
         'transform-inline-environment-variables',
