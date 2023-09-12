@@ -5474,6 +5474,7 @@ __metadata:
     "@my/ui": "*"
     "@react-native-async-storage/async-storage": ~1.18.2
     "@tamagui/lucide-icons": latest
+    moti: ^0.26.0
     react: ^18.2.0
     react-native: ^0.72.4
     react-native-safe-area-context: 4.6.3
@@ -11607,6 +11608,17 @@ __metadata:
   peerDependencies:
     react-native-reanimated: "*"
   checksum: 399b41f7aac178869dda6d13dd0e22dc8d674abae6f9a1034b97af666a752abb6dae761cc52acbadd043c1746a3b56c406e84ada38e439edee66410232595afe
+  languageName: node
+  linkType: hard
+
+"moti@npm:^0.26.0":
+  version: 0.26.0
+  resolution: "moti@npm:0.26.0"
+  dependencies:
+    framer-motion: ^6.5.1
+  peerDependencies:
+    react-native-reanimated: "*"
+  checksum: 0f6459fc4eedf775fe1455e1925365b018d43d7bd6b17727db5e9ff4fad2219086389e35b36b6f2d6ad5bb680cc93fd77cb9e4aa134e548f4d31f66d325f1c5a
   languageName: node
   linkType: hard
 
