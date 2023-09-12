@@ -19,6 +19,9 @@ module.exports = function (api) {
           extensions: ['.js', '.jsx', '.tsx', '.ios.js', '.android.js'],
         },
       ],
+      '@babel/plugin-proposal-export-namespace-from',
+      // NOTE: this is only necessary if you are using reanimated for animations
+      'react-native-reanimated/plugin',
       ...(process.env.EAS_BUILD_PLATFORM === 'android'
         ? []
         : [
@@ -31,8 +34,6 @@ module.exports = function (api) {
               },
             ],
           ]),
-      // NOTE: this is only necessary if you are using reanimated for animations
-      // 'react-native-reanimated/plugin',
       // NOTE: this is required to pass the right environment
       [
         'transform-inline-environment-variables',
