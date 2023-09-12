@@ -1978,9 +1978,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/cli@npm:0.10.11":
-  version: 0.10.11
-  resolution: "@expo/cli@npm:0.10.11"
+"@expo/cli@npm:0.10.12":
+  version: 0.10.12
+  resolution: "@expo/cli@npm:0.10.12"
   dependencies:
     "@babel/runtime": ^7.20.0
     "@expo/code-signing-certificates": 0.0.5
@@ -1992,7 +1992,7 @@ __metadata:
     "@expo/json-file": ^8.2.37
     "@expo/metro-config": ~0.10.0
     "@expo/osascript": ^2.0.31
-    "@expo/package-manager": ~1.0.0
+    "@expo/package-manager": ~1.1.0
     "@expo/plist": ^0.0.20
     "@expo/prebuild-config": 6.2.6
     "@expo/rudder-sdk-node": 1.1.1
@@ -2017,7 +2017,6 @@ __metadata:
     graphql-tag: ^2.10.1
     https-proxy-agent: ^5.0.1
     internal-ip: 4.3.0
-    is-root: ^2.1.0
     js-yaml: ^3.13.1
     json-schema-deref-sync: ^0.13.0
     md5-file: ^3.2.3
@@ -2047,7 +2046,7 @@ __metadata:
     ws: ^8.12.1
   bin:
     expo-internal: build/bin/cli
-  checksum: bbb940f7e67af9f006e447cff5405781395ac2c3ab44f914100f1a94485a584eb75fd3ceb2df990157d4615141388d3edce7db7d4ae6c1f7dc3d9ad2c8d99909
+  checksum: c9fe63a9c2a7c688bf5cbb7a2766aa06e1ba71f5d7fbc976f6a2ea24d54772018df1c3e7c4f927bf4dc75fd866311be2e86405f7b5137c714d17c2e6f821ab72
   languageName: node
   linkType: hard
 
@@ -2217,15 +2216,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/metro-runtime@npm:2.2.3":
-  version: 2.2.3
-  resolution: "@expo/metro-runtime@npm:2.2.3"
+"@expo/metro-runtime@npm:2.2.7":
+  version: 2.2.7
+  resolution: "@expo/metro-runtime@npm:2.2.7"
   dependencies:
     "@bacons/react-views": ^1.1.3
     qs: ^6.10.3
   peerDependencies:
     react-native: "*"
-  checksum: 0746ab892d6acb7465ad29cf0d8b135cfddab5022d7921d56be1b07803305bda141b4d62f18ab6c8477b77ac9bde47a30e12f44c375bc42474dba4c72d70efdc
+  checksum: db02cce741eb05c5ab1755b812928763a7a4f47e08c244808623f22cfedd933999e6883746aef7b98420cae53b320694509f66268ae04fe5f8dfabe11f937058
   languageName: node
   linkType: hard
 
@@ -2252,9 +2251,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/package-manager@npm:~1.0.0":
-  version: 1.0.3
-  resolution: "@expo/package-manager@npm:1.0.3"
+"@expo/package-manager@npm:~1.1.0":
+  version: 1.1.1
+  resolution: "@expo/package-manager@npm:1.1.1"
   dependencies:
     "@expo/json-file": ^8.2.37
     "@expo/spawn-async": ^1.5.0
@@ -2267,7 +2266,7 @@ __metadata:
     npm-package-arg: ^7.0.0
     split: ^1.0.1
     sudo-prompt: 9.1.1
-  checksum: b7efc4b3d5cb2998a02c548c634b85a8a230c01eafe06cd709eb465376f545a3f8dc4910654ab4be1ee7dd9ccf089506dc310e36d90d504c290269b0ba5221a9
+  checksum: 0be6b0bca92adef1533902dd93d4ffde140ac26346a1b8e4fbfb707036748a2c8bffe78165c7bfd6f8a6b07439c2cc5f83558ddd669cb6575c6979b3cabac675
   languageName: node
   linkType: hard
 
@@ -3376,7 +3375,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/animations-react-native@npm:1.61.3, @tamagui/animations-react-native@npm:latest":
+"@tamagui/animations-react-native@npm:1.61.3":
   version: 1.61.3
   resolution: "@tamagui/animations-react-native@npm:1.61.3"
   dependencies:
@@ -3386,6 +3385,19 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: 2bf468561a897bd11546b36a1ff5c83ef26bf876388ae85706bf896cc4be5f69b838ecf5984e706f06113abc250fddff8407ea07915522bfb4a3c223b1a5e093
+  languageName: node
+  linkType: hard
+
+"@tamagui/animations-react-native@npm:latest":
+  version: 1.64.1
+  resolution: "@tamagui/animations-react-native@npm:1.64.1"
+  dependencies:
+    "@tamagui/use-presence": 1.64.1
+    "@tamagui/web": 1.64.1
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 4c99b8eea7a1cd6f82effcdc2cc2fb611d3c9a08f5cf51a5d956bef4f5fe915f47e2655823afe947939950225cdc4f028b5311cd9b624336fb105f5314215a4e
   languageName: node
   linkType: hard
 
@@ -3553,6 +3565,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tamagui/compose-refs@npm:1.64.1":
+  version: 1.64.1
+  resolution: "@tamagui/compose-refs@npm:1.64.1"
+  peerDependencies:
+    react: "*"
+  checksum: 897f8e310d1af8f22347f0e41c1e03964323e1e8566374e6eacdbec3d852422700ed8210b2e609ea86657d3969eb11dfd86bb06fae239d19c6d493c8a889c853
+  languageName: node
+  linkType: hard
+
 "@tamagui/config-default-node@npm:1.61.3":
   version: 1.61.3
   resolution: "@tamagui/config-default-node@npm:1.61.3"
@@ -3586,6 +3607,15 @@ __metadata:
   peerDependencies:
     react: "*"
   checksum: 27718a133b0388493d9ed2a4bb5868d1372f764c70514ef9e14668bfa2757ea6b1a7c1f8927f5b8d65be899a11cadcfed742544b53fcc9dfec5cdc19709fb9ce
+  languageName: node
+  linkType: hard
+
+"@tamagui/constants@npm:1.64.1":
+  version: 1.64.1
+  resolution: "@tamagui/constants@npm:1.64.1"
+  peerDependencies:
+    react: "*"
+  checksum: 477199cbd83ec8138841c1a1f3ccb78723e43a79515bfc050d3817a8fb027fa9767cdf4f6fe356c63b8d509543005aaee57eb463485e973c3ce777d6d64071eb
   languageName: node
   linkType: hard
 
@@ -3876,6 +3906,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tamagui/helpers@npm:1.64.1":
+  version: 1.64.1
+  resolution: "@tamagui/helpers@npm:1.64.1"
+  dependencies:
+    "@tamagui/constants": 1.64.1
+    "@tamagui/simple-hash": 1.64.1
+  checksum: a56e0087eb47e551a29801b98d136cf2c6cd724116a18ea65882b7b83d21cde2b3060addce526708d55be9b118887e54c0d673a725c3b75e1f16e029e87f8932
+  languageName: node
+  linkType: hard
+
 "@tamagui/image@npm:1.61.3":
   version: 1.61.3
   resolution: "@tamagui/image@npm:1.61.3"
@@ -3988,6 +4028,15 @@ __metadata:
   dependencies:
     "@react-native/normalize-color": ^2.1.0
   checksum: 05b41a9888f6a3b6be08ea517c73a025646d4ed4ce28514e6fe5c83e49ace8a5d9af4fa67cce499d1c8931e40a1b50e11b9e8539fc13dae222d7a407d1f607a2
+  languageName: node
+  linkType: hard
+
+"@tamagui/normalize-css-color@npm:1.64.1":
+  version: 1.64.1
+  resolution: "@tamagui/normalize-css-color@npm:1.64.1"
+  dependencies:
+    "@react-native/normalize-color": ^2.1.0
+  checksum: 9f5f017d530db27c43daee269f37148018859a785adc42788e17c41fc004c8a0846be1598ece65e3df19de5ddb55af8816ba86f701192b4d8e80b4ab80ee1150
   languageName: node
   linkType: hard
 
@@ -4268,6 +4317,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tamagui/simple-hash@npm:1.64.1":
+  version: 1.64.1
+  resolution: "@tamagui/simple-hash@npm:1.64.1"
+  checksum: 49a11f816455f99527b53c1d00ae183114544a767575f140ff27a1a7e605d4e7a63235b7f950a6341d3fc28dc1b5844e2b36f1235a2c1f3afde66b32823ab89a
+  languageName: node
+  linkType: hard
+
 "@tamagui/slider@npm:1.61.3":
   version: 1.61.3
   resolution: "@tamagui/slider@npm:1.61.3"
@@ -4418,6 +4474,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tamagui/timer@npm:1.64.1":
+  version: 1.64.1
+  resolution: "@tamagui/timer@npm:1.64.1"
+  checksum: ecb15829518f40c950869f2e100183586454133e543967098b311606ff728ece0fcb9715a48ede2fbb69081974962f5455a4f375e886f86282dcd9d8b586cfb0
+  languageName: node
+  linkType: hard
+
 "@tamagui/toast@npm:latest":
   version: 1.61.3
   resolution: "@tamagui/toast@npm:1.61.3"
@@ -4538,6 +4601,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tamagui/use-did-finish-ssr@npm:1.64.1":
+  version: 1.64.1
+  resolution: "@tamagui/use-did-finish-ssr@npm:1.64.1"
+  dependencies:
+    "@tamagui/constants": 1.64.1
+  peerDependencies:
+    react: "*"
+  checksum: 009ff18be821b3410b8f9a8ff7153e9acbfb4400189f667fc4ed4b94ccb142dffda43811cfbe7b3901d070b71baa2ddc604cae0d83bde144762349c809f020e9
+  languageName: node
+  linkType: hard
+
 "@tamagui/use-direction@npm:1.61.3":
   version: 1.61.3
   resolution: "@tamagui/use-direction@npm:1.61.3"
@@ -4574,6 +4648,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tamagui/use-force-update@npm:1.64.1":
+  version: 1.64.1
+  resolution: "@tamagui/use-force-update@npm:1.64.1"
+  peerDependencies:
+    react: "*"
+  checksum: 58b344c57bb0fa68ff13e9afd1e7162500213d2255a2b78d2a4edd94b0898e084d8d1b049fd429d1be9e2c6dd6a7b4756e78ec592bdfbc824350e1d7e3686ff9
+  languageName: node
+  linkType: hard
+
 "@tamagui/use-keyboard-visible@npm:1.61.3":
   version: 1.61.3
   resolution: "@tamagui/use-keyboard-visible@npm:1.61.3"
@@ -4592,6 +4675,17 @@ __metadata:
   peerDependencies:
     react: "*"
   checksum: cdf0456d324bcceb1617e4e5bb92074b69de4a1eeec1b5ee820cfc93464a40cbf2bca67295bd234ed1a2738526244180714a8622c21e04c1f2e9f84efe90a95d
+  languageName: node
+  linkType: hard
+
+"@tamagui/use-presence@npm:1.64.1":
+  version: 1.64.1
+  resolution: "@tamagui/use-presence@npm:1.64.1"
+  dependencies:
+    "@tamagui/web": 1.64.1
+  peerDependencies:
+    react: "*"
+  checksum: 8770227e3d0c4ae3951174e43c26e655655fefea1c60b704db15367e52faeae3bc7cee717a14029947d8d6f9ce21accd6acb4f356eb80875505c090ca7ad7cea
   languageName: node
   linkType: hard
 
@@ -4639,6 +4733,23 @@ __metadata:
   peerDependencies:
     react: "*"
   checksum: 7586cdb4f15a684ba07604d842f0b0d5e671f5be562c5e9cd8c37d32a98729d61f2780fd5d1875d398460b926cdf2114ce3c2338ccc6801192e6b92430a0b82c
+  languageName: node
+  linkType: hard
+
+"@tamagui/web@npm:1.64.1":
+  version: 1.64.1
+  resolution: "@tamagui/web@npm:1.64.1"
+  dependencies:
+    "@tamagui/compose-refs": 1.64.1
+    "@tamagui/constants": 1.64.1
+    "@tamagui/helpers": 1.64.1
+    "@tamagui/normalize-css-color": 1.64.1
+    "@tamagui/timer": 1.64.1
+    "@tamagui/use-did-finish-ssr": 1.64.1
+    "@tamagui/use-force-update": 1.64.1
+  peerDependencies:
+    react: "*"
+  checksum: 5b85289dd227b92bc4967e833cf989b9d633a0e3912640769edc0c10a077bd9aa6c2c4835636376223e518fdad90effd4b4894be1dc2723632948f6c4aa5f6ec
   languageName: node
   linkType: hard
 
@@ -8123,11 +8234,11 @@ __metadata:
     app: "*"
     babel-plugin-module-resolver: ^5.0.0
     babel-plugin-transform-inline-environment-variables: ^0.4.4
-    expo: ^49.0.9
+    expo: ^49.0.10
     expo-constants: ~14.4.2
     expo-font: ~11.4.0
     expo-linking: ^5.0.2
-    expo-router: 2.0.0
+    expo-router: 2.0.5
     expo-splash-screen: ^0.20.5
     expo-status-bar: ~1.6.0
     expo-system-ui: ~2.4.0
@@ -8274,12 +8385,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"expo-router@npm:2.0.0":
-  version: 2.0.0
-  resolution: "expo-router@npm:2.0.0"
+"expo-router@npm:2.0.5":
+  version: 2.0.5
+  resolution: "expo-router@npm:2.0.5"
   dependencies:
     "@bacons/react-views": ^1.1.3
-    "@expo/metro-runtime": 2.2.3
+    "@expo/metro-runtime": 2.2.7
     "@radix-ui/react-slot": 1.0.1
     "@react-navigation/bottom-tabs": ~6.5.7
     "@react-navigation/native": ~6.1.6
@@ -8292,7 +8403,7 @@ __metadata:
     url: ^0.11.0
   peerDependencies:
     "@react-navigation/drawer": ^6.5.8
-    expo: ^49.0.0-alpha.6
+    expo: ^49.0.0
     expo-constants: "*"
     expo-linking: "*"
     expo-status-bar: "*"
@@ -8308,7 +8419,7 @@ __metadata:
       optional: true
     react-native-reanimated:
       optional: true
-  checksum: 1f4bda71ac8e328cad8f7c22c98c1242f2c5dc052be23741604fc3dbcf57b02518ad2fe31720e964c7fbf101ee05e2df0650790231dbab767e47e2f85c61aba6
+  checksum: c45fe3d4c29c97c3b5ff8f8cda43a1918ccb35a2d38ffd82b3735fe7e92a54563982a4422960478ccdf93d5b3faa287e942aafd5159126e19d49ceca5a914ab0
   languageName: node
   linkType: hard
 
@@ -8342,12 +8453,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo@npm:^49.0.9":
-  version: 49.0.9
-  resolution: "expo@npm:49.0.9"
+"expo@npm:^49.0.10":
+  version: 49.0.10
+  resolution: "expo@npm:49.0.10"
   dependencies:
     "@babel/runtime": ^7.20.0
-    "@expo/cli": 0.10.11
+    "@expo/cli": 0.10.12
     "@expo/config": 8.1.2
     "@expo/config-plugins": 7.2.5
     "@expo/vector-icons": ^13.0.0
@@ -8368,7 +8479,7 @@ __metadata:
     uuid: ^3.4.0
   bin:
     expo: bin/cli
-  checksum: b1fd9a8b9a8010e7bfa4848cb111df0d159c01f0a64e2b11c8728b82be329585dcc28e0020320bbce25a13833a4c04bc4073558a6186cb11d2310a7d64a4d0db
+  checksum: 22750da3cda7f616d2c9eea19619a6e0130d624cd4f19301ace3478bd88700a7b4f904e933ed07ffc3b192cdabd2426df217b629072e9d830175fb7308849df3
   languageName: node
   linkType: hard
 
@@ -9841,13 +9952,6 @@ __metadata:
     call-bind: ^1.0.2
     has-tostringtag: ^1.0.0
   checksum: 362399b33535bc8f386d96c45c9feb04cf7f8b41c182f54174c1a45c9abbbe5e31290bbad09a458583ff6bf3b2048672cdb1881b13289569a7c548370856a652
-  languageName: node
-  linkType: hard
-
-"is-root@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "is-root@npm:2.1.0"
-  checksum: 37eea0822a2a9123feb58a9d101558ba276771a6d830f87005683349a9acff15958a9ca590a44e778c6b335660b83e85c744789080d734f6081a935a4880aee2
   languageName: node
   linkType: hard
 
