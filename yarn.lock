@@ -60,7 +60,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.13.16, @babel/core@npm:^7.20.0, @babel/core@npm:^7.21.8, @babel/core@npm:^7.22.17":
+"@babel/core@npm:^7.13.16, @babel/core@npm:^7.20.0, @babel/core@npm:^7.21.8":
   version: 7.22.17
   resolution: "@babel/core@npm:7.22.17"
   dependencies:
@@ -80,6 +80,29 @@ __metadata:
     json5: ^2.2.3
     semver: ^6.3.1
   checksum: 355216a342d1b3952d7c040dd4c99ecef6b3501ba99a713703c1fec1ae73bc92a48a0c1234562bdbb4fd334b2e452f5a6c3bb282f0e613fa89e1518c91d1aea1
+  languageName: node
+  linkType: hard
+
+"@babel/core@npm:^7.22.19":
+  version: 7.22.19
+  resolution: "@babel/core@npm:7.22.19"
+  dependencies:
+    "@ampproject/remapping": ^2.2.0
+    "@babel/code-frame": ^7.22.13
+    "@babel/generator": ^7.22.15
+    "@babel/helper-compilation-targets": ^7.22.15
+    "@babel/helper-module-transforms": ^7.22.19
+    "@babel/helpers": ^7.22.15
+    "@babel/parser": ^7.22.16
+    "@babel/template": ^7.22.15
+    "@babel/traverse": ^7.22.19
+    "@babel/types": ^7.22.19
+    convert-source-map: ^1.7.0
+    debug: ^4.1.0
+    gensync: ^1.0.0-beta.2
+    json5: ^2.2.3
+    semver: ^6.3.1
+  checksum: d603f6f00b20c1edff6a6c9d32c559d4d09ee873380317271b57322bfb9da4349e59df53a21c65e9e5a1136f52bf612389d798640454e6fd9246a5c6d76b0c5c
   languageName: node
   linkType: hard
 
@@ -232,6 +255,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/helper-module-transforms@npm:^7.22.19":
+  version: 7.22.19
+  resolution: "@babel/helper-module-transforms@npm:7.22.19"
+  dependencies:
+    "@babel/helper-environment-visitor": ^7.22.5
+    "@babel/helper-module-imports": ^7.22.15
+    "@babel/helper-simple-access": ^7.22.5
+    "@babel/helper-split-export-declaration": ^7.22.6
+    "@babel/helper-validator-identifier": ^7.22.19
+  peerDependencies:
+    "@babel/core": ^7.0.0
+  checksum: ee1278a6850bb5c0efff35c4c20a13469a84d1bdc999a5e1c5aaf87d848b76cba464904c3c34bbbabcbe83e4632a5d7c64ac006de710c5d63c7b2c2473c33f77
+  languageName: node
+  linkType: hard
+
 "@babel/helper-optimise-call-expression@npm:^7.22.5":
   version: 7.22.5
   resolution: "@babel/helper-optimise-call-expression@npm:7.22.5"
@@ -312,6 +350,13 @@ __metadata:
   version: 7.22.15
   resolution: "@babel/helper-validator-identifier@npm:7.22.15"
   checksum: eb0bee4bda664c0959924bc1ad5611eacfce806f46612202dd164fef1df8fef1a11682a1e7615288987100e9fb304982b6e2a4ff07ffe842ab8765b95ed1118c
+  languageName: node
+  linkType: hard
+
+"@babel/helper-validator-identifier@npm:^7.22.19":
+  version: 7.22.19
+  resolution: "@babel/helper-validator-identifier@npm:7.22.19"
+  checksum: cf1f94d35cdb2d0f519b31954d1c54929fb31cf8af70fed12b3a1e777c296fabe747e56d9ae3d181c1c96f33ac66aff9501189542554b6fe0508748a38c1c17f
   languageName: node
   linkType: hard
 
@@ -1700,6 +1745,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/traverse@npm:^7.22.19":
+  version: 7.22.19
+  resolution: "@babel/traverse@npm:7.22.19"
+  dependencies:
+    "@babel/code-frame": ^7.22.13
+    "@babel/generator": ^7.22.15
+    "@babel/helper-environment-visitor": ^7.22.5
+    "@babel/helper-function-name": ^7.22.5
+    "@babel/helper-hoist-variables": ^7.22.5
+    "@babel/helper-split-export-declaration": ^7.22.6
+    "@babel/parser": ^7.22.16
+    "@babel/types": ^7.22.19
+    debug: ^4.1.0
+    globals: ^11.1.0
+  checksum: 119154fdfffd0fd560d2d5263ae2d740bcd3c75a6c432786f6ccdb28c9b0776f0fe21a16320c81a3e065c37249fb217dfec4201e44058462d26accfcdcd6c9bb
+  languageName: node
+  linkType: hard
+
 "@babel/types@npm:^7.1.6, @babel/types@npm:^7.20.0, @babel/types@npm:^7.21.5, @babel/types@npm:^7.22.15, @babel/types@npm:^7.22.17, @babel/types@npm:^7.22.5, @babel/types@npm:^7.4.4, @babel/types@npm:^7.8.3":
   version: 7.22.17
   resolution: "@babel/types@npm:7.22.17"
@@ -1708,6 +1771,17 @@ __metadata:
     "@babel/helper-validator-identifier": ^7.22.15
     to-fast-properties: ^2.0.0
   checksum: 7382220f6eb2548f2c867a98916c3aa8a6063498d5372e5d21d8d184ba354033defb72aeba5858c1b2b42177058b896a34a7dcbae5eccd47fb0104721efa909d
+  languageName: node
+  linkType: hard
+
+"@babel/types@npm:^7.22.19":
+  version: 7.22.19
+  resolution: "@babel/types@npm:7.22.19"
+  dependencies:
+    "@babel/helper-string-parser": ^7.22.5
+    "@babel/helper-validator-identifier": ^7.22.19
+    to-fast-properties: ^2.0.0
+  checksum: 2d69740e69b55ba36ece0c17d5afb7b7213b34297157df39ef9ba24965aff677c56f014413052ecc5b2fbbf26910c63e5bb24a969df84d7a17153750cf75915e
   languageName: node
   linkType: hard
 
@@ -2243,15 +2317,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/metro-runtime@npm:2.2.7":
-  version: 2.2.7
-  resolution: "@expo/metro-runtime@npm:2.2.7"
+"@expo/metro-runtime@npm:2.2.8":
+  version: 2.2.8
+  resolution: "@expo/metro-runtime@npm:2.2.8"
   dependencies:
     "@bacons/react-views": ^1.1.3
     qs: ^6.10.3
   peerDependencies:
     react-native: "*"
-  checksum: db02cce741eb05c5ab1755b812928763a7a4f47e08c244808623f22cfedd933999e6883746aef7b98420cae53b320694509f66268ae04fe5f8dfabe11f937058
+  checksum: 71f5fe5206d7c330698d08c602ea2ee65129e1fa41133f62e820c38df189170abba7fd8dbafbfd270ea96ef1276712bd17f2c25f543891913723c3139f5f76e1
   languageName: node
   linkType: hard
 
@@ -8213,7 +8287,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "expo-app@workspace:apps/expo"
   dependencies:
-    "@babel/core": ^7.22.17
+    "@babel/core": ^7.22.19
     "@babel/plugin-proposal-export-namespace-from": ^7.18.9
     "@my/ui": "*"
     "@react-native-async-storage/async-storage": ~1.18.2
@@ -8224,11 +8298,11 @@ __metadata:
     app: "*"
     babel-plugin-module-resolver: ^5.0.0
     babel-plugin-transform-inline-environment-variables: ^0.4.4
-    expo: ^49.0.10
+    expo: ^49.0.11
     expo-constants: ~14.4.2
     expo-font: ~11.4.0
     expo-linking: ^5.0.2
-    expo-router: ^2.0.5
+    expo-router: ^2.0.6
     expo-splash-screen: ^0.20.5
     expo-status-bar: ~1.6.0
     expo-system-ui: ~2.4.0
@@ -8303,17 +8377,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-head@npm:0.0.11":
-  version: 0.0.11
-  resolution: "expo-head@npm:0.0.11"
+"expo-head@npm:0.0.12":
+  version: 0.0.12
+  resolution: "expo-head@npm:0.0.12"
   dependencies:
     react-helmet-async: ^1.3.0
   peerDependencies:
     expo: "*"
-    expo-constants: "*"
     react: "*"
     react-native: "*"
-  checksum: 243f961d95d40996f216f2618336dd3c3f49da798e6ccd789a0484fdab0c018a6c9ec9d8e6acd4274e50572682368406effc9409d613c652732cb312f2e34187
+  checksum: 816051658818af9e9bbefbd0049c0bd7d7efca4547d3a6ec7777eced0e3b07165129ae9f454139b913d23a0b083f52364107bd4ea2c95a0dec0d0b0af7b8d48f
   languageName: node
   linkType: hard
 
@@ -8371,22 +8444,22 @@ __metadata:
   dependencies:
     eslint: ^8.49.0
     prettier: ^3.0.3
-    turbo: ^1.10.13
+    turbo: ^1.10.14
     typescript: ^5.2.2
   languageName: unknown
   linkType: soft
 
-"expo-router@npm:^2.0.5":
-  version: 2.0.5
-  resolution: "expo-router@npm:2.0.5"
+"expo-router@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "expo-router@npm:2.0.6"
   dependencies:
     "@bacons/react-views": ^1.1.3
-    "@expo/metro-runtime": 2.2.7
+    "@expo/metro-runtime": 2.2.8
     "@radix-ui/react-slot": 1.0.1
     "@react-navigation/bottom-tabs": ~6.5.7
     "@react-navigation/native": ~6.1.6
     "@react-navigation/native-stack": ~6.9.12
-    expo-head: 0.0.11
+    expo-head: 0.0.12
     expo-splash-screen: ~0.20.2
     query-string: 7.1.3
     react-helmet-async: ^1.3.0
@@ -8410,7 +8483,7 @@ __metadata:
       optional: true
     react-native-reanimated:
       optional: true
-  checksum: c45fe3d4c29c97c3b5ff8f8cda43a1918ccb35a2d38ffd82b3735fe7e92a54563982a4422960478ccdf93d5b3faa287e942aafd5159126e19d49ceca5a914ab0
+  checksum: 5c9fb300397aba9dc1b23abc15c6bfbd2797b289f11f10de26bbcdad5d66291030d1751c29e97d9346adec3e2cc3fdca4a8a5e53556170fce10439c40a41ccb0
   languageName: node
   linkType: hard
 
@@ -8444,9 +8517,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo@npm:^49.0.10":
-  version: 49.0.10
-  resolution: "expo@npm:49.0.10"
+"expo@npm:^49.0.11":
+  version: 49.0.11
+  resolution: "expo@npm:49.0.11"
   dependencies:
     "@babel/runtime": ^7.20.0
     "@expo/cli": 0.10.12
@@ -8470,7 +8543,7 @@ __metadata:
     uuid: ^3.4.0
   bin:
     expo: bin/cli
-  checksum: 22750da3cda7f616d2c9eea19619a6e0130d624cd4f19301ace3478bd88700a7b4f904e933ed07ffc3b192cdabd2426df217b629072e9d830175fb7308849df3
+  checksum: ab07ecedd9cf7a2741998af64b00da7e461bae6b6e4d9996c6975e2b77caee4637129486364d6b15d6244974e17a8d000a5ec86709496c32ec38eb63e7f28b60
   languageName: node
   linkType: hard
 
@@ -14936,58 +15009,58 @@ __metadata:
   languageName: node
   linkType: hard
 
-"turbo-darwin-64@npm:1.10.13":
-  version: 1.10.13
-  resolution: "turbo-darwin-64@npm:1.10.13"
+"turbo-darwin-64@npm:1.10.14":
+  version: 1.10.14
+  resolution: "turbo-darwin-64@npm:1.10.14"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-darwin-arm64@npm:1.10.13":
-  version: 1.10.13
-  resolution: "turbo-darwin-arm64@npm:1.10.13"
+"turbo-darwin-arm64@npm:1.10.14":
+  version: 1.10.14
+  resolution: "turbo-darwin-arm64@npm:1.10.14"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo-linux-64@npm:1.10.13":
-  version: 1.10.13
-  resolution: "turbo-linux-64@npm:1.10.13"
+"turbo-linux-64@npm:1.10.14":
+  version: 1.10.14
+  resolution: "turbo-linux-64@npm:1.10.14"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-linux-arm64@npm:1.10.13":
-  version: 1.10.13
-  resolution: "turbo-linux-arm64@npm:1.10.13"
+"turbo-linux-arm64@npm:1.10.14":
+  version: 1.10.14
+  resolution: "turbo-linux-arm64@npm:1.10.14"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo-windows-64@npm:1.10.13":
-  version: 1.10.13
-  resolution: "turbo-windows-64@npm:1.10.13"
+"turbo-windows-64@npm:1.10.14":
+  version: 1.10.14
+  resolution: "turbo-windows-64@npm:1.10.14"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-windows-arm64@npm:1.10.13":
-  version: 1.10.13
-  resolution: "turbo-windows-arm64@npm:1.10.13"
+"turbo-windows-arm64@npm:1.10.14":
+  version: 1.10.14
+  resolution: "turbo-windows-arm64@npm:1.10.14"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo@npm:^1.10.13":
-  version: 1.10.13
-  resolution: "turbo@npm:1.10.13"
+"turbo@npm:^1.10.14":
+  version: 1.10.14
+  resolution: "turbo@npm:1.10.14"
   dependencies:
-    turbo-darwin-64: 1.10.13
-    turbo-darwin-arm64: 1.10.13
-    turbo-linux-64: 1.10.13
-    turbo-linux-arm64: 1.10.13
-    turbo-windows-64: 1.10.13
-    turbo-windows-arm64: 1.10.13
+    turbo-darwin-64: 1.10.14
+    turbo-darwin-arm64: 1.10.14
+    turbo-linux-64: 1.10.14
+    turbo-linux-arm64: 1.10.14
+    turbo-windows-64: 1.10.14
+    turbo-windows-arm64: 1.10.14
   dependenciesMeta:
     turbo-darwin-64:
       optional: true
@@ -15003,7 +15076,7 @@ __metadata:
       optional: true
   bin:
     turbo: bin/turbo
-  checksum: 0c000c671534c8c80270c6d1fc77646df0e44164c0db561a85b3fefadd4bda6d5920626d067abb09af38613024e3984fb8d8bc5be922dae6236eda6aab9447a2
+  checksum: 219d245bb5cc32a9f76b136b81e86e179228d93a44cab4df3e3d487a55dd2688b5b85f4d585b66568ac53166145352399dd2d7ed0cd47f1aae63d08beb814ebb
   languageName: node
   linkType: hard
 
