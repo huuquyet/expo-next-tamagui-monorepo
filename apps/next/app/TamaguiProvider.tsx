@@ -1,8 +1,7 @@
 'use client'
 
 import { useServerInsertedHTML } from 'next/navigation'
-import { createTamagui, TamaguiProvider as TamaguiProviderOG } from 'tamagui'
-import { config as configBase } from '@tamagui/config'
+import { TamaguiProvider as TamaguiProviderOG } from 'tamagui'
 import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme'
 
 import '@tamagui/core/reset.css'
