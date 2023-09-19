@@ -4959,14 +4959,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.2.21":
-  version: 18.2.21
-  resolution: "@types/react@npm:18.2.21"
+"@types/react@npm:^18.2.22":
+  version: 18.2.22
+  resolution: "@types/react@npm:18.2.22"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: ffed203bfe7aad772b8286f7953305c9181ac3a8f27d3f5400fbbc2a8e27ca8e5bbff818ee014f39ca0d19d2b3bb154e5bdbec7e232c6f80b59069375aa78349
+  checksum: 44289523dabaadcd3fd85689abb98f9ebcc8492d7e978348d1c986138acef4801030b279e89a19e38a6319e294bcea77559e37e0c803e4bacf2b8ae3a56ba587
   languageName: node
   linkType: hard
 
@@ -8324,7 +8324,7 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
     react-native: ^0.72.4
-    react-native-gesture-handler: ^2.12.1
+    react-native-gesture-handler: ~2.12.1
     react-native-reanimated: ~3.3.0
     react-native-safe-area-context: 4.6.3
     react-native-screens: ~3.22.1
@@ -11818,7 +11818,7 @@ __metadata:
     "@tamagui/next-plugin": latest
     "@tamagui/next-theme": latest
     "@tamagui/polyfill-dev": latest
-    "@types/react": ^18.2.21
+    "@types/react": ^18.2.22
     app: "*"
     eslint-config-next: ^13.4.19
     next: ^13.4.19
@@ -13133,7 +13133,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-gesture-handler@npm:^2.12.1":
+"react-native-gesture-handler@npm:~2.12.1":
   version: 2.12.1
   resolution: "react-native-gesture-handler@npm:2.12.1"
   dependencies:
