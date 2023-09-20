@@ -7887,7 +7887,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:^13.4.19":
+"eslint-config-next@npm:^13.5.1":
   version: 13.5.1
   resolution: "eslint-config-next@npm:13.5.1"
   dependencies:
@@ -8249,11 +8249,11 @@ __metadata:
     expo-constants: ~14.4.2
     expo-font: ~11.4.0
     expo-linking: ~5.0.2
-    expo-router: ^2.0.6
+    expo-router: ^2.0.7
     expo-splash-screen: ~0.20.5
     expo-status-bar: ~1.6.0
     expo-system-ui: ~2.4.0
-    metro-minify-terser: ^0.79.0
+    metro-minify-terser: ^0.79.1
     react: ^18.2.0
     react-dom: ^18.2.0
     react-native: ^0.72.4
@@ -8262,7 +8262,7 @@ __metadata:
     react-native-safe-area-context: 4.6.3
     react-native-screens: ~3.22.1
     react-native-svg: ~13.9.0
-    react-native-web: ^0.19.8
+    react-native-web: ^0.19.9
   languageName: unknown
   linkType: soft
 
@@ -8396,7 +8396,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"expo-router@npm:^2.0.6":
+"expo-router@npm:^2.0.7":
   version: 2.0.7
   resolution: "expo-router@npm:2.0.7"
   dependencies:
@@ -11103,7 +11103,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"metro-minify-terser@npm:^0.79.0":
+"metro-minify-terser@npm:^0.79.1":
   version: 0.79.1
   resolution: "metro-minify-terser@npm:0.79.1"
   dependencies:
@@ -11754,8 +11754,8 @@ __metadata:
     "@tamagui/polyfill-dev": latest
     "@types/react": ^18.2.22
     app: "*"
-    eslint-config-next: ^13.4.19
-    next: ^13.4.19
+    eslint-config-next: ^13.5.1
+    next: ^13.5.1
     raf: ^3.4.1
     react: ^18.2.0
     react-native: ^0.72.4
@@ -11767,7 +11767,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"next@npm:^13.4.19":
+"next@npm:^13.5.1":
   version: 13.5.1
   resolution: "next@npm:13.5.1"
   dependencies:
@@ -13170,7 +13170,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-web@npm:^0.19.6, react-native-web@npm:^0.19.8":
+"react-native-web@npm:^0.19.6, react-native-web@npm:^0.19.9":
   version: 0.19.9
   resolution: "react-native-web@npm:0.19.9"
   dependencies:
