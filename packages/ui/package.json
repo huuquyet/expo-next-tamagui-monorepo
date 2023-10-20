@@ -1,6 +1,6 @@
 {
   "name": "@my/ui",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "private": true,
   "main": "src/index.tsx",
   "types": "./types/index",
@@ -25,7 +25,7 @@
     "@tamagui/shorthands": "latest",
     "@tamagui/themes": "latest",
     "@tamagui/toast": "latest",
-    "burnt": "^0.11.7",
+    "burnt": "^0.12.1",
     "react-native-reanimated": "~3.3.0",
     "tamagui": "latest"
   },
