@@ -6,7 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "yarn workspaces foreach --exclude next-app run build",
+    "build": "yarn workspaces foreach --all --exclude next-app run build",
     "native": "cd apps/expo && yarn start",
     "postinstall": "yarn build",
     "rm:nodemodule": "rm -rf .yarn/cache node_modules apps/expo/node_modules apps/next/node_modules apps/next/.tamagui packages/app/node_modules packages/ui/node_modules yarn.lock",
@@ -25,5 +25,5 @@
     "turbo": "^1.10.16",
     "typescript": "^5.2.2"
   },
-  "packageManager": "yarn@3.6.4"
+  "packageManager": "yarn@4.0.0"
 }
