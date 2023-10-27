@@ -18,14 +18,12 @@ const plugins = [
     outputCSS: process.env.NODE_ENV === 'production' ? './public/tamagui.css' : null,
     logTimings: true,
     disableExtraction,
-    // experiment - reduced bundle size react-native-web
-    useReactNativeWebLite: true,
     shouldExtract: (path) => {
       if (path.includes(join('packages', 'app'))) {
         return true
       }
     },
-
+    excludeReactNativeWebExports: ['Switch', 'ProgressBar', 'Picker', 'CheckBox', 'Touchable'],
     // adds mini-css-extract and css-minimizer-plugin, can fix issues with unique configurations
     enableCSSOptimizations: false,
     // disable tamagui config to make fonts easier to import

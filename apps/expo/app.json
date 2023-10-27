@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "[yourprojectsname]",
-    "slug": "[yourprojectsname]",
-    "scheme": "[yourprojectsname]",
-    "version": "0.2.0",
+    "name": "yourprojectsname",
+    "slug": "yourprojectsname",
+    "scheme": "yourprojectsname",
+    "version": "0.2.5",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
@@ -19,7 +19,7 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.[yourprojectsname].app",
+      "bundleIdentifier": "com.yourprojectsname.app",
       "jsEngine": "jsc",
       "userInterfaceStyle": "automatic"
     },
@@ -28,7 +28,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.[yourprojectsname].app",
+      "package": "com.yourprojectsname.app",
       "userInterfaceStyle": "automatic"
     },
     "web": {
@@ -39,6 +39,13 @@
         "projectId": "[your_project_id]"
       }
     },
-    "plugins": [["expo-router"]]
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://expo-next-tamagui-monorepo.vercel.app/"
+        }
+      ]
+    ]
   }
 }
