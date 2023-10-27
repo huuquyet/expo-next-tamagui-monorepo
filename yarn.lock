@@ -11816,8 +11816,6 @@ __metadata:
     raf: "npm:^3.4.1"
     react: "npm:^18.2.0"
     react-native: "npm:^0.72.6"
-    react-native-web-lite: "npm:latest"
-    setimmediate: "npm:^1.0.5"
     solito: "npm:^4.1.2"
     tamagui: "npm:latest"
     vercel: "npm:latest"
@@ -13204,7 +13202,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-web-lite@npm:1.68.2, react-native-web-lite@npm:latest":
+"react-native-web-lite@npm:1.68.2":
   version: 1.68.2
   resolution: "react-native-web-lite@npm:1.68.2"
   dependencies:
