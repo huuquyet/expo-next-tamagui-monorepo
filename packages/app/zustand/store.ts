@@ -1,5 +1,6 @@
 import { createContext, useContext } from 'react'
 import AsyncStorage from '@react-native-async-storage/async-storage'
+import { isWindowDefined } from '@tamagui/constants'
 import { createStore } from 'zustand'
 import { useStoreWithEqualityFn } from 'zustand/traditional'
 import { devtools, persist, createJSONStorage } from 'zustand/middleware'
@@ -18,7 +19,7 @@ interface StoreInterface {
   decrement: () => void
   reset: () => void
   incrementByAmount: (by: number) => void
-  incrementAsync: (by: number) => void
+  incrementAsync: (by: number) => Promise<void>
   incrementIfOddAsync: (by: number) => void
 }
 
@@ -41,11 +42,6 @@ export const useStore = <T>(selector: (state: StoreInterface) => T) => {
   if (!store) throw new Error('Store is missing the provider')
 
   return useStoreWithEqualityFn(store, selector, shallow)
-}
-
-const getStorageType = () => {
-  const isBrowser = typeof window === 'undefined' //browser or react-native
-  return isBrowser ? window.localStorage : AsyncStorage
 }
 
 export const initializeStore = (preloadedState: Partial<StoreInterface> = {}) => {
@@ -96,7 +92,7 @@ export const initializeStore = (preloadedState: Partial<StoreInterface> = {}) =>
         }),
         {
           name: 'zustand',
-          storage: createJSONStorage(() => getStorageType()),
+          storage: createJSONStorage(() => (isWindowDefined ? window.localStorage : AsyncStorage)),
         }
       ),
       { enabled: false }

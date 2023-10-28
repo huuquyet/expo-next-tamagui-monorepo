@@ -3675,7 +3675,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/constants@npm:1.75.5":
+"@tamagui/constants@npm:1.75.5, @tamagui/constants@npm:latest":
   version: 1.75.5
   resolution: "@tamagui/constants@npm:1.75.5"
   peerDependencies:
@@ -5524,6 +5524,7 @@ __metadata:
   dependencies:
     "@my/ui": "npm:*"
     "@react-native-async-storage/async-storage": "npm:1.18.2"
+    "@tamagui/constants": "npm:latest"
     "@tamagui/lucide-icons": "npm:latest"
     moti: "npm:^0.27.0"
     react: "npm:^18.2.0"
@@ -8387,7 +8388,6 @@ __metadata:
     babel-plugin-module-resolver: "npm:^5.0.0"
     babel-plugin-transform-inline-environment-variables: "npm:^0.4.4"
     expo: "npm:^49.0.16"
-    expo-constants: "npm:~14.4.2"
     expo-font: "npm:~11.4.0"
     expo-linking: "npm:~5.0.2"
     expo-router: "npm:^2.0.10"

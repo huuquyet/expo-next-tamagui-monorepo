@@ -26,11 +26,11 @@
     "@tamagui/themes": "latest",
     "@tamagui/toast": "latest",
     "burnt": "^0.12.1",
+    "expo-constants": "~14.4.2",
     "react-native-reanimated": "~3.3.0",
     "tamagui": "latest"
   },
   "devDependencies": {
-    "@tamagui/build": "latest",
-    "expo-constants": "~14.4.2"
+    "@tamagui/build": "latest"
   }
 }
