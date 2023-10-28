@@ -5,7 +5,6 @@ import { Stack } from 'expo-router'
 import { StatusBar } from 'expo-status-bar'
 
 import { Provider } from 'app/provider'
-import { Theme } from '@my/ui'
 import { tamaguiFonts } from './tamaguiFonts.native'
 
 export default function HomeLayout() {
@@ -16,19 +15,17 @@ export default function HomeLayout() {
     return null
   }
   return (
-    <Provider>
-      <ThemeProvider value={scheme === 'dark' ? DarkTheme : DefaultTheme}>
-        <Theme name={scheme === 'dark' ? 'dark' : 'light'}>
-          <Stack
-            screenOptions={{
-              headerTitleStyle: {
-                fontFamily: '$silkscreen',
-              },
-            }}
-          />
-          <StatusBar style="auto" />
-        </Theme>
-      </ThemeProvider>
-    </Provider>
+    <ThemeProvider value={scheme === 'dark' ? DarkTheme : DefaultTheme}>
+      <Provider defaultTheme={scheme === 'dark' ? 'dark' : 'light'}>
+        <Stack
+          screenOptions={{
+            headerTitleStyle: {
+              fontFamily: '$silkscreen',
+            },
+          }}
+        />
+        <StatusBar style="auto" />
+      </Provider>
+    </ThemeProvider>
   )
 }

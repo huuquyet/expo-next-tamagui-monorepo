@@ -56,24 +56,6 @@ let nextConfig = {
     // optimizeCss: true,
     scrollRestoration: true,
   },
-  webpack: (config, { isServer }) => {
-    config.module.rules.push(
-      {
-        test: /\.(png|svg|jpg|jpeg|gif|ogg|mp3|wav)$/i,
-        type: 'asset/source',
-      },
-      {
-        test: /\.(otf|ttf|eot|woff|woff2)$/i,
-        type: 'asset/resource',
-      }
-    )
-
-    if (process.env.DEBUG) {
-      console.debug(`Webpack rules for ${isServer ? 'server' : 'client'}:`, config.module.rules)
-    }
-
-    return config
-  },
 }
 
 for (const plugin of plugins) {
