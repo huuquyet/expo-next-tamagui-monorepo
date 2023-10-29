@@ -18,11 +18,11 @@ interface CounterAction {
   decrement: () => void
   reset: () => void
   incrementByAmount: (by: number) => void
-  incrementAsync: (by: number) => void
+  incrementAsync: (by: number) => Promise<void>
   incrementIfOddAsync: (by: number) => void
 }
 
-const getDefaultInitialState = () => ({
+const getDefaultState = () => ({
   count: 0,
   amount: 2,
   loading: 'idle' as const,
@@ -32,8 +32,8 @@ export const useCounterStore = create<CounterState & CounterAction>()(
   immer(
     devtools(
       persist(
-        (set) => ({
-          ...getDefaultInitialState(),
+        (set, get) => ({
+          ...getDefaultState(),
           setAmount: (amount: number) => {
             set({ amount })
           },
@@ -49,7 +49,7 @@ export const useCounterStore = create<CounterState & CounterAction>()(
           },
           reset: () => {
             set((state) => {
-              state.count = getDefaultInitialState().count
+              state.count = getDefaultState().count
             })
           },
           incrementByAmount: (by: number) => {
@@ -57,20 +57,18 @@ export const useCounterStore = create<CounterState & CounterAction>()(
               state.count += by
             })
           },
-          incrementAsync: (by: number) => {
-            set(async (state) => {
-              state.loading = 'loading'
-              const response = await fetchIdentityCount(by)
+          incrementAsync: async (by: number) => {
+            set({ loading: 'loading' as const })
+            const response = await fetchIdentityCount(by)
+            set((state) => {
               state.count += response.data
-              state.loading = 'idle'
             })
+            set({ loading: 'idle' as const })
           },
           incrementIfOddAsync: (by: number) => {
-            set((state) => {
-              if (state.count % 2 === 1) {
-                state.incrementByAmount(by)
-              }
-            })
+            if (get().count % 2 === 1) {
+              get().incrementByAmount(by)
+            }
           },
         }),
         {
