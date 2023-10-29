@@ -5526,6 +5526,7 @@ __metadata:
     "@react-native-async-storage/async-storage": "npm:1.18.2"
     "@tamagui/constants": "npm:latest"
     "@tamagui/lucide-icons": "npm:latest"
+    immer: "npm:^10.0.3"
     moti: "npm:^0.27.0"
     react: "npm:^18.2.0"
     react-native: "npm:^0.72.6"
@@ -9831,6 +9832,13 @@ __metadata:
   bin:
     image-size: bin/image-size.js
   checksum: 693dfb2f8bfda2aacd087ef7130fd997fd0aceca838291bae400646db1826b80108185d0062ea3c0365b12c3ab5145bb923fdc777fd94c4991840d47fe44ade3
+  languageName: node
+  linkType: hard
+
+"immer@npm:^10.0.3":
+  version: 10.0.3
+  resolution: "immer@npm:10.0.3"
+  checksum: 0be07be2f278bd1988112613648e0cf9a64fc316d5b4817f273b519fbfed0f1714275b041911f0b8c560c199b2e3430824ce620c23262c96c9d4efc9909ff1cc
   languageName: node
   linkType: hard
 

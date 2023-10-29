@@ -1,11 +1,9 @@
 import { ToastViewport } from './ToastViewport'
 import config from 'app/tamagui.config'
-import { StoreProvider } from 'app/zustand'
 import { CustomToast, TamaguiProvider, TamaguiProviderProps, ToastProvider } from '@my/ui'
 
 export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'config'>) {
   return (
-    <StoreProvider>
       <TamaguiProvider config={config} disableInjectCSS {...rest}>
         <ToastProvider
           swipeDirection="horizontal"
@@ -21,6 +19,5 @@ export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'conf
           <ToastViewport />
         </ToastProvider>
       </TamaguiProvider>
-    </StoreProvider>
   )
 }

@@ -1,3 +1,3 @@
-export * from './store'
-export * from './StoreProvider'
+export * from './clockStore'
 export * from './useInterval'
+export * from './counterStore'

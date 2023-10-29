@@ -1,4 +1,4 @@
-import { useClock, useInterval } from 'app/zustand'
+import { useClockStore, useInterval } from 'app/zustand'
 import { H2 } from '@my/ui'
 
 const formatTime = (time: number) => {
@@ -7,7 +7,8 @@ const formatTime = (time: number) => {
 }
 
 export function Clock() {
-  const { lastUpdate, tick } = useClock()
+  const lastUpdate = useClockStore((state) => state.lastUpdate)
+  const tick = useClockStore((state) => state.tick)
 
   // Tick the time every second
   useInterval(() => {
