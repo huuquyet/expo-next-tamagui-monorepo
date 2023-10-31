@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import type { SolitoAppProps } from 'solito'
-import { NextThemeProvider } from '@tamagui/next-theme'
 import '@tamagui/core/reset.css'
 import '@tamagui/font-inter/css/400.css'
 import '@tamagui/font-inter/css/700.css'
@@ -9,7 +8,6 @@ import '@tamagui/font-inter/css/900.css'
 import '@tamagui/font-silkscreen/css/400.css'
 import 'raf/polyfill'
 
-import { useThemeStore } from 'app/zustand'
 import { Provider } from 'app/provider'
 
 if (process.env.NODE_ENV === 'production') {
@@ -31,21 +29,10 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
           }}
         />
       </Head>
-      <ThemeProvider>
+      <Provider>
         <Component {...pageProps} />
-      </ThemeProvider>
+      </Provider>
     </>
-  )
-}
-
-function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const theme = useThemeStore((state) => state.theme)
-  const setTheme = useThemeStore((state) => state.setTheme)
-
-  return (
-    <NextThemeProvider defaultTheme={theme}>
-      <Provider defaultTheme={theme}>{children}</Provider>
-    </NextThemeProvider>
   )
 }
 

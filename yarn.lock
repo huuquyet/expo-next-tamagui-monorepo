@@ -4055,17 +4055,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/next-theme@npm:latest":
-  version: 1.75.5
-  resolution: "@tamagui/next-theme@npm:1.75.5"
-  dependencies:
-    "@tamagui/use-event": "npm:1.75.5"
-  peerDependencies:
-    react: "*"
-  checksum: 0371dbe67860f9f66fb1d4e16d38ea36ccbd240f6406592e0fed206c1e6e75652688d9f1266663687e1be02feb3ee0b1da45fb96a4a7c29fc7b7404d1f6603f6
-  languageName: node
-  linkType: hard
-
 "@tamagui/normalize-css-color@npm:1.75.5":
   version: 1.75.5
   resolution: "@tamagui/normalize-css-color@npm:1.75.5"
@@ -11951,7 +11940,6 @@ __metadata:
     "@tamagui/font-inter": "npm:latest"
     "@tamagui/font-silkscreen": "npm:latest"
     "@tamagui/next-plugin": "npm:latest"
-    "@tamagui/next-theme": "npm:latest"
     "@tamagui/polyfill-dev": "npm:latest"
     "@types/react": "npm:^18.2.33"
     app: "npm:*"

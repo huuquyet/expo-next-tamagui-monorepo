@@ -1,10 +1,13 @@
 import { ToastViewport } from './ToastViewport'
 import config from 'app/tamagui.config'
+import { useThemeStore } from 'app/zustand'
 import { CustomToast, TamaguiProvider, TamaguiProviderProps, ToastProvider } from '@my/ui'
 
 export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'config'>) {
+  const theme = useThemeStore((state) => state.theme)
+
   return (
-    <TamaguiProvider config={config} disableInjectCSS {...rest}>
+    <TamaguiProvider config={config} defaultTheme={theme} disableInjectCSS {...rest}>
       <ToastProvider
         swipeDirection="horizontal"
         duration={6000}

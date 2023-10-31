@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@my/ui": "*",
-    "@tamagui/next-theme": "latest",
     "app": "*",
     "next": "^14.0.0",
     "raf": "^3.4.1",

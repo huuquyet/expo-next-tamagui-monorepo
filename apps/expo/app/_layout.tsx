@@ -4,12 +4,11 @@ import { useFonts } from 'expo-font'
 import { Stack } from 'expo-router'
 import { StatusBar } from 'expo-status-bar'
 
-import { useThemeStore } from 'app/zustand'
 import { Provider } from 'app/provider'
 import { tamaguiFonts } from './tamaguiFonts.native'
 
 export default function HomeLayout() {
-  const theme = useThemeStore((state) => state.theme) || useColorScheme()
+  const theme = useColorScheme()
 
   const [loaded] = useFonts(tamaguiFonts)
   if (!loaded) {
@@ -18,7 +17,7 @@ export default function HomeLayout() {
 
   return (
     <ThemeProvider value={theme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Provider defaultTheme={theme}>
+      <Provider>
         <Stack
           screenOptions={{
             headerTitleStyle: {
