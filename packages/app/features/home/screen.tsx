@@ -4,12 +4,12 @@ import { Moon, Sun } from '@tamagui/lucide-icons'
 
 import { Clock } from './Clock'
 import { SheetDemo } from './sheet'
-import { useThemeStore } from 'app/zustand'
+import { useBoundStore } from 'app/zustand'
 import { Anchor, Button, H1, Paragraph, Separator, Text, XStack, YStack } from '@my/ui'
 
 export function HomeScreen() {
-  const theme = useThemeStore((state) => state.theme)
-  const toggleTheme = useThemeStore((state) => state.toggleTheme)
+  const theme = useBoundStore((state) => state.theme)
+  const toggleTheme = useBoundStore((state) => state.toggleTheme)
   const linkProps = useLink({
     href: '/user/nate',
   })

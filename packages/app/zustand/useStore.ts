@@ -3,24 +3,20 @@ import { isWindowDefined } from '@tamagui/constants'
 import { create } from 'zustand'
 import { devtools, persist, createJSONStorage } from 'zustand/middleware'
 
-interface ClockState {
-  lastUpdate: number
-  tick: (lastupdate: number) => void
-}
+import { ClockSlice, createClockSlice } from './clockSlice'
+import { CounterSlice, createCounterSlice } from './counterSlice'
+import { ThemeSlice, createThemeSlice } from './themeSlice'
 
-export const useClockStore = create<ClockState>()(
+export const useBoundStore = create<ClockSlice & CounterSlice & ThemeSlice>()(
   devtools(
     persist(
-      (set) => ({
-        lastUpdate: Date.now(),
-        tick: (lastUpdate) => {
-          set({
-            lastUpdate,
-          })
-        },
+      (...a) => ({
+        ...createClockSlice(...a),
+        ...createCounterSlice(...a),
+        ...createThemeSlice(...a),
       }),
       {
-        name: 'clock',
+        name: 'zustand',
         storage: createJSONStorage(() => (!isWindowDefined ? window.localStorage : AsyncStorage)),
       }
     ),

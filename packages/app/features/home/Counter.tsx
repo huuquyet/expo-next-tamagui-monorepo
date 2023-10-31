@@ -1,17 +1,17 @@
-import { useCounterStore } from 'app/zustand'
+import { useBoundStore } from 'app/zustand'
 import { Button, H1, Input, Text, XStack, YStack } from '@my/ui'
 
 export function Counter() {
-  const count = useCounterStore((state) => state.count)
-  const amount = useCounterStore((state) => state.amount)
-  const loading = useCounterStore((state) => state.loading)
-  const setAmount = useCounterStore((state) => state.setAmount)
-  const increment = useCounterStore((state) => state.increment)
-  const decrement = useCounterStore((state) => state.decrement)
-  const reset = useCounterStore((state) => state.reset)
-  const incrementByAmount = useCounterStore((state) => state.incrementByAmount)
-  const incrementAsync = useCounterStore((state) => state.incrementAsync)
-  const incrementIfOddAsync = useCounterStore((state) => state.incrementIfOddAsync)
+  const count = useBoundStore((state) => state.count)
+  const amount = useBoundStore((state) => state.amount)
+  const loading = useBoundStore((state) => state.loading)
+  const setAmount = useBoundStore((state) => state.setAmount)
+  const increment = useBoundStore((state) => state.increment)
+  const decrement = useBoundStore((state) => state.decrement)
+  const reset = useBoundStore((state) => state.reset)
+  const incrementByAmount = useBoundStore((state) => state.incrementByAmount)
+  const incrementAsync = useBoundStore((state) => state.incrementAsync)
+  const incrementIfOddAsync = useBoundStore((state) => state.incrementIfOddAsync)
 
   return (
     <YStack space="$4" p="$4" ai="center">

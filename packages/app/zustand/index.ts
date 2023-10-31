@@ -1,4 +1,2 @@
-export * from './clockStore'
+export * from './useStore'
 export * from './useInterval'
-export * from './counterStore'
-export * from './themeStore'
