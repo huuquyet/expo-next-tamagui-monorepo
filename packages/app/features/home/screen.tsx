@@ -70,14 +70,7 @@ export function HomeScreen() {
       </XStack>
 
       <SheetDemo />
-      <Button
-        pos="absolute"
-        b={30}
-        l={20}
-        icon={theme === 'dark' ? Sun : Moon}
-        onPress={toggleTheme}
-        circular
-      />
+      <Button pos="absolute" b={30} l={20} icon={Moon} onPress={toggleTheme} circular />
     </YStack>
   )
 }

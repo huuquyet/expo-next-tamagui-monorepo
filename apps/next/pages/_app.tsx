@@ -43,10 +43,8 @@ function ThemeProvider({ children }: { children: React.ReactNode }) {
   const setTheme = useThemeStore((state) => state.setTheme)
 
   return (
-    <NextThemeProvider onChangeTheme={setTheme}>
-      <Provider defaultTheme={theme}>
-        {children}
-      </Provider>
+    <NextThemeProvider defaultTheme={theme}>
+      <Provider defaultTheme={theme}>{children}</Provider>
     </NextThemeProvider>
   )
 }

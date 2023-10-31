@@ -9,14 +9,12 @@ import { Provider } from 'app/provider'
 import { tamaguiFonts } from './tamaguiFonts.native'
 
 export default function HomeLayout() {
+  const theme = useThemeStore((state) => state.theme) || useColorScheme()
+
   const [loaded] = useFonts(tamaguiFonts)
   if (!loaded) {
     return null
   }
-
-  const setTheme = useThemeStore((state) => state.setTheme)
-  setTheme(useColorScheme() as any)
-  const theme = useThemeStore((state) => state.theme)
 
   return (
     <ThemeProvider value={theme === 'dark' ? DarkTheme : DefaultTheme}>

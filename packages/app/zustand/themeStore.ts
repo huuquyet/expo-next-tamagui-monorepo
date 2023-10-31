@@ -3,17 +3,23 @@ import { isWindowDefined } from '@tamagui/constants'
 import { create } from 'zustand'
 import { devtools, persist, createJSONStorage } from 'zustand/middleware'
 
+type mode = 'dark' | 'light'
+
 interface ThemeInterface {
-  theme: 'dark' | 'light'
+  theme: mode
   setTheme: (theme: string) => void
   toggleTheme: () => void
+}
+
+const getDefaultState = {
+  theme: 'dark' as mode,
 }
 
 export const useThemeStore = create<ThemeInterface>()(
   devtools(
     persist(
       (set, get) => ({
-        theme: 'dark' as const,
+        ...getDefaultState,
         setTheme: (theme: string) => {
           set({ theme: theme === 'dark' ? 'dark' : 'light' })
         },

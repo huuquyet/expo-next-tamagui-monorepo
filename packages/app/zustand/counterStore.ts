@@ -6,10 +6,12 @@ import { immer } from 'zustand/middleware/immer'
 
 import { fetchIdentityCount } from './fetchIdentityCount'
 
+type statusLoading = 'idle' | 'loading' | 'failed'
+
 interface CounterState {
   count: number
   amount: number
-  loading: 'idle' | 'loading' | 'failed'
+  loading: statusLoading
 }
 
 interface CounterAction {
@@ -22,18 +24,18 @@ interface CounterAction {
   incrementIfOddAsync: (by: number) => void
 }
 
-const getDefaultState = () => ({
+const getDefaultState: CounterState = {
   count: 0,
   amount: 2,
-  loading: 'idle' as const,
-})
+  loading: 'idle',
+}
 
 export const useCounterStore = create<CounterState & CounterAction>()(
   immer(
     devtools(
       persist(
         (set, get) => ({
-          ...getDefaultState(),
+          ...getDefaultState,
           setAmount: (amount: number) => {
             set({ amount })
           },
@@ -49,7 +51,7 @@ export const useCounterStore = create<CounterState & CounterAction>()(
           },
           reset: () => {
             set((state) => {
-              state.count = getDefaultState().count
+              state.count = getDefaultState.count
             })
           },
           incrementByAmount: (by: number) => {
@@ -58,12 +60,12 @@ export const useCounterStore = create<CounterState & CounterAction>()(
             })
           },
           incrementAsync: async (by: number) => {
-            set({ loading: 'loading' as const })
+            set({ loading: 'loading' })
             const response = await fetchIdentityCount(by)
             set((state) => {
               state.count += response.data
             })
-            set({ loading: 'idle' as const })
+            set({ loading: 'idle' })
           },
           incrementIfOddAsync: (by: number) => {
             if (get().count % 2 === 1) {
