@@ -3,7 +3,7 @@
     "name": "yourprojectsname",
     "slug": "yourprojectsname",
     "scheme": "yourprojectsname",
-    "version": "0.2.5",
+    "version": "0.2.6",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",

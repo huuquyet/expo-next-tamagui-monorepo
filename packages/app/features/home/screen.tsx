@@ -1,11 +1,15 @@
 import { useLink } from 'solito/link'
 import { MotiLink } from 'solito/moti'
+import { Moon, Sun } from '@tamagui/lucide-icons'
 
 import { Clock } from './Clock'
 import { SheetDemo } from './sheet'
+import { useBoundStore } from 'app/zustand'
 import { Anchor, Button, H1, Paragraph, Separator, Text, XStack, YStack } from '@my/ui'
 
 export function HomeScreen() {
+  const theme = useBoundStore((state) => state.theme)
+  const toggleTheme = useBoundStore((state) => state.toggleTheme)
   const linkProps = useLink({
     href: '/user/nate',
   })
@@ -66,6 +70,7 @@ export function HomeScreen() {
       </XStack>
 
       <SheetDemo />
+      <Button pos="absolute" b={30} l={20} icon={Moon} onPress={toggleTheme} circular />
     </YStack>
   )
 }

@@ -4,7 +4,7 @@ import NextDocument, { Head, Html, Main, NextScript } from 'next/document'
 import Tamagui from '../tamagui.config'
 
 export default class Document extends NextDocument {
-  static async getInitialProps({ renderPage }) {
+  static async getInitialProps({ renderPage }: any) {
     const page = await renderPage()
 
     // @ts-ignore RN doesn't have this type
