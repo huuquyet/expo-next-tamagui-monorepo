@@ -17,7 +17,7 @@ export const useBoundStore = create<ClockSlice & CounterSlice & ThemeSlice>()(
       }),
       {
         name: 'zustand',
-        storage: createJSONStorage(() => (!isWindowDefined ? window.localStorage : AsyncStorage)),
+        storage: createJSONStorage(() => (isWindowDefined ? window.localStorage : AsyncStorage)),
       }
     ),
     { enabled: false }
