@@ -4,11 +4,11 @@ import { Stack } from 'expo-router'
 import { StatusBar } from 'expo-status-bar'
 
 import { Provider } from 'app/provider'
-import { useBoundStore } from 'app/zustand'
+import { useThemeStore } from 'app/zustand'
 import { tamaguiFonts } from './tamaguiFonts.native'
 
 export default function HomeLayout() {
-  const theme = useBoundStore((state) => state.theme)
+  const { theme } = useThemeStore()
 
   const [loaded] = useFonts(tamaguiFonts)
   if (!loaded) {

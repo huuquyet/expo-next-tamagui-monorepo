@@ -5,10 +5,13 @@ import { fetchIdentityCount } from './fetchIdentityCount'
 
 type statusLoading = 'idle' | 'loading' | 'failed'
 
-export interface CounterSlice {
+interface CounterState {
   count: number
   amount: number
   loading: statusLoading
+}
+
+export interface CounterSlice extends CounterState {
   setAmount: (amount: number) => void
   increment: () => void
   decrement: () => void
@@ -18,10 +21,10 @@ export interface CounterSlice {
   incrementIfOddAsync: (by: number) => void
 }
 
-const getDefaultState = {
+const getDefaultState: CounterState = {
   count: 0,
   amount: 2,
-  loading: 'idle' as statusLoading,
+  loading: 'idle',
 }
 
 export const createCounterSlice: StateCreator<

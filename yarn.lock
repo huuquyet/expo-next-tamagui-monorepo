@@ -4055,6 +4055,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tamagui/next-theme@npm:latest":
+  version: 1.76.0
+  resolution: "@tamagui/next-theme@npm:1.76.0"
+  dependencies:
+    "@tamagui/use-event": "npm:1.76.0"
+  peerDependencies:
+    react: "*"
+  checksum: c7708d97e7b1c80467b97b8f00547625402ac1de1d945f499f242d0dc7e0709e0c9bce655f7c91d7b37e59ddd341622024378815cb7d8e6baff397b35ad0d449
+  languageName: node
+  linkType: hard
+
 "@tamagui/normalize-css-color@npm:1.75.5":
   version: 1.75.5
   resolution: "@tamagui/normalize-css-color@npm:1.75.5"
@@ -4657,6 +4668,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tamagui/use-event@npm:1.76.0":
+  version: 1.76.0
+  resolution: "@tamagui/use-event@npm:1.76.0"
+  peerDependencies:
+    react: "*"
+  checksum: 96f5222fcc5d4caf443bd61e3846a01482452e10dda83bfe6b05ce857f451865c799268d822cd79ef6ca87bb13b7165b3b6f44db328ba2374ed23fdffc77252a
+  languageName: node
+  linkType: hard
+
 "@tamagui/use-force-update@npm:1.75.5":
   version: 1.75.5
   resolution: "@tamagui/use-force-update@npm:1.75.5"
@@ -4873,14 +4893,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.2.33":
-  version: 18.2.33
-  resolution: "@types/react@npm:18.2.33"
+"@types/react@npm:^18.2.34":
+  version: 18.2.34
+  resolution: "@types/react@npm:18.2.34"
   dependencies:
     "@types/prop-types": "npm:*"
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 7f84dcf70eed3644973c7a47a63669d9e9ecc8d15b331fb272940a5c7cc322df11995eeeae1edfab5c278083cc3527477aa682c79f26667cfe8cd74481621884
+  checksum: 6d16f86b384e829edc3710b1dd9ec4eb1d6b26bc079c5cf605bd0cbf77ae6224f15c76949afadb7f53df4544cfe4025c1111fbe36732cd7f660a320fbc2e5866
   languageName: node
   linkType: hard
 
@@ -11940,8 +11960,9 @@ __metadata:
     "@tamagui/font-inter": "npm:latest"
     "@tamagui/font-silkscreen": "npm:latest"
     "@tamagui/next-plugin": "npm:latest"
+    "@tamagui/next-theme": "npm:latest"
     "@tamagui/polyfill-dev": "npm:latest"
-    "@types/react": "npm:^18.2.33"
+    "@types/react": "npm:^18.2.34"
     app: "npm:*"
     eslint-config-next: "npm:^14.0.1"
     next: "npm:^14.0.1"

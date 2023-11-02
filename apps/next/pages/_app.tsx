@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import type { SolitoAppProps } from 'solito'
+import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme'
 import '@tamagui/core/reset.css'
 import '@tamagui/font-inter/css/400.css'
 import '@tamagui/font-inter/css/700.css'
@@ -29,10 +30,24 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
           }}
         />
       </Head>
-      <Provider>
+      <ThemeProvider>
         <Component {...pageProps} />
-      </Provider>
+      </ThemeProvider>
     </>
+  )
+}
+
+function ThemeProvider({ children }: { children: React.ReactNode }) {
+  const [theme, setTheme] = useRootTheme()
+
+  return (
+    <NextThemeProvider
+      onChangeTheme={(next: any) => {
+        setTheme(next)
+      }}
+    >
+      <Provider>{children}</Provider>
+    </NextThemeProvider>
   )
 }
 
