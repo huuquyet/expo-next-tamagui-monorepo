@@ -7,6 +7,11 @@ import { SheetDemo } from './sheet'
 import { useThemeStore } from 'app/zustand'
 import { Anchor, Button, H1, Paragraph, Separator, Text, XStack, YStack } from '@my/ui'
 
+const icons = {
+  dark: Sun,
+  light: Moon,
+}
+
 export function HomeScreen() {
   const { theme, toggleTheme } = useThemeStore()
   const linkProps = useLink({
@@ -69,14 +74,7 @@ export function HomeScreen() {
       </XStack>
 
       <SheetDemo />
-      <Button
-        pos="absolute"
-        b={30}
-        l={20}
-        icon={theme === 'dark' ? <Sun /> : <Moon />}
-        onPress={toggleTheme}
-        circular
-      />
+      <Button pos="absolute" b={30} l={20} icon={icons[theme]} onPress={toggleTheme} circular />
     </YStack>
   )
 }

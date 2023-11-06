@@ -31,6 +31,7 @@ module.exports = function (api) {
                 components: ['@my/ui', 'tamagui'],
                 config: './tamagui.config.ts',
                 logTimings: true,
+                exclude: /node_modules/,
               },
             ],
           ]),
