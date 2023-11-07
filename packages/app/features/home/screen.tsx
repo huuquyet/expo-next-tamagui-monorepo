@@ -4,8 +4,18 @@ import { Moon, Sun } from '@tamagui/lucide-icons'
 
 import { Clock } from './Clock'
 import { SheetDemo } from './sheet'
-import { useThemeStore } from 'app/zustand'
-import { Anchor, Button, H1, Paragraph, Separator, Text, XStack, YStack } from '@my/ui'
+import { createThemeStore, useThemeStore } from 'app/zustand'
+import {
+  Anchor,
+  Button,
+  H1,
+  Paragraph,
+  Separator,
+  Text,
+  XStack,
+  YStack,
+  useIsomorphicLayoutEffect,
+} from '@my/ui'
 
 const icons = {
   dark: Sun,
@@ -17,6 +27,10 @@ export function HomeScreen() {
   const linkProps = useLink({
     href: '/user/nate',
   })
+
+  useIsomorphicLayoutEffect(() => {
+    createThemeStore.persist.rehydrate()
+  }, [])
 
   return (
     <YStack f={1} jc="center" ai="center" p="$4" space>

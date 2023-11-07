@@ -14,7 +14,7 @@ const getDefaultState = {
   theme: 'dark' as mode,
 }
 
-const createThemeStore = create<ThemeInterface>()(
+export const createThemeStore = create<ThemeInterface>()(
   devtools(
     persist(
       (set, get) => ({
@@ -26,6 +26,7 @@ const createThemeStore = create<ThemeInterface>()(
       {
         name: 'theme',
         storage: createJSONStorage(() => mmkvStorage),
+        skipHydration: true,
       }
     ),
     { enabled: false }
