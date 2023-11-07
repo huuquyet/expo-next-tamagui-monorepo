@@ -2234,15 +2234,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/metro-runtime@npm:2.2.12":
-  version: 2.2.12
-  resolution: "@expo/metro-runtime@npm:2.2.12"
+"@expo/metro-runtime@npm:2.2.13":
+  version: 2.2.13
+  resolution: "@expo/metro-runtime@npm:2.2.13"
   dependencies:
     "@bacons/react-views": "npm:^1.1.3"
     qs: "npm:^6.10.3"
   peerDependencies:
     react-native: "*"
-  checksum: 9fd6bf1fc5b0065978d8d4d22e7e5f5cbf707cde28e6a36806109746cea96df87be598c64133c6ec9df69654f91f63f6cb44826bc7c4430f9fc77e6c2da7ed34
+  checksum: 0e09dd412d3b9e96e9880282568d5d3b631ff1eea8c67af3020de81b843f9c67a1ff451c1bfa475a99ff183f798092b97f8ac0282d149aa91090f7fee7690b3f
   languageName: node
   linkType: hard
 
@@ -4887,14 +4887,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.2.35":
-  version: 18.2.35
-  resolution: "@types/react@npm:18.2.35"
+"@types/react@npm:^18.2.36":
+  version: 18.2.36
+  resolution: "@types/react@npm:18.2.36"
   dependencies:
     "@types/prop-types": "npm:*"
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 3c8c752d21856f74ddb96b9dd13cdd70c0ce1522808f20511f0220f392ea727fae9388db4da3ebe317d9bac98a0d930566d4277b22e92c1cad414429739e1d76
+  checksum: 4dac0a9f808b0da01029146efe7eeed454da68d01f0f73d417c95d691460f210b9baeb5fa756015f5a048825a1145a7dcb6c6d9c3e4e7876c683edf9892c383b
   languageName: node
   linkType: hard
 
@@ -8389,7 +8389,7 @@ __metadata:
     expo: "npm:^49.0.16"
     expo-font: "npm:~11.4.0"
     expo-linking: "npm:~5.0.2"
-    expo-router: "npm:^2.0.10"
+    expo-router: "npm:^2.0.11"
     expo-splash-screen: "npm:~0.20.5"
     expo-status-bar: "npm:~1.6.0"
     expo-system-ui: "npm:~2.4.0"
@@ -8465,16 +8465,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-head@npm:0.0.16":
-  version: 0.0.16
-  resolution: "expo-head@npm:0.0.16"
+"expo-head@npm:0.0.17":
+  version: 0.0.17
+  resolution: "expo-head@npm:0.0.17"
   dependencies:
     react-helmet-async: "npm:^1.3.0"
   peerDependencies:
     expo: "*"
     react: "*"
     react-native: "*"
-  checksum: ad770a9cbdd434df46e38f6c67eba4c2be9763ce29d0b77553aeb38f875d847d7b4debcdce37d67a42bde618431306de5c5696fdfb5bd3877474fab6171ccd31
+  checksum: 34a979f4d30d3ce51d72f01121c8191626544864b013e5521166d2e7fb8b115b45a7b3be686fa5872a4d21b60426ace092dacfa8a19c5d3900b5000aab604734
   languageName: node
   linkType: hard
 
@@ -8537,17 +8537,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"expo-router@npm:^2.0.10":
-  version: 2.0.10
-  resolution: "expo-router@npm:2.0.10"
+"expo-router@npm:^2.0.11":
+  version: 2.0.11
+  resolution: "expo-router@npm:2.0.11"
   dependencies:
     "@bacons/react-views": "npm:^1.1.3"
-    "@expo/metro-runtime": "npm:2.2.12"
+    "@expo/metro-runtime": "npm:2.2.13"
     "@radix-ui/react-slot": "npm:1.0.1"
     "@react-navigation/bottom-tabs": "npm:~6.5.7"
     "@react-navigation/native": "npm:~6.1.6"
     "@react-navigation/native-stack": "npm:~6.9.12"
-    expo-head: "npm:0.0.16"
+    expo-head: "npm:0.0.17"
     expo-splash-screen: "npm:~0.20.2"
     query-string: "npm:7.1.3"
     react-helmet-async: "npm:^1.3.0"
@@ -8571,7 +8571,7 @@ __metadata:
       optional: true
     react-native-reanimated:
       optional: true
-  checksum: 7fb1981ceb01afc95571ebf0bbd2be5693ecea805327524705ed580d5d308193b98fcd41724b76987d050b30284cb3e4195090aded66cb6bacee01d419df7501
+  checksum: 4df54381f996a8a0b115da4837c601601e1b9b09b0a91193d1d474fb215cc23ea269a603bcb88797fd053c5ecb9341836ab1856651942c4ed5ad3faece962af8
   languageName: node
   linkType: hard
 
@@ -11909,7 +11909,7 @@ __metadata:
     "@tamagui/next-plugin": "npm:latest"
     "@tamagui/next-theme": "npm:latest"
     "@tamagui/polyfill-dev": "npm:latest"
-    "@types/react": "npm:^18.2.35"
+    "@types/react": "npm:^18.2.36"
     app: "npm:*"
     eslint-config-next: "npm:^14.0.1"
     next: "npm:^14.0.1"
