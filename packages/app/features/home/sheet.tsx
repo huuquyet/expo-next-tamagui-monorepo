@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
 
 import { Counter } from './Counter'
-import { Button, Sheet, useToastController } from '@my/ui'
+import { Button, Paragraph, Sheet, useToastController } from '@my/ui'
 
 export function SheetDemo() {
   const [open, setOpen] = useState(false)
@@ -11,6 +11,7 @@ export function SheetDemo() {
 
   return (
     <>
+      <Paragraph ta="center">This button show the modal display zustand demo</Paragraph>
       <Button
         size="$6"
         icon={open ? ChevronDown : ChevronUp}

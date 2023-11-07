@@ -20,7 +20,7 @@
     "web:prod:serve": "yarn workspace next-app serve"
   },
   "devDependencies": {
-    "eslint": "^8.52.0",
+    "eslint": "^8.53.0",
     "prettier": "^3.0.3",
     "turbo": "^1.10.16",
     "typescript": "^5.2.2"
