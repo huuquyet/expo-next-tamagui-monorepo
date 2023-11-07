@@ -2943,17 +2943,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-async-storage/async-storage@npm:1.18.2":
-  version: 1.18.2
-  resolution: "@react-native-async-storage/async-storage@npm:1.18.2"
-  dependencies:
-    merge-options: "npm:^3.0.4"
-  peerDependencies:
-    react-native: ^0.0.0-0 || 0.60 - 0.72 || 1000.0.0
-  checksum: 3830828c608c9bdc36e147f7b8ff8632368eb8c97ee6f8dc30629a6ba802b99e5307202d86fe5ec37affcef225f82e331be6723921b91d500b935006da2e25ac
-  languageName: node
-  linkType: hard
-
 "@react-native-community/cli-clean@npm:11.3.7":
   version: 11.3.7
   resolution: "@react-native-community/cli-clean@npm:11.3.7"
@@ -3689,7 +3678,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/constants@npm:1.76.0, @tamagui/constants@npm:latest":
+"@tamagui/constants@npm:1.76.0":
   version: 1.76.0
   resolution: "@tamagui/constants@npm:1.76.0"
   peerDependencies:
@@ -5544,13 +5533,12 @@ __metadata:
   resolution: "app@workspace:packages/app"
   dependencies:
     "@my/ui": "npm:*"
-    "@react-native-async-storage/async-storage": "npm:1.18.2"
-    "@tamagui/constants": "npm:latest"
     "@tamagui/lucide-icons": "npm:latest"
     immer: "npm:^10.0.3"
     moti: "npm:^0.26.1"
     react: "npm:^18.2.0"
     react-native: "npm:^0.72.6"
+    react-native-mmkv: "npm:^2.10.2"
     react-native-safe-area-context: "npm:4.6.3"
     solito: "npm:^4.1.3"
     zustand: "npm:^4.4.6"
@@ -8391,7 +8379,6 @@ __metadata:
     "@babel/core": "npm:^7.23.2"
     "@babel/plugin-proposal-export-namespace-from": "npm:^7.18.9"
     "@my/ui": "npm:*"
-    "@react-native-async-storage/async-storage": "npm:1.18.2"
     "@react-navigation/native": "npm:^6.1.9"
     "@tamagui/babel-plugin": "npm:latest"
     "@tamagui/font-inter": "npm:latest"
@@ -8411,6 +8398,7 @@ __metadata:
     react-dom: "npm:^18.2.0"
     react-native: "npm:^0.72.6"
     react-native-gesture-handler: "npm:~2.12.1"
+    react-native-mmkv: "npm:^2.10.2"
     react-native-reanimated: "npm:~3.3.0"
     react-native-safe-area-context: "npm:4.6.3"
     react-native-screens: "npm:~3.22.1"
@@ -10211,13 +10199,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-plain-obj@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "is-plain-obj@npm:2.1.0"
-  checksum: cec9100678b0a9fe0248a81743041ed990c2d4c99f893d935545cfbc42876cbe86d207f3b895700c690ad2fa520e568c44afc1605044b535a7820c1d40e38daa
-  languageName: node
-  linkType: hard
-
 "is-plain-object@npm:^2.0.4":
   version: 2.0.4
   resolution: "is-plain-object@npm:2.0.4"
@@ -11213,15 +11194,6 @@ __metadata:
   version: 0.2.0
   resolution: "memory-cache@npm:0.2.0"
   checksum: 583573d75702123e29a27c0323934ca9a468e0b530845714be7b584dcef8a38085d8f7bb97c2fe8eceb021e73dd6edaad1750f2b9f0d87732e634871302fa154
-  languageName: node
-  linkType: hard
-
-"merge-options@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "merge-options@npm:3.0.4"
-  dependencies:
-    is-plain-obj: "npm:^2.1.0"
-  checksum: d86ddb3dd6e85d558dbf25dc944f3527b6bacb944db3fdda6e84a3f59c4e4b85231095f58b835758b9a57708342dee0f8de0dffa352974a48221487fe9f4584f
   languageName: node
   linkType: hard
 
@@ -13320,6 +13292,16 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: b83590b50a113fae6afcee580f5019c29b6a7da144dd8c11ea8676ec580a5dc5776d595d88745989da5918669279f577cd2cd8ae02d43ea04a0d34efc6a1553b
+  languageName: node
+  linkType: hard
+
+"react-native-mmkv@npm:^2.10.2":
+  version: 2.10.2
+  resolution: "react-native-mmkv@npm:2.10.2"
+  peerDependencies:
+    react: "*"
+    react-native: ">=0.71.0"
+  checksum: 0b592b06c02eccfb7edad16efa6ef683ac72bf9db2abbb48540b792176fe9e7a6a64c96741aa1cff596933ce479180f54e273031bb281bb310ae45b11b70df75
   languageName: node
   linkType: hard
 

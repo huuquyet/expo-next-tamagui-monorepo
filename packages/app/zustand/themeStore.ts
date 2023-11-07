@@ -1,7 +1,7 @@
-import AsyncStorage from '@react-native-async-storage/async-storage'
-import { isWindowDefined } from '@tamagui/constants'
 import { create } from 'zustand'
 import { devtools, persist, createJSONStorage } from 'zustand/middleware'
+
+import { mmkvStorage } from './mmkvStorage'
 
 type mode = 'dark' | 'light'
 
@@ -25,7 +25,7 @@ const createThemeStore = create<ThemeInterface>()(
       }),
       {
         name: 'theme',
-        storage: createJSONStorage(() => (isWindowDefined ? window.localStorage : AsyncStorage)),
+        storage: createJSONStorage(() => mmkvStorage),
       }
     ),
     { enabled: false }

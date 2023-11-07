@@ -1,10 +1,9 @@
-import AsyncStorage from '@react-native-async-storage/async-storage'
-import { isWindowDefined } from '@tamagui/constants'
 import { create } from 'zustand'
 import { devtools, persist, createJSONStorage } from 'zustand/middleware'
 import { immer } from 'zustand/middleware/immer'
 
 import { fetchIdentityCount } from './fetchIdentityCount'
+import { mmkvStorage } from './mmkvStorage'
 
 type statusLoading = 'idle' | 'loading' | 'failed'
 
@@ -75,7 +74,7 @@ const createCounterStore = create<CounterInterface>()(
         }),
         {
           name: 'counter',
-          storage: createJSONStorage(() => (isWindowDefined ? window.localStorage : AsyncStorage)),
+          storage: createJSONStorage(() => mmkvStorage),
         }
       ),
       { enabled: false }
