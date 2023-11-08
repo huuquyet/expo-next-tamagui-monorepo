@@ -4059,7 +4059,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/polyfill-dev@npm:1.76.0, @tamagui/polyfill-dev@npm:latest":
+"@tamagui/polyfill-dev@npm:1.76.0":
   version: 1.76.0
   resolution: "@tamagui/polyfill-dev@npm:1.76.0"
   checksum: f5ff53b6c232c2004d402f1d0f6c70de3e8f09d264639fa2901f4c43a8f9a4362b3db2396d8272fed292bd074c50dcdfe50a7943615fa1ec7a0510d3d10abef6
@@ -10808,7 +10808,6 @@ __metadata:
     "@tamagui/font-silkscreen": "npm:latest"
     "@tamagui/next-plugin": "npm:latest"
     "@tamagui/next-theme": "npm:latest"
-    "@tamagui/polyfill-dev": "npm:latest"
     "@types/react": "npm:^18.2.36"
     app: "npm:*"
     next: "npm:^14.0.1"

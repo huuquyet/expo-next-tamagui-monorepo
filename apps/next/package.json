@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "cd ../.. && yarn build && cd apps/next && next build",
     "start": "next start",
-    "serve": "NODE_ENV=production next start --port 8151",
-    "lint": "next lint"
+    "serve": "NODE_ENV=production next start --port 8151"
   },
   "dependencies": {
     "@my/ui": "*",
@@ -28,7 +27,6 @@
     "@tamagui/font-silkscreen": "latest",
     "@tamagui/next-plugin": "latest",
     "@tamagui/next-theme": "latest",
-    "@tamagui/polyfill-dev": "latest",
     "@types/react": "^18.2.36"
   }
 }

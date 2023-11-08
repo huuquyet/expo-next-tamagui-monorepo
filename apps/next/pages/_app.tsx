@@ -6,7 +6,6 @@ import '@tamagui/font-inter/css/900.css'
 import '@tamagui/font-silkscreen/css/400.css'
 import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme'
 import Head from 'next/head'
-import 'raf/polyfill'
 import { useEffect } from 'react'
 import type { SolitoAppProps } from 'solito'
 
