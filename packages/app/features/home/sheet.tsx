@@ -1,8 +1,8 @@
-import { useState } from 'react'
 import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
+import { useState } from 'react'
 
-import { Counter } from './Counter'
 import { Button, Paragraph, Sheet, useToastController } from '@my/ui'
+import { Counter } from './Counter'
 
 export function SheetDemo() {
   const [open, setOpen] = useState(false)

@@ -1,11 +1,11 @@
+import { Moon, Sun } from '@tamagui/lucide-icons'
 import { useLink } from 'solito/link'
 import { MotiLink } from 'solito/moti'
-import { Moon, Sun } from '@tamagui/lucide-icons'
 
+import { Anchor, Button, H1, Paragraph, Separator, Text, XStack, YStack } from '@my/ui'
+import { useThemeStore } from 'app/zustand'
 import { Clock } from './Clock'
 import { SheetDemo } from './sheet'
-import { useThemeStore } from 'app/zustand'
-import { Anchor, Button, H1, Paragraph, Separator, Text, XStack, YStack } from '@my/ui'
 
 const icons = {
   dark: Moon,

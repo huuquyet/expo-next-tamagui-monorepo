@@ -1,6 +1,6 @@
+import { ChevronLeft } from '@tamagui/lucide-icons'
 import { createParam } from 'solito'
 import { useLink } from 'solito/link'
-import { ChevronLeft } from '@tamagui/lucide-icons'
 
 import { Button, Paragraph, YStack } from '@my/ui'
 

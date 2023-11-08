@@ -1,5 +1,5 @@
-import { useCounterStore } from 'app/zustand'
 import { Button, H1, Input, Text, XStack, YStack } from '@my/ui'
+import { useCounterStore } from 'app/zustand'
 
 export function Counter() {
   const {

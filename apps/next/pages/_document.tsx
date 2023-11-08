@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native'
 import NextDocument, { Head, Html, Main, NextScript } from 'next/document'
+import { StyleSheet } from 'react-native'
 
 import Tamagui from '../tamagui.config'
 

@@ -1,7 +1,7 @@
-import { ToastViewport } from './ToastViewport'
+import { CustomToast, TamaguiProvider, TamaguiProviderProps, ToastProvider } from '@my/ui'
 import config from 'app/tamagui.config'
 import { useThemeStore } from 'app/zustand'
-import { CustomToast, TamaguiProvider, TamaguiProviderProps, ToastProvider } from '@my/ui'
+import { ToastViewport } from './ToastViewport'
 
 export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'config'>) {
   const { theme } = useThemeStore()

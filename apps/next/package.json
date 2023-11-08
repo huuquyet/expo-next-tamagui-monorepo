@@ -29,7 +29,6 @@
     "@tamagui/next-plugin": "latest",
     "@tamagui/next-theme": "latest",
     "@tamagui/polyfill-dev": "latest",
-    "@types/react": "^18.2.36",
-    "eslint-config-next": "^14.0.1"
+    "@types/react": "^18.2.36"
   }
 }
