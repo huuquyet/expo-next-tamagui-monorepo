@@ -7,17 +7,17 @@ import { Appearance } from 'react-native'
 import { ToastViewport } from './ToastViewport'
 
 export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'config'>) {
-  const { theme } = useThemeStore()
+  const { scheme } = useThemeStore()
 
   useEffect(() => {
     createThemeStore.persist.rehydrate()
   }, [])
 
   const current = () => {
-    if (theme === ('system' as mode)) {
+    if (scheme === ('system' as mode)) {
       return Appearance.getColorScheme() as mode
     }
-    return theme
+    return scheme
   }
 
   return (

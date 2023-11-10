@@ -13,7 +13,7 @@ const icons = {
 }
 
 export function HomeScreen() {
-  const { theme, toggleTheme } = useThemeStore()
+  const { scheme, toggleScheme } = useThemeStore()
   const linkProps = useLink({
     href: '/user/nate',
   })
@@ -22,7 +22,7 @@ export function HomeScreen() {
     <YStack f={1} jc="center" ai="center" p="$4" space>
       <YStack space="$4" maw={600} jc="center">
         <Clock />
-        <H1 ta="center" fontFamily="$silkscreen">
+        <H1 ta="center" ff="$silkscreen">
           Welcome to Tamagui.
         </H1>
         <Paragraph ta="center">
@@ -33,12 +33,12 @@ export function HomeScreen() {
         <Separator />
         <Paragraph ta="center">
           Made by{' '}
-          <Anchor color="$color12" href="https://twitter.com/natebirdman" target="_blank">
+          <Anchor col="$color12" href="https://twitter.com/natebirdman" target="_blank">
             @natebirdman
           </Anchor>
           ,{' '}
           <Anchor
-            color="$color12"
+            col="$color12"
             href="https://github.com/tamagui/tamagui"
             target="_blank"
             rel="noreferrer"
@@ -69,12 +69,12 @@ export function HomeScreen() {
             duration: 150,
           }}
         >
-          <Text fontFamily="$body">Moti Link</Text>
+          <Text ff="$body">Moti Link</Text>
         </MotiLink>
       </XStack>
 
       <SheetDemo />
-      <Button pos="absolute" b={30} l={20} icon={icons[theme]} onPress={toggleTheme} circular />
+      <Button pos="absolute" b={30} l={20} icon={icons[scheme]} onPress={toggleScheme} circular />
     </YStack>
   )
 }

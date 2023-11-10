@@ -5,12 +5,12 @@ import { mmkvStorage } from './mmkvStorage'
 export type mode = 'system' | 'dark' | 'light'
 
 interface ThemeInterface {
-  theme: mode
-  toggleTheme: () => void
+  scheme: mode
+  toggleScheme: () => void
 }
 
 const getDefaultState = {
-  theme: 'system' as mode,
+  scheme: 'system' as mode,
 }
 
 export const createThemeStore = create<ThemeInterface>()(
@@ -18,14 +18,15 @@ export const createThemeStore = create<ThemeInterface>()(
     persist(
       (set, get) => ({
         ...getDefaultState,
-        toggleTheme: () => {
+        toggleScheme: () => {
           set({
-            theme: get().theme === 'dark' ? 'light' : get().theme === 'light' ? 'system' : 'dark',
+            scheme:
+              get().scheme === 'dark' ? 'light' : get().scheme === 'light' ? 'system' : 'dark',
           })
         },
       }),
       {
-        name: 'theme',
+        name: 'scheme',
         storage: createJSONStorage(() => mmkvStorage),
         skipHydration: true,
       }
@@ -36,7 +37,7 @@ export const createThemeStore = create<ThemeInterface>()(
 
 export const useThemeStore = () => {
   return createThemeStore((store) => ({
-    theme: store.theme,
-    toggleTheme: store.toggleTheme,
+    scheme: store.scheme,
+    toggleScheme: store.toggleScheme,
   }))
 }

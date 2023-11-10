@@ -1,35 +1,47 @@
 import { CustomToast, TamaguiProvider, TamaguiProviderProps, ToastProvider } from '@my/ui'
-import { useThemeSetting } from '@tamagui/next-theme'
+import { NextThemeProvider, useRootTheme, useThemeSetting } from '@tamagui/next-theme'
 import config from 'app/tamagui.config'
-import { type mode, useThemeStore } from 'app/zustand'
+import { createThemeStore, type mode, useThemeStore } from 'app/zustand'
+import { useEffect } from 'react'
 import { ToastViewport } from './ToastViewport'
 
 export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'config'>) {
-  const { theme } = useThemeStore()
-  const themeSetting = useThemeSetting()
+  const [theme, setTheme] = useRootTheme()
+  const themeSetting = useThemeSetting()!
+  const { scheme } = useThemeStore()
+
+  useEffect(() => {
+    createThemeStore.persist.rehydrate()
+  }, [])
 
   const current = () => {
-    if (theme === ('system' as mode)) {
-      return themeSetting.systemTheme
+    if (scheme === ('system' as mode)) {
+      return themeSetting.systemTheme as mode
     }
-    return theme
+    return scheme
   }
 
   return (
-    <TamaguiProvider config={config} defaultTheme={current()} disableInjectCSS {...rest}>
-      <ToastProvider
-        swipeDirection="horizontal"
-        duration={6000}
-        native={[
-          /* uncomment the next line to do native toasts on mobile. NOTE: it'll require you making a dev build and won't work with Expo Go */
-          'mobile',
-        ]}
-      >
-        {children}
+    <NextThemeProvider
+      onChangeTheme={(next: any) => {
+        setTheme(next)
+      }}
+    >
+      <TamaguiProvider config={config} defaultTheme={current()} disableInjectCSS {...rest}>
+        <ToastProvider
+          swipeDirection="horizontal"
+          duration={6000}
+          native={[
+            /* uncomment the next line to do native toasts on mobile. NOTE: it'll require you making a dev build and won't work with Expo Go */
+            'mobile',
+          ]}
+        >
+          {children}
 
-        <CustomToast />
-        <ToastViewport />
-      </ToastProvider>
-    </TamaguiProvider>
+          <CustomToast />
+          <ToastViewport />
+        </ToastProvider>
+      </TamaguiProvider>
+    </NextThemeProvider>
   )
 }

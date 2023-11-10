@@ -23,7 +23,7 @@ export function SheetDemo() {
         open={open}
         onOpenChange={setOpen}
         snapPoints={[80]}
-        position={position}
+        pos={position}
         onPositionChange={setPosition}
         dismissOnSnapToBottom
       >

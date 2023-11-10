@@ -22,7 +22,7 @@ export function Counter() {
         <Button size="$6" onPress={() => increment()}>
           +
         </Button>
-        <Text fontSize="$8" fontFamily="$body">
+        <Text fos="$8" ff="$body">
           {count}
         </Text>
         <Button size="$6" onPress={() => decrement()}>
