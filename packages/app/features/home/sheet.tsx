@@ -1,7 +1,6 @@
+import { Button, Paragraph, Sheet, useToastController } from '@my/ui'
 import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
 import { useState } from 'react'
-
-import { Button, Paragraph, Sheet, useToastController } from '@my/ui'
 import { Counter } from './Counter'
 
 export function SheetDemo() {

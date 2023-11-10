@@ -5,12 +5,11 @@ import '@tamagui/font-inter/css/800.css'
 import '@tamagui/font-inter/css/900.css'
 import '@tamagui/font-silkscreen/css/400.css'
 import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme'
+import { Provider } from 'app/provider'
+import { createThemeStore } from 'app/zustand'
 import Head from 'next/head'
 import { useEffect } from 'react'
 import type { SolitoAppProps } from 'solito'
-
-import { Provider } from 'app/provider'
-import { createThemeStore } from 'app/zustand'
 
 if (process.env.NODE_ENV === 'production') {
   require('../public/tamagui.css')
