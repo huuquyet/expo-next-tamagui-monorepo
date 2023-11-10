@@ -7,7 +7,6 @@ import { media } from './mediaQueries'
 
 export const config = createTamagui({
   defaultFont: 'body',
-  defaultTheme: 'dark',
   animations,
   shouldAddPrefersColorThemes: true,
   themeClassNameOnRoot: false,

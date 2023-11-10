@@ -5516,7 +5516,9 @@ __metadata:
   resolution: "app@workspace:packages/app"
   dependencies:
     "@my/ui": "npm:*"
+    "@react-navigation/native": "npm:^6.1.9"
     "@tamagui/lucide-icons": "npm:latest"
+    "@tamagui/next-theme": "npm:latest"
     immer: "npm:^10.0.3"
     moti: "npm:^0.26.1"
     react: "npm:^18.2.0"
@@ -7806,7 +7808,6 @@ __metadata:
     "@babel/core": "npm:^7.23.3"
     "@babel/plugin-proposal-export-namespace-from": "npm:^7.18.9"
     "@my/ui": "npm:*"
-    "@react-navigation/native": "npm:^6.1.9"
     "@tamagui/babel-plugin": "npm:latest"
     "@tamagui/font-inter": "npm:latest"
     "@tamagui/font-silkscreen": "npm:latest"

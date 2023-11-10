@@ -1,9 +1,8 @@
 import { create } from 'zustand'
 import { createJSONStorage, devtools, persist } from 'zustand/middleware'
-
 import { mmkvStorage } from './mmkvStorage'
 
-type mode = 'dark' | 'light'
+export type mode = 'system' | 'dark' | 'light'
 
 interface ThemeInterface {
   theme: mode
@@ -11,7 +10,7 @@ interface ThemeInterface {
 }
 
 const getDefaultState = {
-  theme: 'dark' as mode,
+  theme: 'system' as mode,
 }
 
 export const createThemeStore = create<ThemeInterface>()(
@@ -20,7 +19,9 @@ export const createThemeStore = create<ThemeInterface>()(
       (set, get) => ({
         ...getDefaultState,
         toggleTheme: () => {
-          set({ theme: get().theme === 'dark' ? 'light' : 'dark' })
+          set({
+            theme: get().theme === 'dark' ? 'light' : get().theme === 'light' ? 'system' : 'dark',
+          })
         },
       }),
       {
