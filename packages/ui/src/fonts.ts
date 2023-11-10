@@ -1,6 +1,6 @@
-import { createFont, GenericFont } from 'tamagui'
 import { createInterFont } from '@tamagui/font-inter'
 import { createSilkscreenFont } from '@tamagui/font-silkscreen'
+import { GenericFont, createFont } from 'tamagui'
 
 const genericFontSizes = {
   1: 10,
@@ -21,7 +21,7 @@ const genericFontSizes = {
   16: 124,
 } as const
 
-export function createGenericFont<A extends GenericFont<keyof typeof genericFontSizes>>(
+export function createGenericFont<A extends GenericFont<keyof typeof genericFontSizes>,>(
   family: string,
   font: Partial<A> = {},
   {

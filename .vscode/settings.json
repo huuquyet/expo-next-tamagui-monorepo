@@ -1,8 +1,16 @@
 {
   "diffEditor.codeLens": true,
+  "editor.codeActionsOnSave": {
+    "quickfix.biome": true,
+    "source.organizeImports.biome": true
+  },
+  "editor.defaultFormatter": "biomejs.biome",
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "editor.formatOnSave": true,
   "editor.inlayHints.enabled": "on",
   "editor.tabCompletion": "on",
-  "eslint.nodePath": ".yarn/sdks",
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
     "package.json": "package-lock.json, yarn.lock",
@@ -10,13 +18,9 @@
     "*.ts": "$(capture).test.ts, $(capture).test.tsx, $(capture).test.node.ts, $(capture).test.node.tsx, $(capture).test.native.ts, $(capture).test.native.tsx, $(capture).test.ios.ts, $(capture).test.ios.tsx, $(capture).test.web.ts, $(capture).test.web.tsx, $(capture).test.android.ts, $(capture).test.android.tsx, ${capture}.native.tsx, ${capture}.ios.tsx, ${capture}.android.tsx, ${capture}.web.tsx, ${capture}.native.ts, ${capture}.ios.ts, ${capture}.android.ts, ${capture}.web.ts, ${capture}.native.js, ${capture}.ios.js, ${capture}.android.js, ${capture}.web.js, ${capture}.native.jsx, ${capture}.ios.jsx, ${capture}.android.jsx, ${capture}.web.jsx",
     "*.tsx": "$(capture).test.ts, $(capture).test.tsx, $(capture).test.node.ts, $(capture).test.node.tsx, $(capture).test.native.ts, $(capture).test.native.tsx, $(capture).test.ios.ts, $(capture).test.ios.tsx, $(capture).test.web.ts, $(capture).test.web.tsx, $(capture).test.android.ts, $(capture).test.android.tsx, ${capture}.native.tsx, ${capture}.ios.tsx, ${capture}.android.tsx, ${capture}.web.tsx, ${capture}.native.ts, ${capture}.ios.ts, ${capture}.android.ts, ${capture}.web.ts, ${capture}.native.js, ${capture}.ios.js, ${capture}.android.js, ${capture}.web.js, ${capture}.native.jsx, ${capture}.ios.jsx, ${capture}.android.jsx, ${capture}.web.jsx"
   },
-  "java.configuration.updateBuildConfiguration": "interactive",
   "javascript.inlayHints.parameterNames.enabled": "all",
-  "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
   "search.exclude": {
     "**/node_modules": true,
-    "**/bower_components": true,
-    "**/*.code-search": true,
     "**/.tamagui": true,
     "**/.next": true,
     "**/.yarn": true,

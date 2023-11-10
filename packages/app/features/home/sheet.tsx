@@ -1,8 +1,7 @@
-import { useState } from 'react'
-import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
-
-import { Counter } from './Counter'
 import { Button, Paragraph, Sheet, useToastController } from '@my/ui'
+import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
+import { useState } from 'react'
+import { Counter } from './Counter'
 
 export function SheetDemo() {
   const [open, setOpen] = useState(false)
@@ -24,7 +23,7 @@ export function SheetDemo() {
         open={open}
         onOpenChange={setOpen}
         snapPoints={[80]}
-        position={position}
+        pos={position}
         onPositionChange={setPosition}
         dismissOnSnapToBottom
       >

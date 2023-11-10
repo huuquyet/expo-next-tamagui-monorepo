@@ -1,5 +1,5 @@
-import { useCounterStore } from 'app/zustand'
 import { Button, H1, Input, Text, XStack, YStack } from '@my/ui'
+import { useCounterStore } from 'app/zustand'
 
 export function Counter() {
   const {
@@ -22,7 +22,7 @@ export function Counter() {
         <Button size="$6" onPress={() => increment()}>
           +
         </Button>
-        <Text fontSize="$8" fontFamily="$body">
+        <Text fos="$8" ff="$body">
           {count}
         </Text>
         <Button size="$6" onPress={() => decrement()}>

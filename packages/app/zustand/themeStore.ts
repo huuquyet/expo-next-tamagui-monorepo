@@ -1,17 +1,16 @@
 import { create } from 'zustand'
-import { devtools, persist, createJSONStorage } from 'zustand/middleware'
-
+import { createJSONStorage, devtools, persist } from 'zustand/middleware'
 import { mmkvStorage } from './mmkvStorage'
 
-type mode = 'dark' | 'light'
+export type mode = 'system' | 'dark' | 'light'
 
 interface ThemeInterface {
-  theme: mode
-  toggleTheme: () => void
+  scheme: mode
+  toggleScheme: () => void
 }
 
 const getDefaultState = {
-  theme: 'dark' as mode,
+  scheme: 'system' as mode,
 }
 
 export const createThemeStore = create<ThemeInterface>()(
@@ -19,12 +18,15 @@ export const createThemeStore = create<ThemeInterface>()(
     persist(
       (set, get) => ({
         ...getDefaultState,
-        toggleTheme: () => {
-          set({ theme: get().theme === 'dark' ? 'light' : 'dark' })
+        toggleScheme: () => {
+          set({
+            scheme:
+              get().scheme === 'dark' ? 'light' : get().scheme === 'light' ? 'system' : 'dark',
+          })
         },
       }),
       {
-        name: 'theme',
+        name: 'scheme',
         storage: createJSONStorage(() => mmkvStorage),
         skipHydration: true,
       }
@@ -35,7 +37,7 @@ export const createThemeStore = create<ThemeInterface>()(
 
 export const useThemeStore = () => {
   return createThemeStore((store) => ({
-    theme: store.theme,
-    toggleTheme: store.toggleTheme,
+    scheme: store.scheme,
+    toggleScheme: store.toggleScheme,
   }))
 }

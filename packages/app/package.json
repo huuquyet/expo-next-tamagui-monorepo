@@ -8,7 +8,9 @@
   ],
   "dependencies": {
     "@my/ui": "*",
+    "@react-navigation/native": "^6.1.9",
     "@tamagui/lucide-icons": "latest",
+    "@tamagui/next-theme": "latest",
     "immer": "^10.0.3",
     "moti": "^0.26.1",
     "react": "^18.2.0",

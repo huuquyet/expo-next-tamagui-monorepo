@@ -1,6 +1,5 @@
 import { create } from 'zustand'
-import { devtools, persist, createJSONStorage } from 'zustand/middleware'
-
+import { createJSONStorage, devtools, persist } from 'zustand/middleware'
 import { mmkvStorage } from './mmkvStorage'
 
 interface ClockInterface {

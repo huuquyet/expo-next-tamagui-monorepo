@@ -1,7 +1,6 @@
 import { create } from 'zustand'
-import { devtools, persist, createJSONStorage } from 'zustand/middleware'
+import { createJSONStorage, devtools, persist } from 'zustand/middleware'
 import { immer } from 'zustand/middleware/immer'
-
 import { fetchIdentityCount } from './fetchIdentityCount'
 import { mmkvStorage } from './mmkvStorage'
 
@@ -40,7 +39,7 @@ const createCounterStore = create<CounterInterface>()(
           },
           increment: () => {
             set((state) => {
-              count: state.count += 1
+              state.count += 1
             })
           },
           decrement: () => {
