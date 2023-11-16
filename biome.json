@@ -28,6 +28,7 @@
         "noDangerouslySetInnerHtml": "off"
       },
       "suspicious": {
+        "noEmptyInterface": "off",
         "noExplicitAny": "off"
       },
       "style": {
