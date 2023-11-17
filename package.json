@@ -6,26 +6,26 @@
     "packages/*"
   ],
   "scripts": {
-    "android": "yarn workspace expo-app run android",
-    "build": "yarn workspaces foreach --all --exclude next-app run build",
-    "check:expo": "yarn workspace expo-app run expo install --check",
-    "ios": "yarn workspace expo-app run ios",
+    "android": "yarn expo:android",
+    "build": "cd $INIT_CWD && yarn ui:build",
+    "check:expo": "yarn expo:check",
+    "clean": "git clean -xd",
+    "doctor": "yarn dlx @yarnpkg/doctor && yarn expo:doctor",
+    "ios": "yarn expo:ios",
     "lint": "yarn dlx @biomejs/biome check --apply .",
-    "native": "yarn workspace expo-app run start",
+    "native": "yarn expo:start",
     "postinstall": "yarn build",
-    "rm:nodemodule": "rm -rf .yarn/cache node_modules apps/expo/node_modules apps/next/node_modules apps/next/.tamagui packages/app/node_modules packages/ui/node_modules yarn.lock",
     "upgrade:tamagui": "yarn up '*tamagui*'@latest '@tamagui/*'@latest",
     "upgrade:tamagui:canary": "yarn up '*tamagui*'@canary '@tamagui/*'@canary",
     "vercel:install": "yarn set version berry && yarn install",
-    "watch": "yarn workspaces foreach -pi run watch",
-    "web": "yarn build && yarn workspace next-app run next",
-    "web:extract": "DISABLE_EXTRACTION=false yarn workspace next-app run dev",
-    "web:prod": "yarn workspace next-app run build",
-    "web:prod:serve": "yarn workspace next-app run serve"
+    "watch": "yarn ui:watch",
+    "web": "yarn build && yarn next:dev",
+    "web:extract": "DISABLE_EXTRACTION=false yarn next:dev",
+    "web:prod": "yarn next:build",
+    "web:prod:serve": "yarn next:serve"
   },
   "devDependencies": {
     "@biomejs/biome": "1.3.3",
-    "turbo": "^1.10.16",
     "typescript": "^5.2.2"
   },
   "packageManager": "yarn@4.0.1"

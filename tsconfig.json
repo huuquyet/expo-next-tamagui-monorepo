@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "module": "esnext",
     "forceConsistentCasingInFileNames": true,
     "noUncheckedIndexedAccess": true,
     "paths": {

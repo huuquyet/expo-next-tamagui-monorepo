@@ -15,8 +15,8 @@
     "*.css"
   ],
   "scripts": {
-    "build": "tamagui-build",
-    "watch": "tamagui-build --watch"
+    "ui:build": "tamagui-build",
+    "ui:watch": "tamagui-build --watch"
   },
   "dependencies": {
     "@tamagui/animations-moti": "latest",
