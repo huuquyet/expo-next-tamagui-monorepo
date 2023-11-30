@@ -27,6 +27,6 @@
     "@tamagui/font-silkscreen": "latest",
     "@tamagui/next-plugin": "latest",
     "@tamagui/next-theme": "latest",
-    "@types/react": "^18.2.38"
+    "@types/react": "^18.2.39"
   }
 }
