@@ -1828,16 +1828,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@biomejs/biome@npm:1.4.0":
-  version: 1.4.0
-  resolution: "@biomejs/biome@npm:1.4.0"
+"@biomejs/biome@npm:1.4.1":
+  version: 1.4.1
+  resolution: "@biomejs/biome@npm:1.4.1"
   dependencies:
-    "@biomejs/cli-darwin-arm64": "npm:1.4.0"
-    "@biomejs/cli-darwin-x64": "npm:1.4.0"
-    "@biomejs/cli-linux-arm64": "npm:1.4.0"
-    "@biomejs/cli-linux-x64": "npm:1.4.0"
-    "@biomejs/cli-win32-arm64": "npm:1.4.0"
-    "@biomejs/cli-win32-x64": "npm:1.4.0"
+    "@biomejs/cli-darwin-arm64": "npm:1.4.1"
+    "@biomejs/cli-darwin-x64": "npm:1.4.1"
+    "@biomejs/cli-linux-arm64": "npm:1.4.1"
+    "@biomejs/cli-linux-x64": "npm:1.4.1"
+    "@biomejs/cli-win32-arm64": "npm:1.4.1"
+    "@biomejs/cli-win32-x64": "npm:1.4.1"
   dependenciesMeta:
     "@biomejs/cli-darwin-arm64":
       optional: true
@@ -1853,48 +1853,48 @@ __metadata:
       optional: true
   bin:
     biome: bin/biome
-  checksum: 95fe9415f00ae059920a929241f568b039b3f66e2971d101161a04a97d495bbd9142a19347e76227f90a242a7a5f7a9c82a13cba49c11235d9eab7744c2869f6
+  checksum: fad12f5fdca7fe51f5ebf0cd559cd6ab67a6ffdb6c4b834cbd3221c1e0ca86c5ea80a565cb3bcdba0901f1055a9050db0a399c43e8c3d469cfd8bc31b95a5aca
   languageName: node
   linkType: hard
 
-"@biomejs/cli-darwin-arm64@npm:1.4.0":
-  version: 1.4.0
-  resolution: "@biomejs/cli-darwin-arm64@npm:1.4.0"
+"@biomejs/cli-darwin-arm64@npm:1.4.1":
+  version: 1.4.1
+  resolution: "@biomejs/cli-darwin-arm64@npm:1.4.1"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-darwin-x64@npm:1.4.0":
-  version: 1.4.0
-  resolution: "@biomejs/cli-darwin-x64@npm:1.4.0"
+"@biomejs/cli-darwin-x64@npm:1.4.1":
+  version: 1.4.1
+  resolution: "@biomejs/cli-darwin-x64@npm:1.4.1"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-linux-arm64@npm:1.4.0":
-  version: 1.4.0
-  resolution: "@biomejs/cli-linux-arm64@npm:1.4.0"
+"@biomejs/cli-linux-arm64@npm:1.4.1":
+  version: 1.4.1
+  resolution: "@biomejs/cli-linux-arm64@npm:1.4.1"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-linux-x64@npm:1.4.0":
-  version: 1.4.0
-  resolution: "@biomejs/cli-linux-x64@npm:1.4.0"
+"@biomejs/cli-linux-x64@npm:1.4.1":
+  version: 1.4.1
+  resolution: "@biomejs/cli-linux-x64@npm:1.4.1"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-win32-arm64@npm:1.4.0":
-  version: 1.4.0
-  resolution: "@biomejs/cli-win32-arm64@npm:1.4.0"
+"@biomejs/cli-win32-arm64@npm:1.4.1":
+  version: 1.4.1
+  resolution: "@biomejs/cli-win32-arm64@npm:1.4.1"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-win32-x64@npm:1.4.0":
-  version: 1.4.0
-  resolution: "@biomejs/cli-win32-x64@npm:1.4.0"
+"@biomejs/cli-win32-x64@npm:1.4.1":
+  version: 1.4.1
+  resolution: "@biomejs/cli-win32-x64@npm:1.4.1"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -4999,14 +4999,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.2.39":
-  version: 18.2.39
-  resolution: "@types/react@npm:18.2.39"
+"@types/react@npm:^18.2.42":
+  version: 18.2.42
+  resolution: "@types/react@npm:18.2.42"
   dependencies:
     "@types/prop-types": "npm:*"
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 870f7774c676ae0f3ab6339a62b3315f5a296e89412358b15a5249a61e781a8807a2253ef7ad2ec98e7a5bea1e8c3ddd95b02226d6b8ac4a085da59b4a496564
+  checksum: b6ee1873ba551ca7bf87cefff00a615aa4322cd68d425858a2e09be260d8037d7fc68865739d2b05cc88cefa7acd009afdaea43e9856fc6302b322cc8c19464e
   languageName: node
   linkType: hard
 
@@ -8019,7 +8019,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "expo-next-tamagui-monorepo@workspace:."
   dependencies:
-    "@biomejs/biome": "npm:1.4.0"
+    "@biomejs/biome": "npm:1.4.1"
     typescript: "npm:^5.3.2"
   languageName: unknown
   linkType: soft
@@ -10957,7 +10957,7 @@ __metadata:
     "@tamagui/font-silkscreen": "npm:latest"
     "@tamagui/next-plugin": "npm:latest"
     "@tamagui/next-theme": "npm:latest"
-    "@types/react": "npm:^18.2.39"
+    "@types/react": "npm:^18.2.42"
     app: "npm:*"
     next: "npm:^14.0.3"
     raf: "npm:^3.4.1"

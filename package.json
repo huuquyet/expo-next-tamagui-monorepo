@@ -25,7 +25,7 @@
     "web:prod:serve": "yarn next:serve"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.4.0",
+    "@biomejs/biome": "1.4.1",
     "typescript": "^5.3.2"
   },
   "packageManager": "yarn@4.0.2"
