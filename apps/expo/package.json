@@ -33,7 +33,7 @@
     "react-native-web": "^0.19.9"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.5",
+    "@babel/core": "^7.23.6",
     "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
     "@tamagui/babel-plugin": "latest",
     "@tamagui/font-inter": "latest",
