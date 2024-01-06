@@ -93,26 +93,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.23.6":
-  version: 7.23.6
-  resolution: "@babel/core@npm:7.23.6"
+"@babel/core@npm:^7.23.7":
+  version: 7.23.7
+  resolution: "@babel/core@npm:7.23.7"
   dependencies:
     "@ampproject/remapping": "npm:^2.2.0"
     "@babel/code-frame": "npm:^7.23.5"
     "@babel/generator": "npm:^7.23.6"
     "@babel/helper-compilation-targets": "npm:^7.23.6"
     "@babel/helper-module-transforms": "npm:^7.23.3"
-    "@babel/helpers": "npm:^7.23.6"
+    "@babel/helpers": "npm:^7.23.7"
     "@babel/parser": "npm:^7.23.6"
     "@babel/template": "npm:^7.22.15"
-    "@babel/traverse": "npm:^7.23.6"
+    "@babel/traverse": "npm:^7.23.7"
     "@babel/types": "npm:^7.23.6"
     convert-source-map: "npm:^2.0.0"
     debug: "npm:^4.1.0"
     gensync: "npm:^1.0.0-beta.2"
     json5: "npm:^2.2.3"
     semver: "npm:^6.3.1"
-  checksum: a72ba71d2f557d09ff58a5f0846344b9cea9dfcbd7418729a3a74d5b0f37a5ca024942fef4d19f248de751928a1be3d5cb0488746dd8896009dd55b974bb552e
+  checksum: 956841695ea801c8b4196d01072e6c1062335960715a6fcfd4009831003b526b00627c78b373ed49b1658c3622c71142f7ff04235fe839cac4a1a25ed51b90aa
   languageName: node
   linkType: hard
 
@@ -416,14 +416,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helpers@npm:^7.23.6":
-  version: 7.23.6
-  resolution: "@babel/helpers@npm:7.23.6"
+"@babel/helpers@npm:^7.23.7":
+  version: 7.23.7
+  resolution: "@babel/helpers@npm:7.23.7"
   dependencies:
     "@babel/template": "npm:^7.22.15"
-    "@babel/traverse": "npm:^7.23.6"
+    "@babel/traverse": "npm:^7.23.7"
     "@babel/types": "npm:^7.23.6"
-  checksum: 2a85fd2bcbc15a6c94dbe7b9e94d8920f9de76d164179d6895fee89c4339079d9e3e56f572bf19b5e7d1e6f1997d7fbaeaa686b47d35136852631dfd09e85c2f
+  checksum: ec07061dc871d406ed82c8757c4d7a510aaf15145799fb0a2c3bd3c72ca101fe82a02dd5f83ca604fbbba5de5408dd731bb1452150562bed4f3b0a2846f81f61
   languageName: node
   linkType: hard
 
@@ -1806,9 +1806,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/traverse@npm:^7.23.6":
-  version: 7.23.6
-  resolution: "@babel/traverse@npm:7.23.6"
+"@babel/traverse@npm:^7.23.7":
+  version: 7.23.7
+  resolution: "@babel/traverse@npm:7.23.7"
   dependencies:
     "@babel/code-frame": "npm:^7.23.5"
     "@babel/generator": "npm:^7.23.6"
@@ -1820,7 +1820,7 @@ __metadata:
     "@babel/types": "npm:^7.23.6"
     debug: "npm:^4.3.1"
     globals: "npm:^11.1.0"
-  checksum: ee4434a3ce792ee8956b64d76843caa1dda4779bb621ed9f951dd3551965bf1f292f097011c9730ecbc0b57f02434b1fa5a771610a2ef570726b0df0fc3332d9
+  checksum: 3215e59429963c8dac85c26933372cdd322952aa9930e4bc5ef2d0e4bd7a1510d1ecf8f8fd860ace5d4d9fe496d23805a1ea019a86410aee4111de5f63ee84f9
   languageName: node
   linkType: hard
 
@@ -2920,7 +2920,7 @@ __metadata:
     "@tamagui/shorthands": "npm:latest"
     "@tamagui/themes": "npm:latest"
     "@tamagui/toast": "npm:latest"
-    burnt: "npm:^0.12.1"
+    burnt: "npm:^0.12.2"
     expo-constants: "npm:~14.4.2"
     react-native-reanimated: "npm:~3.3.0"
     tamagui: "npm:latest"
@@ -5026,14 +5026,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.2.45":
-  version: 18.2.45
-  resolution: "@types/react@npm:18.2.45"
+"@types/react@npm:^18.2.47":
+  version: 18.2.47
+  resolution: "@types/react@npm:18.2.47"
   dependencies:
     "@types/prop-types": "npm:*"
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: bd27fd8a959fa776965997af89cb04e43e7868416850fdff421b5539f389efa35acae3d55915c9f32d7b00fb388550302bf8a7f06010abf9ad431e5bf58cb774
+  checksum: 0a98c2ef8303909f78c973ac9731cb671f3a0b96bc5213b538d1a50cbaae6e51b6befd64845a9cb95af8528767315d5bd99a85608eb716c020393c7d33a9b477
   languageName: node
   linkType: hard
 
@@ -6166,9 +6166,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"burnt@npm:^0.12.1":
-  version: 0.12.1
-  resolution: "burnt@npm:0.12.1"
+"burnt@npm:^0.12.2":
+  version: 0.12.2
+  resolution: "burnt@npm:0.12.2"
   dependencies:
     sf-symbols-typescript: "npm:^1.0.0"
     sonner: "npm:^0.3.5"
@@ -6176,7 +6176,7 @@ __metadata:
     expo: "*"
     react: "*"
     react-native: "*"
-  checksum: 442fb867daecb36ae88bbfffc9e911e33c31b642155af0d2c15c7387a836f44f89d25a84c4506daba73804b4d70fbf830a9d0c09ba480517049bec0a77c19144
+  checksum: 8ecaaa22f6e365640ba247aabfb56311eca4f7199cb07519dffd4fe9fd30d173b5cd9ab4e1ecede1e538d613c5eb9820eb752ba0ac220a468b046ed2d5c060f6
   languageName: node
   linkType: hard
 
@@ -7910,7 +7910,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "expo-app@workspace:apps/expo"
   dependencies:
-    "@babel/core": "npm:^7.23.6"
+    "@babel/core": "npm:^7.23.7"
     "@babel/plugin-proposal-export-namespace-from": "npm:^7.18.9"
     "@my/ui": "npm:*"
     "@tamagui/babel-plugin": "npm:latest"
@@ -7926,7 +7926,7 @@ __metadata:
     expo-splash-screen: "npm:~0.20.5"
     expo-status-bar: "npm:~1.6.0"
     expo-system-ui: "npm:~2.4.0"
-    metro-minify-terser: "npm:^0.80.1"
+    metro-minify-terser: "npm:^0.80.3"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     react-native: "npm:0.72.6"
@@ -7936,7 +7936,7 @@ __metadata:
     react-native-safe-area-context: "npm:4.6.3"
     react-native-screens: "npm:~3.22.1"
     react-native-svg: "npm:13.9.0"
-    react-native-web: "npm:^0.19.9"
+    react-native-web: "npm:^0.19.10"
   languageName: unknown
   linkType: soft
 
@@ -10423,12 +10423,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"metro-minify-terser@npm:^0.80.1":
-  version: 0.80.1
-  resolution: "metro-minify-terser@npm:0.80.1"
+"metro-minify-terser@npm:^0.80.3":
+  version: 0.80.3
+  resolution: "metro-minify-terser@npm:0.80.3"
   dependencies:
     terser: "npm:^5.15.0"
-  checksum: d8bbccdb0472e48121b7bba2cf1a1aabc38cd162d2b3e6bb500b6bf20741066a406888613dd94e6e69a2862881755b156006e3edc5c5ed857dd081c4539be84c
+  checksum: 8e6610ea16e857acb49031757779145305dcea127c023d70bd03765bf9332b25978ef1cb3d9a188a5479b29e2c9f4218c1004701a14727ec73741b1cd72b23df
   languageName: node
   linkType: hard
 
@@ -11012,7 +11012,7 @@ __metadata:
     "@tamagui/font-silkscreen": "npm:latest"
     "@tamagui/next-plugin": "npm:latest"
     "@tamagui/next-theme": "npm:latest"
-    "@types/react": "npm:^18.2.45"
+    "@types/react": "npm:^18.2.47"
     app: "npm:*"
     next: "npm:^14.0.4"
     raf: "npm:^3.4.1"
@@ -12389,7 +12389,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-web@npm:^0.19.6, react-native-web@npm:^0.19.9":
+"react-native-web@npm:^0.19.10":
+  version: 0.19.10
+  resolution: "react-native-web@npm:0.19.10"
+  dependencies:
+    "@babel/runtime": "npm:^7.18.6"
+    "@react-native/normalize-color": "npm:^2.1.0"
+    fbjs: "npm:^3.0.4"
+    inline-style-prefixer: "npm:^6.0.1"
+    memoize-one: "npm:^6.0.0"
+    nullthrows: "npm:^1.1.1"
+    postcss-value-parser: "npm:^4.2.0"
+    styleq: "npm:^0.1.3"
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  checksum: 923a13b6d6c23039a0bb36d9c1490bc184c308649198e95ea0fdb62ab35983150126c4b07d716a09d42f37be57d14f2669ca9661e9a3faaf856ed7f7f222120e
+  languageName: node
+  linkType: hard
+
+"react-native-web@npm:^0.19.6":
   version: 0.19.9
   resolution: "react-native-web@npm:0.19.9"
   dependencies:

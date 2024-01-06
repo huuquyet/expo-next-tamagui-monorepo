@@ -27,7 +27,7 @@
     "@tamagui/shorthands": "latest",
     "@tamagui/themes": "latest",
     "@tamagui/toast": "latest",
-    "burnt": "^0.12.1",
+    "burnt": "^0.12.2",
     "expo-constants": "~14.4.2",
     "react-native-reanimated": "~3.3.0",
     "tamagui": "latest"
