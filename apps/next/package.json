@@ -1,14 +1,15 @@
 {
   "name": "next-app",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "private": true,
   "scripts": {
-    "next:build": "yarn ui:build && next build --no-lint",
+    "next:build": "next build --no-lint",
     "next:dev": "next dev",
     "next:serve": "NODE_ENV=production next start --port 8151",
     "next:start": "next start"
   },
   "dependencies": {
+    "@my/config": "*",
     "@my/ui": "*",
     "app": "*",
     "next": "^14.0.4",

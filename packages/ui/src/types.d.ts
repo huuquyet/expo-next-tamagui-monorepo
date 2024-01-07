@@ -1,4 +1,7 @@
-import { config } from '@my/ui'
+// don't import from here, that's handled already
+// instead this is just setting types for this folder
+
+import { config } from '@my/config'
 
 export type AppConfig = typeof config
 
@@ -7,5 +10,3 @@ declare module 'tamagui' {
   // work everywhere you import `tamagui`
   interface TamaguiCustomConfig extends AppConfig {}
 }
-
-export default config

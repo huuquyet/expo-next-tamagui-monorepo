@@ -1,6 +1,6 @@
 {
   "name": "expo-app",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "main": "index.js",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "expo:start": "expo start -c"
   },
   "dependencies": {
+    "@my/config": "*",
     "@my/ui": "*",
     "app": "*",
     "burnt": "^0.12.2",
@@ -35,7 +36,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
-    "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
     "@tamagui/babel-plugin": "latest",
     "@tamagui/font-inter": "latest",
     "@tamagui/font-silkscreen": "latest",

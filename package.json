@@ -1,13 +1,14 @@
 {
   "name": "expo-next-tamagui-monorepo",
+  "version": "0.2.7",
   "private": true,
   "workspaces": [
-    "apps/*",
-    "packages/*"
+    "./apps/*",
+    "./packages/*"
   ],
   "scripts": {
     "android": "yarn expo:android",
-    "build": "cd $INIT_CWD && yarn ui:build",
+    "build": "yarn ui:build && yarn config:build",
     "check:expo": "yarn expo:check",
     "clean": "yarn cache clean --all && git clean -xdf",
     "doctor": "yarn dlx @yarnpkg/doctor && yarn expo:doctor",
@@ -21,7 +22,7 @@
     "watch": "yarn ui:watch",
     "web": "yarn build && yarn next:dev",
     "web:extract": "DISABLE_EXTRACTION=false yarn next:dev",
-    "web:prod": "yarn next:build",
+    "web:prod": "yarn build && yarn next:build",
     "web:prod:serve": "yarn next:serve"
   },
   "devDependencies": {

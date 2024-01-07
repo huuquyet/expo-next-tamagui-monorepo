@@ -14,12 +14,12 @@ module.exports = (api) => {
           alias: {
             // define aliases to shorten the import paths
             app: '../../packages/app',
+            '@my/config': '../../packages/config',
             '@my/ui': '../../packages/ui',
           },
           extensions: ['.js', '.jsx', '.tsx', '.ios.js', '.android.js'],
         },
       ],
-      '@babel/plugin-proposal-export-namespace-from',
       // NOTE: this is only necessary if you are using reanimated for animations
       'react-native-reanimated/plugin',
       ...(process.env.EAS_BUILD_PLATFORM === 'android'
@@ -29,20 +29,11 @@ module.exports = (api) => {
               '@tamagui/babel-plugin',
               {
                 components: ['@my/ui', 'tamagui'],
-                config: './tamagui.config.ts',
-                logTimings: true,
-                exclude: /node_modules/,
+                config: '../../packages/config/src/tamagui.config.ts',
               },
             ],
           ]),
-      // NOTE: this is required to pass the right environment
-      [
-        'transform-inline-environment-variables',
-        // NOTE: include is optional, you can leave this part out
-        {
-          include: ['TAMAGUI_TARGET', 'EXPO_ROUTER_APP_ROOT'],
-        },
-      ],
+      'transform-inline-environment-variables',
     ],
   }
 }

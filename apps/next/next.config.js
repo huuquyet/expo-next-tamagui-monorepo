@@ -1,5 +1,6 @@
-const { withExpo } = require('@expo/next-adapter')
+/** @type {import('next').NextConfig} */
 const { withTamagui } = require('@tamagui/next-plugin')
+const { withExpo } = require('@expo/next-adapter')
 const { join } = require('path')
 
 const boolVals = {
@@ -12,7 +13,7 @@ const disableExtraction =
 
 const plugins = [
   withTamagui({
-    config: './tamagui.config.ts',
+    config: '../../packages/config/src/tamagui.config.ts',
     components: ['tamagui', '@my/ui'],
     importsWhitelist: ['constants.js', 'colors.js'],
     outputCSS: process.env.NODE_ENV === 'production' ? './public/tamagui.css' : null,
@@ -24,13 +25,6 @@ const plugins = [
       }
     },
     excludeReactNativeWebExports: ['Switch', 'ProgressBar', 'Picker', 'CheckBox', 'Touchable'],
-    // adds mini-css-extract and css-minimizer-plugin, can fix issues with unique configurations
-    enableCSSOptimizations: false,
-    // disable tamagui config to make fonts easier to import
-    disableFontSupport: false,
-    // set to false if you never call addTheme or updateTheme
-    // when combined with outputCSS this saves you 1Kb more bundle size
-    doesMutateThemes: false, // default true
   }),
 ]
 

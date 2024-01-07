@@ -1,12 +1,13 @@
 {
   "name": "app",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "main": "index.ts",
   "private": true,
   "sideEffects": [
     "*.css"
   ],
   "dependencies": {
+    "@my/config": "*",
     "@my/ui": "*",
     "@react-navigation/native": "^6.1.9",
     "@tamagui/lucide-icons": "latest",
