@@ -14,6 +14,7 @@
   "dependencies": {
     "@my/ui": "*",
     "app": "*",
+    "burnt": "^0.12.2",
     "expo": "^49.0.21",
     "expo-font": "~11.4.0",
     "expo-linking": "~5.0.2",

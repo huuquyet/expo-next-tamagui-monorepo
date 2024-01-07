@@ -23,6 +23,7 @@ export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'conf
 
   return (
     <NextThemeProvider
+      skipNextHead
       onChangeTheme={(next: any) => {
         setTheme(next)
       }}

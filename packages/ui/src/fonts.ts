@@ -21,7 +21,7 @@ const genericFontSizes = {
   16: 124,
 } as const
 
-export function createGenericFont<A extends GenericFont<keyof typeof genericFontSizes>,>(
+export function createGenericFont<A extends GenericFont<keyof typeof genericFontSizes>>(
   family: string,
   font: Partial<A> = {},
   {

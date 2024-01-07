@@ -10,7 +10,7 @@
     "strict": true,
     "strictNullChecks": true
   },
-  "extends": "expo/tsconfig.base",
+  "extends": "tsconfig.base",
   "exclude": [
     "**/node_modules",
     "**/dist",
