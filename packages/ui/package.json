@@ -1,35 +1,25 @@
 {
   "name": "@my/ui",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "private": true,
-  "main": "dist/cjs",
-  "types": "./types/index.d.ts",
-  "module": "dist/esm",
-  "module:jsx": "dist/jsx",
+  "main": "./src/index.tsx",
+  "types": "./src",
+  "module:jsx": "./src",
   "files": [
     "types",
-    "src",
     "dist"
   ],
   "sideEffects": [
     "*.css"
   ],
   "scripts": {
-    "build": "tamagui-build",
-    "watch": "tamagui-build --watch"
+    "ui:build": "tamagui-build --skip-types",
+    "ui:watch": "tamagui-build --skip-types --watch"
   },
   "dependencies": {
-    "@tamagui/animations-moti": "latest",
-    "@tamagui/config": "latest",
-    "@tamagui/font-inter": "latest",
-    "@tamagui/font-silkscreen": "latest",
-    "@tamagui/react-native-media-driver": "latest",
-    "@tamagui/shorthands": "latest",
-    "@tamagui/themes": "latest",
+    "@my/config": "*",
     "@tamagui/toast": "latest",
-    "burnt": "^0.12.1",
     "expo-constants": "~14.4.2",
-    "react-native-reanimated": "~3.3.0",
     "tamagui": "latest"
   },
   "devDependencies": {

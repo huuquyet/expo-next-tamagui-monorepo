@@ -1,6 +1,5 @@
-import { CustomToast, TamaguiProvider, TamaguiProviderProps, ToastProvider } from '@my/ui'
+import { CustomToast, TamaguiProvider, TamaguiProviderProps, ToastProvider, config } from '@my/ui'
 import { NextThemeProvider, useRootTheme, useThemeSetting } from '@tamagui/next-theme'
-import config from 'app/tamagui.config'
 import { createThemeStore, type mode, useThemeStore } from 'app/zustand'
 import { useEffect } from 'react'
 import { ToastViewport } from './ToastViewport'
@@ -23,6 +22,7 @@ export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'conf
 
   return (
     <NextThemeProvider
+      skipNextHead
       onChangeTheme={(next: any) => {
         setTheme(next)
       }}

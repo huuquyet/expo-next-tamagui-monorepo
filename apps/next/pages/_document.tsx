@@ -1,6 +1,6 @@
+import { config } from '@my/ui'
 import NextDocument, { Head, Html, Main, NextScript } from 'next/document'
 import { StyleSheet } from 'react-native'
-import Tamagui from '../tamagui.config'
 
 export default class Document extends NextDocument {
   static async getInitialProps({ renderPage }: any) {
@@ -16,7 +16,7 @@ export default class Document extends NextDocument {
           <style id={rnwStyle.id} dangerouslySetInnerHTML={{ __html: rnwStyle.textContent }} />
           <style
             dangerouslySetInnerHTML={{
-              __html: Tamagui.getCSS({
+              __html: config.getCSS({
                 // if you are using "outputCSS" option, you should use this "exclude"
                 // if not, then you can leave the option out
                 exclude: process.env.NODE_ENV === 'production' ? 'design-system' : null,

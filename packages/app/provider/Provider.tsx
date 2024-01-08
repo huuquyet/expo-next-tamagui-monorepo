@@ -1,6 +1,5 @@
-import { CustomToast, TamaguiProvider, TamaguiProviderProps, ToastProvider } from '@my/ui'
+import { CustomToast, TamaguiProvider, TamaguiProviderProps, ToastProvider, config } from '@my/ui'
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native'
-import config from 'app/tamagui.config'
 import { createThemeStore, type mode, useThemeStore } from 'app/zustand'
 import { useEffect } from 'react'
 import { Appearance } from 'react-native'
