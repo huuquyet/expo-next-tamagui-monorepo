@@ -16,10 +16,10 @@
     "@my/ui": "*",
     "app": "*",
     "burnt": "^0.12.2",
-    "expo": "^49.0.21",
+    "expo": "^49.0.22",
     "expo-font": "~11.4.0",
     "expo-linking": "~5.0.2",
-    "expo-router": "^2.0.14",
+    "expo-router": "^2.0.15",
     "expo-splash-screen": "~0.20.5",
     "expo-status-bar": "~1.6.0",
     "expo-system-ui": "~2.4.0",
@@ -35,12 +35,12 @@
     "react-native-web": "^0.19.10"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.7",
+    "@babel/core": "^7.23.9",
     "@tamagui/babel-plugin": "latest",
     "@tamagui/font-inter": "latest",
     "@tamagui/font-silkscreen": "latest",
     "babel-plugin-module-resolver": "^5.0.0",
     "babel-plugin-transform-inline-environment-variables": "^0.4.4",
-    "metro-minify-terser": "^0.80.3"
+    "metro-minify-terser": "^0.80.5"
   }
 }
