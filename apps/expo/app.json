@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "yourprojectsname",
-    "slug": "yourprojectsname",
-    "scheme": "yourprojectsname",
+    "name": "Awesome App",
+    "slug": "awesomeapp",
+    "scheme": "awesomeapp",
     "version": "0.2.7",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,7 +19,7 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.yourprojectsname.app",
+      "bundleIdentifier": "com.quyet.awesomeapp",
       "jsEngine": "jsc",
       "userInterfaceStyle": "automatic"
     },
@@ -28,7 +28,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.yourprojectsname.app",
+      "package": "com.quyet.awesomeapp",
       "userInterfaceStyle": "automatic"
     },
     "web": {
@@ -36,7 +36,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "[your_project_id]"
+        "projectId": "bb1042da-09e4-434b-bd0d-8cdde59b799c"
       }
     },
     "plugins": [
