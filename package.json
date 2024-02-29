@@ -8,12 +8,12 @@
   ],
   "scripts": {
     "android": "yarn workspace expo-app android",
-    "build": "yarn ui:build && yarn config:build",
+    "build": "yarn ui:build",
     "check:expo": "yarn expo:check",
     "clean": "yarn cache clean --all && git clean -xdf",
     "doctor": "yarn dlx @yarnpkg/doctor && yarn expo:doctor",
     "ios": "yarn workspace expo-app ios",
-    "lint": "yarn dlx @biomejs/biome check --apply .",
+    "lint": "yarn dlx @biomejs/biome@1.4.1 check --apply .",
     "native": "yarn expo:start",
     "postinstall": "yarn build",
     "upgrade:tamagui": "yarn up '*tamagui*'@latest '@tamagui/*'@latest",
@@ -25,9 +25,18 @@
     "web:prod": "yarn build && yarn next:build",
     "web:prod:serve": "yarn next:serve"
   },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native": "0.72.11",
+    "react-native-web": "^0.19.10"
+  },
   "devDependencies": {
-    "@biomejs/biome": "1.4.1",
+    "@babel/types": "^7.24.0",
+    "@biomejs/biome": "^1.5.3",
+    "@tamagui/constants": "latest",
+    "@types/node": "^20.11.22",
     "typescript": "^5.3.3"
   },
-  "packageManager": "yarn@4.0.2"
+  "packageManager": "yarn@4.1.0"
 }

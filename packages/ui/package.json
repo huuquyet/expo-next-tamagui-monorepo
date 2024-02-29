@@ -17,9 +17,15 @@
     "ui:watch": "tamagui-build --skip-types --watch"
   },
   "dependencies": {
-    "@my/config": "*",
+    "@tamagui/animations-moti": "latest",
+    "@tamagui/font-inter": "latest",
+    "@tamagui/font-silkscreen": "latest",
+    "@tamagui/react-native-media-driver": "latest",
+    "@tamagui/shorthands": "latest",
+    "@tamagui/themes": "latest",
     "@tamagui/toast": "latest",
     "expo-constants": "~14.4.2",
+    "react-native-reanimated": "~3.6.3",
     "tamagui": "latest"
   },
   "devDependencies": {
