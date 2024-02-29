@@ -25,7 +25,7 @@
     "@tamagui/themes": "latest",
     "@tamagui/toast": "latest",
     "expo-constants": "~14.4.2",
-    "react-native-reanimated": "~3.3.0",
+    "react-native-reanimated": "~3.6.3",
     "tamagui": "latest"
   },
   "devDependencies": {
