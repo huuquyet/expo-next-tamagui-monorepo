@@ -7,7 +7,6 @@
     "*.css"
   ],
   "dependencies": {
-    "@my/config": "*",
     "@my/ui": "*",
     "@react-navigation/native": "^6.1.14",
     "@tamagui/lucide-icons": "latest",

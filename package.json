@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "android": "yarn workspace expo-app android",
-    "build": "yarn ui:build && yarn config:build",
+    "build": "yarn ui:build",
     "check:expo": "yarn expo:check",
     "clean": "yarn cache clean --all && git clean -xdf",
     "doctor": "yarn dlx @yarnpkg/doctor && yarn expo:doctor",

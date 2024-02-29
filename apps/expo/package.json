@@ -12,7 +12,6 @@
     "ios": "expo run:ios"
   },
   "dependencies": {
-    "@my/config": "*",
     "@my/ui": "*",
     "app": "*",
     "burnt": "^0.12.2",

@@ -9,7 +9,6 @@
     "next:start": "next start"
   },
   "dependencies": {
-    "@my/config": "*",
     "@my/ui": "*",
     "app": "*",
     "next": "^14.1.0",

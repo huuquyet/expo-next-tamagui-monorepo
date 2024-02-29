@@ -2978,11 +2978,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@my/config@npm:*, @my/config@workspace:packages/config":
+"@my/ui@npm:*, @my/ui@workspace:packages/ui":
   version: 0.0.0-use.local
-  resolution: "@my/config@workspace:packages/config"
+  resolution: "@my/ui@workspace:packages/ui"
   dependencies:
-    "@my/ui": "npm:*"
     "@tamagui/animations-moti": "npm:latest"
     "@tamagui/build": "npm:latest"
     "@tamagui/font-inter": "npm:latest"
@@ -2990,19 +2989,9 @@ __metadata:
     "@tamagui/react-native-media-driver": "npm:latest"
     "@tamagui/shorthands": "npm:latest"
     "@tamagui/themes": "npm:latest"
-    react-native-reanimated: "npm:~3.3.0"
-    tamagui: "npm:latest"
-  languageName: unknown
-  linkType: soft
-
-"@my/ui@npm:*, @my/ui@workspace:packages/ui":
-  version: 0.0.0-use.local
-  resolution: "@my/ui@workspace:packages/ui"
-  dependencies:
-    "@my/config": "npm:*"
-    "@tamagui/build": "npm:latest"
     "@tamagui/toast": "npm:latest"
     expo-constants: "npm:~14.4.2"
+    react-native-reanimated: "npm:~3.3.0"
     tamagui: "npm:latest"
   languageName: unknown
   linkType: soft
@@ -5931,7 +5920,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app@workspace:packages/app"
   dependencies:
-    "@my/config": "npm:*"
     "@my/ui": "npm:*"
     "@react-navigation/native": "npm:^6.1.14"
     "@tamagui/lucide-icons": "npm:latest"
@@ -8384,7 +8372,6 @@ __metadata:
   resolution: "expo-app@workspace:apps/expo"
   dependencies:
     "@babel/core": "npm:^7.24.0"
-    "@my/config": "npm:*"
     "@my/ui": "npm:*"
     "@tamagui/babel-plugin": "npm:latest"
     "@tamagui/font-inter": "npm:latest"
@@ -11597,7 +11584,6 @@ __metadata:
   resolution: "next-app@workspace:apps/next"
   dependencies:
     "@expo/next-adapter": "npm:^6.0.0"
-    "@my/config": "npm:*"
     "@my/ui": "npm:*"
     "@tamagui/config": "npm:latest"
     "@tamagui/core": "npm:latest"
