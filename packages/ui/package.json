@@ -25,7 +25,9 @@
     "@tamagui/themes": "latest",
     "@tamagui/toast": "latest",
     "expo-constants": "~14.4.2",
+    "moti": "^0.28.1",
     "react-native-reanimated": "~3.6.3",
+    "solito": "^4.2.1",
     "tamagui": "latest"
   },
   "devDependencies": {

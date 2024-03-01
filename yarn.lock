@@ -3103,7 +3103,9 @@ __metadata:
     "@tamagui/themes": "npm:latest"
     "@tamagui/toast": "npm:latest"
     expo-constants: "npm:~14.4.2"
+    moti: "npm:^0.28.1"
     react-native-reanimated: "npm:~3.6.3"
+    solito: "npm:^4.2.1"
     tamagui: "npm:latest"
   languageName: unknown
   linkType: soft
@@ -6252,7 +6254,6 @@ __metadata:
     "@tamagui/next-theme": "npm:latest"
     burnt: "npm:^0.12.2"
     immer: "npm:^10.0.3"
-    moti: "npm:^0.28.1"
     react-native-mmkv: "npm:^2.12.1"
     react-native-safe-area-context: "npm:4.8.2"
     solito: "npm:^4.2.1"

@@ -16,9 +16,9 @@ export function Counter() {
   } = useCounterStore()
 
   return (
-    <YStack space="$4" p="$4" ai="center">
+    <YStack gap="$4" p="$4" ai="center">
       <H1>Zustand demo</H1>
-      <XStack space="$6" jc="center" ai="center">
+      <XStack gap="$6" jc="center" ai="center">
         <Button size="$6" onPress={() => increment()}>
           +
         </Button>
@@ -32,7 +32,7 @@ export function Counter() {
       <Button size="$6" onPress={() => reset()}>
         Reset
       </Button>
-      <XStack space="$4" ai="center">
+      <XStack gap="$4" ai="center">
         <Input
           size="$8"
           ta="center"
@@ -40,7 +40,7 @@ export function Counter() {
           inputMode="numeric"
           onChangeText={(e) => setAmount(Number(e) || 0)}
         />
-        <YStack space="$2">
+        <YStack gap="$2">
           <Button size="$6" onPress={() => incrementByAmount(amount)}>
             Add Amount
           </Button>
