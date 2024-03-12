@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.6.1/schema.json",
   "organizeImports": {
     "enabled": true
   },
@@ -7,17 +7,17 @@
   "files": {
     "ignoreUnknown": true,
     "ignore": [
-      "**/node_modules",
-      "**/.git",
-      "**/.pnp*",
-      "**/.tamagui",
-      "**/.next",
-      "**/dist",
-      "**/types",
-      "**/public",
-      "**/build",
-      "**/android",
-      "**/ios"
+      "./node_modules",
+      "./.git",
+      "./.pnp*",
+      "./.tamagui",
+      "./.next",
+      "./dist",
+      "./types",
+      "./public",
+      "./build",
+      "./android",
+      "./ios"
     ]
   },
   "linter": {

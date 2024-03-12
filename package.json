@@ -1,11 +1,8 @@
 {
   "name": "expo-next-tamagui-monorepo",
-  "version": "0.2.7",
+  "version": "0.3.0",
   "private": true,
-  "workspaces": [
-    "./apps/*",
-    "./packages/*"
-  ],
+  "workspaces": ["./apps/*", "./packages/*"],
   "scripts": {
     "android": "yarn workspace expo-app android",
     "build": "yarn ui:build",
@@ -13,7 +10,7 @@
     "clean": "yarn cache clean --all && git clean -xdf",
     "doctor": "yarn dlx @yarnpkg/doctor && yarn expo:doctor",
     "ios": "yarn workspace expo-app ios",
-    "lint": "yarn dlx @biomejs/biome@1.4.1 check --apply .",
+    "lint": "yarn dlx @biomejs/biome check --apply .",
     "native": "yarn expo:start",
     "postinstall": "yarn build",
     "upgrade:tamagui": "yarn up '*tamagui*'@latest '@tamagui/*'@latest",
@@ -28,15 +25,15 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-native": "0.72.11",
+    "react-native": "0.72.12",
     "react-native-web": "^0.19.10"
   },
   "devDependencies": {
     "@babel/types": "^7.24.0",
-    "@biomejs/biome": "^1.5.3",
+    "@biomejs/biome": "^1.6.1",
     "@tamagui/constants": "latest",
-    "@types/node": "^20.11.22",
-    "typescript": "^5.3.3"
+    "@types/node": "^20.11.26",
+    "typescript": "^5.4.2"
   },
   "packageManager": "yarn@4.1.0"
 }

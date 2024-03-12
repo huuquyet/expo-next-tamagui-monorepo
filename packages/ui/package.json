@@ -1,17 +1,12 @@
 {
   "name": "@my/ui",
-  "version": "0.2.7",
+  "version": "0.3.0",
   "private": true,
   "main": "./src/index.tsx",
   "types": "./src",
   "module:jsx": "./src",
-  "files": [
-    "types",
-    "dist"
-  ],
-  "sideEffects": [
-    "*.css"
-  ],
+  "files": ["types", "dist"],
+  "sideEffects": ["*.css"],
   "scripts": {
     "ui:build": "tamagui-build --skip-types",
     "ui:watch": "tamagui-build --skip-types --watch"
@@ -27,7 +22,7 @@
     "expo-constants": "~14.4.2",
     "moti": "^0.28.1",
     "react-native-reanimated": "~3.6.3",
-    "solito": "^4.2.1",
+    "solito": "^4.2.2",
     "tamagui": "latest"
   },
   "devDependencies": {

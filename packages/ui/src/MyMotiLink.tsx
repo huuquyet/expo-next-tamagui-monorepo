@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 import { MotiLink } from 'solito/moti'
 
 export const MyMotiLink = ({ children }: { children: ReactNode }) => {

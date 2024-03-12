@@ -1,4 +1,10 @@
-import { CustomToast, TamaguiProvider, TamaguiProviderProps, ToastProvider, config } from '@my/ui'
+import {
+  CustomToast,
+  TamaguiProvider,
+  type TamaguiProviderProps,
+  ToastProvider,
+  config,
+} from '@my/ui'
 import { NextThemeProvider, useRootTheme, useThemeSetting } from '@tamagui/next-theme'
 import { type mode, useThemeStore } from 'app/zustand'
 import { ToastViewport } from './ToastViewport'
