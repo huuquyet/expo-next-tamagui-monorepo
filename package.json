@@ -4,12 +4,12 @@
   "private": true,
   "workspaces": ["./apps/*", "./packages/*"],
   "scripts": {
-    "android": "yarn workspace expo-app android",
+    "android": "yarn expo:android",
     "build": "yarn ui:build",
     "check:expo": "yarn expo:check",
     "clean": "yarn cache clean --all && git clean -xdf",
     "doctor": "yarn dlx @yarnpkg/doctor && yarn expo:doctor",
-    "ios": "yarn workspace expo-app ios",
+    "ios": "yarn expo:ios",
     "lint": "yarn dlx @biomejs/biome check --apply .",
     "native": "yarn expo:start",
     "postinstall": "yarn build",
@@ -25,7 +25,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-native": "0.73.6",
+    "react-native": "0.73.4",
     "react-native-web": "^0.19.10"
   },
   "devDependencies": {

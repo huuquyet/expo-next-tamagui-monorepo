@@ -4,12 +4,11 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "android": "expo run:android",
-    "expo:check": "expo install --check",
+    "expo:android": "expo run android",
+    "expo:check": "expo install --fix",
     "expo:doctor": "npx expo-doctor@latest",
-    "expo:eject": "expo eject",
     "expo:start": "expo start -c",
-    "ios": "expo run:ios"
+    "expo:ios": "expo run ios"
   },
   "dependencies": {
     "@my/ui": "*",
