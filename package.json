@@ -32,8 +32,8 @@
     "@babel/types": "^7.24.0",
     "@biomejs/biome": "^1.6.1",
     "@tamagui/constants": "latest",
-    "@types/node": "^20.11.26",
+    "@types/node": "^20.11.28",
     "typescript": "^5.4.2"
   },
-  "packageManager": "yarn@4.1.0"
+  "packageManager": "yarn@4.1.1"
 }
