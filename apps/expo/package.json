@@ -1,12 +1,12 @@
 {
   "name": "expo-app",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "main": "index.js",
   "private": true,
   "scripts": {
     "expo:android": "expo run android",
     "expo:check": "expo install --fix",
-    "expo:doctor": "npx expo-doctor@latest",
+    "expo:doctor": "yarn dlx expo-doctor@latest",
     "expo:start": "expo start -c",
     "expo:ios": "expo run ios"
   },
@@ -14,7 +14,7 @@
     "@my/ui": "*",
     "app": "*",
     "burnt": "^0.12.2",
-    "expo": "~50.0.13",
+    "expo": "~50.0.14",
     "expo-font": "~11.10.3",
     "expo-linking": "~6.2.2",
     "expo-router": "~3.4.8",
@@ -29,13 +29,13 @@
     "react-native-svg": "14.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.0",
+    "@babel/core": "^7.24.3",
     "@tamagui/babel-plugin": "latest",
     "@tamagui/font-inter": "latest",
     "@tamagui/font-silkscreen": "latest",
     "babel-plugin-module-resolver": "^5.0.0",
     "babel-plugin-transform-inline-environment-variables": "^0.4.4",
     "babel-preset-expo": "^10.0.1",
-    "metro-minify-terser": "^0.80.6"
+    "metro-minify-terser": "^0.80.8"
   }
 }
