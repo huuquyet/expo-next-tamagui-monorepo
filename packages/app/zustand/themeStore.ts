@@ -13,7 +13,7 @@ const getDefaultState = {
   scheme: 'system' as mode,
 }
 
-export const createThemeStore = create<ThemeInterface>()(
+const createThemeStore = create<ThemeInterface>()(
   devtools(
     persist(
       (set, get) => ({
@@ -28,7 +28,6 @@ export const createThemeStore = create<ThemeInterface>()(
       {
         name: 'scheme',
         storage: createJSONStorage(() => mmkvStorage),
-        skipHydration: true,
       }
     ),
     { enabled: false }

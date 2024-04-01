@@ -1,8 +1,7 @@
-import { Anchor, Button, H1, Paragraph, Separator, Text, XStack, YStack } from '@my/ui'
+import { Anchor, Button, H1, MyMotiLink, Paragraph, Separator, Text, XStack, YStack } from '@my/ui'
 import { Monitor, Moon, Sun } from '@tamagui/lucide-icons'
 import { useThemeStore } from 'app/zustand'
 import { useLink } from 'solito/link'
-import { MotiLink } from 'solito/moti'
 import { Clock } from './Clock'
 import { SheetDemo } from './sheet'
 
@@ -19,8 +18,8 @@ export function HomeScreen() {
   })
 
   return (
-    <YStack f={1} jc="center" ai="center" p="$4" space>
-      <YStack space="$4" bc="$" jc="center">
+    <YStack f={1} jc="center" ai="center" p="$4" gap>
+      <YStack gap="$4" bc="$background" jc="center">
         <Clock />
         <H1 ta="center" ff="$silkscreen">
           Welcome to Tamagui.
@@ -48,29 +47,11 @@ export function HomeScreen() {
         </Paragraph>
       </YStack>
 
-      <XStack space="$4" ai="center">
+      <XStack gap="$4" ai="center">
         <Button {...linkProps}>Link to user</Button>
-        <MotiLink
-          href="/user/fernando"
-          animate={({ hovered, pressed }) => {
-            'worklet'
-
-            return {
-              scale: pressed ? 0.95 : hovered ? 1.1 : 1,
-              rotateZ: pressed ? '0deg' : hovered ? '-3deg' : '0deg',
-            }
-          }}
-          from={{
-            scale: 0,
-            rotateZ: '0deg',
-          }}
-          transition={{
-            type: 'timing',
-            duration: 150,
-          }}
-        >
+        <MyMotiLink>
           <Text ff="$body">Moti Link</Text>
-        </MotiLink>
+        </MyMotiLink>
       </XStack>
 
       <SheetDemo />

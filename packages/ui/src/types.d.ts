@@ -1,7 +1,7 @@
 // don't import from here, that's handled already
 // instead this is just setting types for this folder
 
-import { config } from './tamagui.config'
+import type { config } from './tamagui.config'
 
 export type AppConfig = typeof config
 

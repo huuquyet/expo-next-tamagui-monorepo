@@ -1,6 +1,6 @@
 {
   "name": "next-app",
-  "version": "0.2.7",
+  "version": "0.3.1",
   "private": true,
   "scripts": {
     "next:build": "next build --no-lint",
@@ -11,9 +11,10 @@
   "dependencies": {
     "@my/ui": "*",
     "app": "*",
-    "next": "^14.1.0",
+    "next": "^14.1.4",
     "raf": "^3.4.1",
-    "solito": "^4.2.1",
+    "react-native": "0.73.6",
+    "solito": "^4.2.2",
     "tamagui": "latest",
     "vercel": "latest"
   },
@@ -26,8 +27,8 @@
     "@tamagui/next-plugin": "latest",
     "@tamagui/next-theme": "latest",
     "@tamagui/static": "latest",
-    "@types/node": "^20.11.22",
-    "@types/react": "^18.2.60",
-    "typescript": "^5.3.3"
+    "@types/node": "^20.12.2",
+    "@types/react": "^18.2.73",
+    "typescript": "^5.4.3"
   }
 }

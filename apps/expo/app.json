@@ -3,7 +3,7 @@
     "name": "Awesome App",
     "slug": "awesomeapp",
     "scheme": "awesomeapp",
-    "version": "0.2.7",
+    "version": "0.3.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",

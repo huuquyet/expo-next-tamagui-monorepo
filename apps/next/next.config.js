@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const { withTamagui } = require('@tamagui/next-plugin')
 const { withExpo } = require('@expo/next-adapter')
-const { join } = require('path')
+const { join } = require('node:path')
 
 const boolVals = {
   true: true,

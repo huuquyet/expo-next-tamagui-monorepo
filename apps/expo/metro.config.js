@@ -4,7 +4,7 @@
  * @type {import('expo/metro-config')}
  */
 const { getDefaultConfig } = require('expo/metro-config')
-const path = require('path')
+const path = require('node:path')
 
 // Find the project and workspace directories
 const projectRoot = __dirname
