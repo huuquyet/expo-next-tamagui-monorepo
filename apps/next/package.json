@@ -26,6 +26,7 @@
     "@tamagui/font-silkscreen": "latest",
     "@tamagui/next-plugin": "latest",
     "@tamagui/next-theme": "latest",
+    "@tamagui/polyfill-dev": "latest",
     "@tamagui/static": "latest",
     "@types/node": "^20.12.2",
     "@types/react": "^18.2.73",
