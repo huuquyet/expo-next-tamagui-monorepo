@@ -3,6 +3,7 @@ import '@tamagui/font-inter/css/400.css'
 import '@tamagui/font-inter/css/700.css'
 import '@tamagui/font-inter/css/800.css'
 import '@tamagui/font-inter/css/900.css'
+import { Analytics } from '@vercel/analytics/react'
 import { Provider } from 'app/provider'
 import Head from 'next/head'
 import Script from 'next/script'
@@ -12,13 +13,37 @@ if (process.env.NODE_ENV === 'production') {
   require('../public/tamagui.css')
 }
 
+const APP_TITLE = 'Tamagui Expo Next.js Monorepo App'
+const APP_DESCRIPTION = 'Tamagui, Expo, Next.js & Solito monorepo'
+const APP_URL = 'https://expo-next-tamagui-monorepo.vercel.app/'
+const APP_TWITTER = '@HuuQuyetNg'
+
 function MyApp({ Component, pageProps }: SolitoAppProps) {
   return (
     <>
       <Head>
-        <title>Tamagui Example App</title>
-        <meta name="description" content="Tamagui, Solito, Expo & Next.js" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>{APP_TITLE}</title>
+        <meta name="description" content={APP_DESCRIPTION} />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="mask-icon" href="/vercel.svg" color="#FFFFFF" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="apple-touch-icon" href="/vercel.svg" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/vercel.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/vercel.svg" />
+        <link rel="apple-touch-icon" sizes="167x167" href="/vercel.svg" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:url" content={APP_URL} />
+        <meta name="twitter:title" content={APP_TITLE} />
+        <meta name="twitter:description" content={APP_DESCRIPTION} />
+        <meta name="twitter:image" content="/vercel.svg" />
+        <meta name="twitter:creator" content={APP_TWITTER} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={APP_TITLE} />
+        <meta property="og:description" content={APP_DESCRIPTION} />
+        <meta property="og:site_name" content={APP_TITLE} />
+        <meta property="og:url" content={APP_URL} />
+        <meta property="og:image" content="/vercel.svg" />
         <Script
           key="tamagui-animations-mount"
           dangerouslySetInnerHTML={{
@@ -30,6 +55,7 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
       <Provider>
         <Component {...pageProps} />
       </Provider>
+      <Analytics />
     </>
   )
 }

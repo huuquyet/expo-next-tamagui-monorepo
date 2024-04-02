@@ -9,7 +9,9 @@
     "next:start": "next start"
   },
   "dependencies": {
+    "@ducanh2912/next-pwa": "^10.2.5",
     "@my/ui": "*",
+    "@vercel/analytics": "^1.2.2",
     "app": "*",
     "next": "^14.1.4",
     "raf": "^3.4.1",

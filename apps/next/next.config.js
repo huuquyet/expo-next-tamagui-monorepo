@@ -2,6 +2,9 @@
 const { withTamagui } = require('@tamagui/next-plugin')
 const { withExpo } = require('@expo/next-adapter')
 const { join } = require('node:path')
+const withPWA = require('@ducanh2912/next-pwa').default({
+  dest: 'public',
+})
 
 const boolVals = {
   true: true,
@@ -44,6 +47,7 @@ let nextConfig = {
     // optimizeCss: true,
     scrollRestoration: true,
   },
+  reactStrictMode: true,
 }
 
 for (const plugin of plugins) {
@@ -53,4 +57,4 @@ for (const plugin of plugins) {
   }
 }
 
-module.exports = withExpo(nextConfig)
+module.exports = withExpo(withPWA(nextConfig))
