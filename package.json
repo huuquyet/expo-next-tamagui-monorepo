@@ -2,10 +2,7 @@
   "name": "expo-next-tamagui-monorepo",
   "version": "0.3.1",
   "private": true,
-  "workspaces": [
-    "./apps/*",
-    "./packages/*"
-  ],
+  "workspaces": ["./apps/*", "./packages/*"],
   "scripts": {
     "android": "yarn expo:android",
     "build": "yarn ui:build",

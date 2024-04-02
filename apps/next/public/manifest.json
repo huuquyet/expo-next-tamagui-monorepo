@@ -1,0 +1,27 @@
+{
+    "name": "Tamagui Expo Next monorepo PWA",
+    "short_name": "Tamagui PWA",
+    "icons": [
+      {
+        "src": "vercel.svg",
+        "sizes": "192x192",
+        "type": "svg",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "vercel.svg",
+        "sizes": "384x384",
+        "type": "svg"
+      },
+      {
+        "src": "vercel.svg",
+        "sizes": "512x512",
+        "type": "svg"
+      }
+    ],
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait"
+  }

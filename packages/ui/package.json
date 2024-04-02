@@ -5,13 +5,8 @@
   "main": "./src/index.tsx",
   "types": "./src",
   "module:jsx": "./src",
-  "files": [
-    "types",
-    "dist"
-  ],
-  "sideEffects": [
-    "*.css"
-  ],
+  "files": ["types", "dist"],
+  "sideEffects": ["*.css"],
   "scripts": {
     "ui:build": "tamagui-build --skip-types",
     "ui:watch": "tamagui-build --skip-types --watch"
