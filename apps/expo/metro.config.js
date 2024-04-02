@@ -11,11 +11,7 @@ const projectRoot = __dirname
 // This can be replaced with `find-yarn-workspace-root`
 const workspaceRoot = path.resolve(projectRoot, '../..')
 
-/** @type {import('expo/metro-config').MetroConfig} */
-const config = getDefaultConfig(projectRoot, {
-  // [Web-only]: Enables CSS support in Metro.
-  isCSSEnabled: true,
-})
+const config = getDefaultConfig(projectRoot)
 
 // 1. Watch all files within the monorepo
 config.watchFolders = [workspaceRoot]
@@ -35,10 +31,4 @@ config.transformer = {
 }
 config.transformer.minifierPath = require.resolve('metro-minify-terser')
 
-// add nice web support with optimizing compiler + CSS extraction
-const { withTamagui } = require('@tamagui/metro-plugin')
-module.exports = withTamagui(config, {
-  components: ['tamagui'],
-  config: './tamagui.config.ts',
-  outputCSS: './tamagui-web.css',
-})
+module.exports = config

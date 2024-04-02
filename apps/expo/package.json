@@ -33,7 +33,6 @@
     "@tamagui/babel-plugin": "latest",
     "@tamagui/font-inter": "latest",
     "@tamagui/font-silkscreen": "latest",
-    "@tamagui/metro-plugin": "latest",
     "babel-plugin-module-resolver": "^5.0.0",
     "babel-plugin-transform-inline-environment-variables": "^0.4.4",
     "babel-preset-expo": "^10.0.1",

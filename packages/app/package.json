@@ -3,7 +3,9 @@
   "version": "0.3.1",
   "main": "index.ts",
   "private": true,
-  "sideEffects": ["*.css"],
+  "sideEffects": [
+    "*.css"
+  ],
   "dependencies": {
     "@my/ui": "*",
     "@react-navigation/native": "^6.1.17",
