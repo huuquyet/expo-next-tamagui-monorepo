@@ -4158,20 +4158,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/animations-css@npm:1.94.0":
-  version: 1.94.0
-  resolution: "@tamagui/animations-css@npm:1.94.0"
-  dependencies:
-    "@tamagui/constants": "npm:1.94.0"
-    "@tamagui/cubic-bezier-animator": "npm:1.94.0"
-    "@tamagui/use-presence": "npm:1.94.0"
-    "@tamagui/web": "npm:1.94.0"
-    react: "npm:^18.2.0"
-  checksum: 10/4cf395d2a94986a0868132e01c28c53bd050a062fe3ea2cb52565bf33a79b600f1ea47118ac558fed0c59cfd22b0901348ccbebe8498b6d9e2687aafd3ebb21a
-  languageName: node
-  linkType: hard
-
-"@tamagui/animations-moti@npm:1.94.0, @tamagui/animations-moti@npm:latest":
+"@tamagui/animations-moti@npm:latest":
   version: 1.94.0
   resolution: "@tamagui/animations-moti@npm:1.94.0"
   dependencies:
@@ -4455,24 +4442,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/config@npm:latest":
-  version: 1.94.0
-  resolution: "@tamagui/config@npm:1.94.0"
-  dependencies:
-    "@tamagui/animations-css": "npm:1.94.0"
-    "@tamagui/animations-moti": "npm:1.94.0"
-    "@tamagui/animations-react-native": "npm:1.94.0"
-    "@tamagui/colors": "npm:1.94.0"
-    "@tamagui/font-inter": "npm:1.94.0"
-    "@tamagui/font-silkscreen": "npm:1.94.0"
-    "@tamagui/react-native-media-driver": "npm:1.94.0"
-    "@tamagui/shorthands": "npm:1.94.0"
-    "@tamagui/themes": "npm:1.94.0"
-    "@tamagui/web": "npm:1.94.0"
-  checksum: 10/24c96722dddccc327e0c82f9fd4f17da0972a6fc9e05693f2729fdcf1c8fc996492c3d644f9ec7bc45ad920dc629a59814f5dbe23f2e8e9501cf65f9699dc751
-  languageName: node
-  linkType: hard
-
 "@tamagui/constants@npm:1.94.0, @tamagui/constants@npm:latest":
   version: 1.94.0
   resolution: "@tamagui/constants@npm:1.94.0"
@@ -4543,13 +4512,6 @@ __metadata:
   dependencies:
     "@tamagui/web": "npm:1.94.1"
   checksum: 10/39b5ba059b71e668c6a66f2ad7a72efaff9894a4e4fc74e65cc0cc9b1bf82112b0e6ef006e76667dc2c2d052c54aef83e62aec074fb26affee49090165b92902
-  languageName: node
-  linkType: hard
-
-"@tamagui/cubic-bezier-animator@npm:1.94.0":
-  version: 1.94.0
-  resolution: "@tamagui/cubic-bezier-animator@npm:1.94.0"
-  checksum: 10/da88b59b9ca5ed83a0d60c0d523c1c055fee00bfc52b44192bded723ea7dead01f31ff82ee63a1548010d708aa7c9c36dccc63dd2137ceb56443e439d46a8f37
   languageName: node
   linkType: hard
 
@@ -4660,7 +4622,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/font-inter@npm:1.94.0, @tamagui/font-inter@npm:latest":
+"@tamagui/font-inter@npm:latest":
   version: 1.94.0
   resolution: "@tamagui/font-inter@npm:1.94.0"
   dependencies:
@@ -4669,7 +4631,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/font-silkscreen@npm:1.94.0, @tamagui/font-silkscreen@npm:latest":
+"@tamagui/font-silkscreen@npm:latest":
   version: 1.94.0
   resolution: "@tamagui/font-silkscreen@npm:1.94.0"
   dependencies:
@@ -5525,7 +5487,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/themes@npm:1.94.0, @tamagui/themes@npm:latest":
+"@tamagui/themes@npm:latest":
   version: 1.94.0
   resolution: "@tamagui/themes@npm:1.94.0"
   dependencies:
@@ -12852,7 +12814,6 @@ __metadata:
     "@ducanh2912/next-pwa": "npm:^10.2.5"
     "@expo/next-adapter": "npm:^6.0.0"
     "@my/ui": "npm:*"
-    "@tamagui/config": "npm:latest"
     "@tamagui/core": "npm:latest"
     "@tamagui/font-inter": "npm:latest"
     "@tamagui/font-silkscreen": "npm:latest"
