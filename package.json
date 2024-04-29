@@ -25,17 +25,16 @@
     "web:prod:serve": "yarn next:serve"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-native": "0.73.6",
-    "react-native-web": "^0.19.10"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-native": "0.73.7",
+    "react-native-web": "^0.19.11"
   },
   "devDependencies": {
     "@babel/types": "^7.24.0",
-    "@biomejs/biome": "^1.6.3",
     "@tamagui/constants": "latest",
-    "@types/node": "^20.12.2",
-    "typescript": "^5.4.3"
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
   },
   "packageManager": "yarn@4.1.1"
 }
