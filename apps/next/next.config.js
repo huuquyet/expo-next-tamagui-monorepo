@@ -4,6 +4,7 @@ const { withExpo } = require('@expo/next-adapter')
 const { join } = require('node:path')
 const withPWA = require('@ducanh2912/next-pwa').default({
   dest: 'public',
+  disable: process.env.NODE_ENV === 'development',
 })
 
 const boolVals = {
@@ -29,6 +30,8 @@ const plugins = [
     },
     excludeReactNativeWebExports: ['Switch', 'ProgressBar', 'Picker', 'CheckBox', 'Touchable'],
   }),
+  withPWA,
+  withExpo,
 ]
 
 /** @type {import('next').NextConfig} */
@@ -57,4 +60,4 @@ for (const plugin of plugins) {
   }
 }
 
-module.exports = withExpo(withPWA(nextConfig))
+module.exports = nextConfig

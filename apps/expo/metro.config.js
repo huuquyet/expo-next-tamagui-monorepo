@@ -26,10 +26,7 @@ config.resolver.nodeModulesPaths = [
 // https://github.com/expo/expo/issues/23180
 config.resolver.sourceExts.push('mjs')
 
-config.transformer = {
-  ...config.transformer,
-  unstable_allowRequireContext: true,
-}
+config.transformer = { ...config.transformer, unstable_allowRequireContext: true }
 config.transformer.minifierPath = require.resolve('metro-minify-terser')
 
 // add nice web support with optimizing compiler + CSS extraction
