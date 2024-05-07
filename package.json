@@ -31,9 +31,9 @@
     "react-native-web": "^0.19.11"
   },
   "devDependencies": {
-    "@babel/types": "^7.24.0",
+    "@babel/types": "^7.24.5",
     "@tamagui/constants": "latest",
-    "@types/node": "^20.12.7",
+    "@types/node": "^20.12.10",
     "typescript": "^5.4.5"
   },
   "packageManager": "yarn@4.1.1"
