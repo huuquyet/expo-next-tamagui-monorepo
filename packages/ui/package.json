@@ -8,8 +8,8 @@
   "files": ["types", "dist"],
   "sideEffects": ["*.css"],
   "scripts": {
-    "ui:build": "tamagui-build --skip-types",
-    "ui:watch": "tamagui-build --skip-types --watch"
+    "build": "bunx tamagui-build",
+    "watch": "bunx tamagui-build --watch"
   },
   "dependencies": {
     "@tamagui/animations-moti": "latest",

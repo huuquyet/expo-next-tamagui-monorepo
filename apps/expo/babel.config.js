@@ -1,12 +1,8 @@
-// Don't forget to specify your TAMAGUI_TARGET here or ideally in the command to run / .env files
-process.env.TAMAGUI_TARGET = 'native'
-
 module.exports = (api) => {
   api.cache(true)
   return {
     presets: [['babel-preset-expo', { jsxRuntime: 'automatic' }]],
     plugins: [
-      require.resolve('expo-router/babel'),
       [
         require.resolve('babel-plugin-module-resolver'),
         {
@@ -29,10 +25,11 @@ module.exports = (api) => {
               {
                 components: ['@my/ui', 'tamagui'],
                 config: '../../packages/ui/src/tamagui.config.ts',
+                logTimings: true,
+                disableExtraction: process.env.NODE_ENV === 'development',
               },
             ],
           ]),
-      'transform-inline-environment-variables',
     ],
   }
 }

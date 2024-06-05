@@ -5,7 +5,7 @@
   "private": true,
   "sideEffects": ["*.css"],
   "dependencies": {
-    "@my/ui": "*",
+    "@my/ui": "workspace:*",
     "@react-navigation/native": "^6.1.17",
     "@tamagui/lucide-icons": "latest",
     "@tamagui/next-theme": "latest",

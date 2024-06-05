@@ -4,15 +4,15 @@
   "main": "index.ts",
   "private": true,
   "scripts": {
-    "expo:android": "expo run android",
-    "expo:check": "expo install --fix",
-    "expo:doctor": "yarn dlx expo-doctor@latest",
-    "expo:start": "expo start -c",
-    "expo:ios": "expo run ios"
+    "android": "bunx expo run android",
+    "check": "bunx expo install --fix",
+    "doctor": "bunx expo-doctor@latest",
+    "start": "bunx expo start -c",
+    "ios": "bunx expo run ios"
   },
   "dependencies": {
-    "@my/ui": "*",
-    "app": "*",
+    "@my/ui": "workspace:*",
+    "app": "workspace:*",
     "burnt": "^0.12.2",
     "expo": "~50.0.18",
     "expo-font": "~11.10.3",
