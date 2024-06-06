@@ -1,33 +1,49 @@
 {
   "compilerOptions": {
-    "allowJs": false,
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
-    "downlevelIteration": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "importHelpers": true,
     "incremental": true,
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "jsx": "react-jsx",
-    "lib": ["dom", "esnext"],
-    "module": "system",
-    "moduleResolution": "node",
-    "noEmitOnError": false,
-    "noImplicitAny": false,
-    "noImplicitReturns": false,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "preserveConstEnums": true,
-    "preserveSymlinks": true,
-    "removeComments": false, // DONT DO THIS so jsdoc will remain
+    "moduleDetection": "force",
+
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "baseUrl": ".",
     "rootDir": ".",
-    "skipLibCheck": true,
+    "paths": {
+      "app/*": ["./packages/app/*"],
+      "@my/ui/*": ["./packages/ui/*"]
+    },
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+
     "sourceMap": false,
+    "removeComments": false, // DONT DO THIS so jsdoc will remain
+    // "noEmit": true,
+    "importHelpers": true,
+    "downlevelIteration": true,
+    "noEmitOnError": false,
+    "preserveConstEnums": true,
+
+    "verbatimModuleSyntax": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "preserveSymlinks": true,
+    "forceConsistentCasingInFileNames": true,
+
     "strict": true,
+    "noImplicitAny": false,
     "strictNullChecks": true,
-    "target": "es2020",
-    "types": ["node"],
-    "useUnknownInCatchVariables": false
+    "noFallthroughCasesInSwitch": true,
+
+    "useUnknownInCatchVariables": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": false,
+    "noUncheckedIndexedAccess": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "skipLibCheck": true
   },
   "exclude": ["_"],
   "typeAcquisition": {

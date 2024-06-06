@@ -1,16 +1,10 @@
 {
   "extends": "./tsconfig.base",
   "compilerOptions": {
-    "esModuleInterop": true,
-    "module": "esnext",
-    "forceConsistentCasingInFileNames": true,
-    "noUncheckedIndexedAccess": true,
     "paths": {
       "app/*": ["./packages/app/*"],
       "@my/ui/*": ["./packages/ui/*"]
-    },
-    "strict": true,
-    "strictNullChecks": true
+    }
   },
   "exclude": [
     "**/node_modules",
