@@ -32,7 +32,6 @@ export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'conf
           ]}
         >
           {children}
-
           <CustomToast />
           <ToastViewport />
         </ToastProvider>

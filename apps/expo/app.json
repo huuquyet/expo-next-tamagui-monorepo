@@ -41,7 +41,8 @@
     },
     "plugins": [
       [
-        "expo-router","expo-font",
+        "expo-router",
+        "expo-font",
         {
           "origin": "https://expo-next-tamagui-monorepo.vercel.app/"
         }

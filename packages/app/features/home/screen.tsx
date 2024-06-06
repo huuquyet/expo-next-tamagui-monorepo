@@ -18,33 +18,35 @@ export function HomeScreen() {
   })
 
   return (
-    <YStack f={1} jc="center" ai="center" p="$4" gap>
-      <YStack gap="$4" bc="$background" jc="center">
+    <YStack f={1} jc="center" ai="center" p="$4" gap="$8" bg="$background">
+      <YStack gap="$4">
         <Clock />
-        <H1 ta="center" ff="$silkscreen">
+        <H1 ta="center" col="$color12">
           Welcome to Tamagui.
         </H1>
-        <Paragraph ta="center">
-          Here's a basic starter to show navigating from one screen to another. This screen uses the
-          same code on Next.js and React Native.
+        <Paragraph ta="center" col="$color10">
+          Here's a basic starter to show navigating from one screen to another.
         </Paragraph>
-
         <Separator />
         <Paragraph ta="center">
-          Made by{' '}
-          <Anchor col="$color12" href="https://twitter.com/natebirdman" target="_blank">
-            @natebirdman
+          This screen uses the same code on Next.js and React Native.
+        </Paragraph>
+        <Separator />
+
+        <XStack gap="$2">
+          <Paragraph ta="center">Made by</Paragraph>
+          <Anchor col="$blue10" href="https://twitter.com/natebirdman" target="_blank">
+            @natebirdman,
           </Anchor>
-          ,{' '}
           <Anchor
-            col="$color12"
+            col="$purple10"
             href="https://github.com/tamagui/tamagui"
             target="_blank"
             rel="noreferrer"
           >
             give it a ⭐️
           </Anchor>
-        </Paragraph>
+        </XStack>
       </YStack>
 
       <XStack gap="$4" ai="center">

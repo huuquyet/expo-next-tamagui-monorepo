@@ -8,13 +8,12 @@
   "files": ["types", "dist"],
   "sideEffects": ["*.css"],
   "scripts": {
-    "build": "bunx tamagui-build",
-    "watch": "bunx tamagui-build --watch"
+    "build": "bunx tamagui-build --skip-types",
+    "watch": "bunx tamagui-build --skip-types --watch"
   },
   "dependencies": {
     "@tamagui/animations-moti": "latest",
     "@tamagui/font-inter": "latest",
-    "@tamagui/font-silkscreen": "latest",
     "@tamagui/react-native-media-driver": "latest",
     "@tamagui/shorthands": "latest",
     "@tamagui/themes": "latest",

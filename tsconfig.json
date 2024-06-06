@@ -1,5 +1,7 @@
 {
+  "extends": "./tsconfig.base",
   "compilerOptions": {
+    "esModuleInterop": true,
     "module": "esnext",
     "forceConsistentCasingInFileNames": true,
     "noUncheckedIndexedAccess": true,
@@ -10,7 +12,6 @@
     "strict": true,
     "strictNullChecks": true
   },
-  "extends": "./tsconfig.base",
   "exclude": [
     "**/node_modules",
     "**/dist",

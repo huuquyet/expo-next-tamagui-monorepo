@@ -1,5 +1,4 @@
 import { createInterFont } from '@tamagui/font-inter'
-import { createSilkscreenFont } from '@tamagui/font-silkscreen'
 
 const headingFont = createInterFont({
   size: {
@@ -48,5 +47,4 @@ const bodyFont = createInterFont(
 export const fonts = {
   heading: headingFont,
   body: bodyFont,
-  silkscreen: createSilkscreenFont(),
 }

@@ -1,9 +1,9 @@
+import { NativeToast } from '@my/ui/src/NativeToast'
 import { Provider } from 'app/provider'
 import { useFonts } from 'expo-font'
+import { SplashScreen, Stack } from 'expo-router'
 import { StatusBar } from 'expo-status-bar'
 import { useEffect } from 'react'
-import { SplashScreen, Stack } from 'expo-router'
-import { NativeToast } from '@my/ui/src/NativeToast'
 
 export const unstable_settings = {
   // Ensure that reloading on `/user` keeps a back button present.
@@ -18,7 +18,7 @@ export default function App() {
     Inter: require('@tamagui/font-inter/otf/Inter-Medium.otf'),
     InterBold: require('@tamagui/font-inter/otf/Inter-Bold.otf'),
   })
-  
+
   useEffect(() => {
     if (interLoaded || interError) {
       // Hide the splash screen after the fonts have loaded (or an error was returned) and the UI is ready.
@@ -39,11 +39,12 @@ function RootLayoutNav() {
       <Stack
         screenOptions={{
           headerTitleStyle: {
-            fontFamily: '$silkscreen',
+            fontFamily: '$body',
           },
         }}
       />
       <StatusBar style="auto" />
+      <NativeToast />
     </Provider>
   )
 }
