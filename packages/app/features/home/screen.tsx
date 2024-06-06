@@ -33,7 +33,7 @@ export function HomeScreen() {
         </Paragraph>
         <Separator />
 
-        <XStack gap="$2">
+        <XStack gap="$2" jc="center">
           <Paragraph ta="center">Made by</Paragraph>
           <Anchor col="$blue10" href="https://twitter.com/natebirdman" target="_blank">
             @natebirdman,
