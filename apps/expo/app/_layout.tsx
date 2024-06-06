@@ -1,28 +1,50 @@
+import { NativeToast } from '@my/ui/src/NativeToast'
 import { Provider } from 'app/provider'
 import { useFonts } from 'expo-font'
-import { Stack } from 'expo-router'
+import { SplashScreen, Stack } from 'expo-router'
 import { StatusBar } from 'expo-status-bar'
+import { useEffect } from 'react'
 
-export default function HomeLayout() {
-  const [loaded] = useFonts({
+export const unstable_settings = {
+  // Ensure that reloading on `/user` keeps a back button present.
+  initialRouteName: 'Home',
+}
+
+// Prevent the splash screen from auto-hiding before asset loading is complete.
+SplashScreen.preventAutoHideAsync()
+
+export default function App() {
+  const [interLoaded, interError] = useFonts({
     Inter: require('@tamagui/font-inter/otf/Inter-Medium.otf'),
     InterBold: require('@tamagui/font-inter/otf/Inter-Bold.otf'),
-    Silkscreen: require('@tamagui/font-silkscreen/files/slkscr.ttf'),
   })
-  if (!loaded) {
+
+  useEffect(() => {
+    if (interLoaded || interError) {
+      // Hide the splash screen after the fonts have loaded (or an error was returned) and the UI is ready.
+      SplashScreen.hideAsync()
+    }
+  }, [interLoaded, interError])
+
+  if (!interLoaded && !interError) {
     return null
   }
 
+  return <RootLayoutNav />
+}
+
+function RootLayoutNav() {
   return (
     <Provider>
       <Stack
         screenOptions={{
           headerTitleStyle: {
-            fontFamily: '$silkscreen',
+            fontFamily: '$body',
           },
         }}
       />
       <StatusBar style="auto" />
+      <NativeToast />
     </Provider>
   )
 }

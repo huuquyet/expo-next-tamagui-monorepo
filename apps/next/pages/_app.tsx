@@ -1,8 +1,6 @@
 import '@tamagui/core/reset.css'
 import '@tamagui/font-inter/css/400.css'
 import '@tamagui/font-inter/css/700.css'
-import '@tamagui/font-inter/css/800.css'
-import '@tamagui/font-inter/css/900.css'
 import { Analytics } from '@vercel/analytics/react'
 import { Provider } from 'app/provider'
 import Head from 'next/head'
@@ -18,7 +16,7 @@ const APP_DESCRIPTION = 'Tamagui, Expo, Next.js & Solito monorepo'
 const APP_URL = 'https://expo-next-tamagui-monorepo.vercel.app/'
 const APP_TWITTER = '@HuuQuyetNg'
 
-function MyApp({ Component, pageProps }: SolitoAppProps) {
+export default function MyApp({ Component, pageProps }: SolitoAppProps) {
   return (
     <>
       <Head>
@@ -45,9 +43,8 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
         <meta property="og:url" content={APP_URL} />
         <meta property="og:image" content="/vercel.svg" />
         <Script
-          key="tamagui-animations-mount"
           dangerouslySetInnerHTML={{
-            // avoid flash of entered elements before enter animations run:
+            // avoid flash of animated things on enter:
             __html: `document.documentElement.classList.add('t_unmounted')`,
           }}
         />
@@ -59,5 +56,3 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
     </>
   )
 }
-
-export default MyApp

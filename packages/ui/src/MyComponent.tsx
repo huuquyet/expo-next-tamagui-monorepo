@@ -2,7 +2,7 @@ import { YStack, styled } from 'tamagui'
 
 export const MyComponent = styled(YStack, {
   name: 'MyComponent',
-  backgroundColor: 'red',
+  // backgroundColor: 'red',
 
   variants: {
     blue: {

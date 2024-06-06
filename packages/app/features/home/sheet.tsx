@@ -4,9 +4,9 @@ import { useState } from 'react'
 import { Counter } from './Counter'
 
 export function SheetDemo() {
+  const toast = useToastController()
   const [open, setOpen] = useState(false)
   const [position, setPosition] = useState(0)
-  const toast = useToastController()
 
   return (
     <>
@@ -28,8 +28,8 @@ export function SheetDemo() {
         dismissOnSnapToBottom
       >
         <Sheet.Overlay animation="lazy" enterStyle={{ opacity: 0 }} exitStyle={{ opacity: 0 }} />
-        <Sheet.Frame ai="center" jc="center">
-          <Sheet.Handle />
+        <Sheet.Handle bg="$gray8" />
+        <Sheet.Frame ai="center" jc="center" gap="$10" bg="$color2">
           <Counter />
 
           <Button

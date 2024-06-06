@@ -1,13 +1,5 @@
-import { HomeScreen } from 'app/features/home/screen'
-import Head from 'next/head'
+'use client'
 
-export default function Page() {
-  return (
-    <>
-      <Head>
-        <title>Home</title>
-      </Head>
-      <HomeScreen />
-    </>
-  )
-}
+import { HomeScreen } from 'app/features/home/screen'
+
+export default HomeScreen

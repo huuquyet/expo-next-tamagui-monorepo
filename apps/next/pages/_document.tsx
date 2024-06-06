@@ -1,36 +1,50 @@
 import { config } from '@my/ui'
-import NextDocument, { Head, Html, Main, NextScript } from 'next/document'
-import { StyleSheet } from 'react-native'
+import NextDocument, {
+  type DocumentContext,
+  type DocumentInitialProps,
+  Head,
+  Html,
+  Main,
+  NextScript,
+} from 'next/document'
+import { Children } from 'react'
+import { AppRegistry } from 'react-native'
 
 export default class Document extends NextDocument {
-  static async getInitialProps({ renderPage }: any) {
-    const page = await renderPage()
+  static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
+    AppRegistry.registerComponent('Main', () => Main)
+    const page = await ctx.renderPage()
 
-    // @ts-ignore RN doesn't have this type
-    const rnwStyle = StyleSheet.getSheet()
+    // @ts-ignore
+    const { getStyleElement } = AppRegistry.getApplication('Main')
 
-    return {
-      ...page,
-      styles: (
-        <>
-          <style id={rnwStyle.id} dangerouslySetInnerHTML={{ __html: rnwStyle.textContent }} />
-          <style
-            dangerouslySetInnerHTML={{
-              __html: config.getCSS({
-                // if you are using "outputCSS" option, you should use this "exclude"
-                // if not, then you can leave the option out
-                exclude: process.env.NODE_ENV === 'production' ? 'design-system' : null,
-              }),
-            }}
-          />
-        </>
-      ),
-    }
+    /**
+     * Note: be sure to keep tamagui styles after react-native-web styles like it is here!
+     * So Tamagui styles can override the react-native-web styles.
+     */
+    const styles = [
+      getStyleElement(),
+      <style
+        key="tamagui-css"
+        dangerouslySetInnerHTML={{
+          __html: config.getCSS({
+            exclude: process.env.NODE_ENV === 'development' ? null : 'design-system',
+          }),
+        }}
+      />,
+      <style key="font-inter" jsx global>{`
+        html {
+          font-family: 'Inter';
+        }
+      `}</style>,
+    ]
+
+    return { ...page, styles: Children.toArray(styles) }
   }
 
   render() {
     return (
-      <Html lang="en">
+      <Html>
         <Head>
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         </Head>
