@@ -12,6 +12,10 @@ import { useServerInsertedHTML } from 'next/navigation'
 import type { ReactNode } from 'react'
 import { StyleSheet } from 'react-native'
 
+if (process.env.NODE_ENV === 'production') {
+  require('../public/tamagui.css')
+}
+
 export function NextTamaguiProvider({ children }: { children: ReactNode }) {
   useServerInsertedHTML(() => {
     // @ts-ignore
