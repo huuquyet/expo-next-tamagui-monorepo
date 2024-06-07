@@ -1,10 +1,10 @@
 import type { ReactNode } from 'react'
 import { MotiLink } from 'solito/moti'
 
-export const MyMotiLink = ({ children }: { children: ReactNode }) => {
+export const MyMotiLink = ({ slug, children }: { slug: string; children: ReactNode }) => {
   return (
     <MotiLink
-      href="/user/fernando"
+      href={slug}
       animate={({ hovered, pressed }) => {
         'worklet'
 

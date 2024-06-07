@@ -51,7 +51,7 @@ export function HomeScreen() {
 
       <XStack gap="$4" ai="center">
         <Button {...linkProps}>Link to user</Button>
-        <MyMotiLink>
+        <MyMotiLink slug="/user/fernando">
           <Text ff="$body">Moti Link</Text>
         </MyMotiLink>
       </XStack>

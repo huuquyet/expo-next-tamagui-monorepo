@@ -14,9 +14,5 @@ export function Clock() {
     tick(Date.now())
   }, 1000)
 
-  return (
-    <H2 ta="center" suppressHydrationWarning>
-      {formatTime(lastUpdate)}
-    </H2>
-  )
+  return <H2 ta="center">{formatTime(lastUpdate)}</H2>
 }
