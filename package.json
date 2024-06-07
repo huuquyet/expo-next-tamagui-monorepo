@@ -4,24 +4,25 @@
   "private": true,
   "workspaces": ["./apps/*", "./packages/*"],
   "scripts": {
-    "android": "bun --filter './apps/expo' android",
-    "check": "bun --filter './apps/expo' check",
+    "android": "bun --filter 'expo*' android",
+    "build:pkg": "bun --filter '*/ui' build",
+    "check": "bun --filter 'expo*' check",
     "clean": "git clean -xdf",
-    "doctor": "bun --filter './apps/expo' doctor",
-    "ios": "bun --filter './apps/expo' ios",
+    "doctor": "bun --filter 'expo*' doctor",
+    "ios": "bun --filter 'expo*' ios",
     "lint": "bunx @biomejs/biome check --write .",
-    "native": "bun --filter './apps/expo' start",
-    "postinstall": "bun --filter '*/ui' build",
+    "native": "bun --filter 'expo*' start",
+    "postinstall": "bun build:pkg",
     "watch": "bun --filter '*/ui' watch",
-    "web": "bun --filter '*/ui' build && bun --filter './apps/next' dev",
-    "web:extract": "DISABLE_EXTRACTION=false bun --fitler './apps/next' dev",
-    "web:prod": "bun --filter '*/ui' build && bun --filter './apps/next' build",
-    "web:prod:serve": "bun --filter './apps/next' serve"
+    "web": "bun build:pkg && bun --filter 'next*' dev",
+    "web:extract": "DISABLE_EXTRACTION=false bun --fitler 'next*' dev",
+    "web:prod": "bun build:pkg && bun --filter 'next*' build",
+    "web:prod:serve": "bun --filter 'next*' serve"
   },
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-native": "0.74.1",
+    "react-native": "0.74.2",
     "react-native-web": "^0.19.12"
   },
   "devDependencies": {
