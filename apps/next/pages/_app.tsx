@@ -1,6 +1,7 @@
 import '@tamagui/core/reset.css'
 import '@tamagui/font-inter/css/400.css'
 import '@tamagui/font-inter/css/700.css'
+import 'raf/polyfill'
 import { Analytics } from '@vercel/analytics/react'
 import { Provider } from 'app/provider'
 import Head from 'next/head'
