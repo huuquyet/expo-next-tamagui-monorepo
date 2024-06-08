@@ -20,7 +20,7 @@
 
     "sourceMap": false,
     "removeComments": false, // DONT DO THIS so jsdoc will remain
-    // "noEmit": true,
+    "noEmit": true,
     "importHelpers": true,
     "downlevelIteration": true,
     "noEmitOnError": false,
