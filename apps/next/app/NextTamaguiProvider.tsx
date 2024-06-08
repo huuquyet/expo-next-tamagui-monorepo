@@ -11,7 +11,7 @@ import type { ReactNode } from 'react'
 import { StyleSheet } from 'react-native'
 
 if (process.env.NODE_ENV === 'production') {
-  require('/tamagui.css')
+  require('../public/tamagui.css')
 }
 
 export function NextTamaguiProvider({ children }: { children: ReactNode }) {
