@@ -1,4 +1,3 @@
-import { NativeToast } from '@my/ui/src/NativeToast'
 import { Provider } from 'app/provider'
 import { useFonts } from 'expo-font'
 import { SplashScreen, Stack } from 'expo-router'
@@ -44,7 +43,6 @@ function RootLayoutNav() {
         }}
       />
       <StatusBar style="auto" />
-      <NativeToast />
     </Provider>
   )
 }

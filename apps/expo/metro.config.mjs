@@ -1,4 +1,5 @@
 import { resolve } from 'node:path'
+import { withTamagui } from '@tamagui/metro-plugin'
 // Learn more https://docs.expo.dev/guides/monorepos
 // Learn more https://docs.expo.io/guides/customizing-metro
 /** @type {import('expo/metro-config').MetroConfig} */
@@ -32,7 +33,6 @@ config.transformer = { ...config.transformer, unstable_allowRequireContext: true
 config.transformer.minifierPath = require.resolve('metro-minify-terser')
 
 // add nice web support with optimizing compiler + CSS extraction
-import { withTamagui } from '@tamagui/metro-plugin'
 export default withTamagui(config, {
   components: ['tamagui'],
   config: '../../packages/ui/src/tamagui.config.ts',

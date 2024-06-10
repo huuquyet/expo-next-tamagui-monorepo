@@ -1,5 +1,5 @@
 import {
-  CustomToast,
+  NativeToast,
   TamaguiProvider,
   type TamaguiProviderProps,
   ToastProvider,
@@ -10,7 +10,7 @@ import { type mode, useThemeStore } from 'app/zustand'
 import { ToastViewport } from './ToastViewport'
 
 export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'config'>) {
-  const [theme, setTheme] = useRootTheme()
+  const [_, setTheme] = useRootTheme()
   const themeSetting = useThemeSetting()!
   const { scheme } = useThemeStore()
 
@@ -34,7 +34,7 @@ export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'conf
         >
           {children}
 
-          <CustomToast />
+          <NativeToast />
           <ToastViewport />
         </ToastProvider>
       </TamaguiProvider>

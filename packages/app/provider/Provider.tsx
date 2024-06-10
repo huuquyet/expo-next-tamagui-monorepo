@@ -1,5 +1,5 @@
 import {
-  CustomToast,
+  NativeToast,
   TamaguiProvider,
   type TamaguiProviderProps,
   ToastProvider,
@@ -32,7 +32,7 @@ export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'conf
           ]}
         >
           {children}
-          <CustomToast />
+          <NativeToast />
           <ToastViewport />
         </ToastProvider>
       </TamaguiProvider>

@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next'
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import { NextTamaguiProvider } from './NextTamaguiProvider'
@@ -14,6 +15,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en" suppressHydrationWarning>
       <body>
         <NextTamaguiProvider>{children}</NextTamaguiProvider>
+        <Analytics />
       </body>
     </html>
   )

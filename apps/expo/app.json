@@ -42,11 +42,11 @@
     "plugins": [
       [
         "expo-router",
-        "expo-font",
         {
           "origin": "https://expo-next-tamagui-monorepo.vercel.app/"
         }
-      ]
+      ],
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true

@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 const { withTamagui } = require('@tamagui/next-plugin')
 const { withExpo } = require('@expo/next-adapter')
 const { join } = require('node:path')

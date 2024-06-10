@@ -23,8 +23,6 @@
     "@tamagui/core": "latest",
     "@tamagui/font-inter": "latest",
     "@tamagui/next-plugin": "latest",
-    "@tamagui/next-theme": "latest",
-    "@tamagui/static": "latest",
     "@types/react": "~18.2.79",
     "typescript": "~5.3.3"
   }

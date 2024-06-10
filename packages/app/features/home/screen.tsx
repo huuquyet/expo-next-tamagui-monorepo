@@ -18,7 +18,7 @@ export function HomeScreen() {
   })
 
   return (
-    <YStack f={1} jc="center" ai="center" p="$4" gap="$8" bg="$background">
+    <YStack f={1} jc="center" ai="center" p="$4" gap="$8">
       <YStack gap="$4">
         <Clock />
         <H1 ta="center" col="$color12">

@@ -4,7 +4,6 @@ import '@tamagui/core/reset.css'
 import '@tamagui/font-inter/css/400.css'
 import '@tamagui/font-inter/css/700.css'
 import { config } from '@my/ui'
-import { Analytics } from '@vercel/analytics/react'
 import { Provider } from 'app/provider'
 import { useServerInsertedHTML } from 'next/navigation'
 import type { ReactNode } from 'react'
@@ -56,10 +55,5 @@ export function NextTamaguiProvider({ children }: { children: ReactNode }) {
     )
   })
 
-  return (
-    <Provider>
-      {children}
-      <Analytics />
-    </Provider>
-  )
+  return <Provider>{children}</Provider>
 }

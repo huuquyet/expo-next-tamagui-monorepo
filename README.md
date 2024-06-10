@@ -80,7 +80,7 @@ If you're installing a library with any native code, you must install it in `exp
 ```sh
 cd apps/expo
 bun add react-native-reanimated
-cd ..
+cd ../..
 bun install
 ```
 
@@ -89,7 +89,7 @@ bun install
 ### Pure JS dependencies
 
 ```sh
-bun update
+bun update --latest
 ```
 
 You can also install the native library inside of `packages/app` if you want to get autoimport for that package inside of the `app` folder. However, you need to be careful and install the _exact_ same version in both packages. If the versions mismatch at all, you'll potentially get terrible bugs. This is a classic monorepo issue. I use `lerna-update-wizard` to help with this (you don't need to use Lerna to use that lib).
