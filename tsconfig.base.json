@@ -10,10 +10,6 @@
     "moduleResolution": "Bundler",
     "baseUrl": ".",
     "rootDir": ".",
-    "paths": {
-      "app/*": ["./packages/app/*"],
-      "@my/ui/*": ["./packages/ui/*"]
-    },
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "allowJs": true,

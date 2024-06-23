@@ -4,20 +4,20 @@
   "private": true,
   "workspaces": ["./apps/*", "./packages/*"],
   "scripts": {
-    "android": "bun --filter 'expo*' android",
-    "build:pkg": "bun --filter '*/ui' build",
-    "check": "bun --filter 'expo*' check",
+    "android": "bun --filter 'expo-app' android",
+    "build": "bun --filter '@my/ui' build",
+    "check": "bun --filter 'expo-app' check",
     "clean": "git clean -xdf",
-    "doctor": "bun --filter 'expo*' doctor",
-    "ios": "bun --filter 'expo*' ios",
+    "doctor": "bun --filter 'expo-app' doctor",
+    "ios": "bun --filter 'expo-app' ios",
     "lint": "bunx @biomejs/biome check --write .",
-    "native": "bun --filter 'expo*' start",
-    "postinstall": "bun build:pkg",
-    "watch": "bun --filter '*/ui' watch",
-    "web": "bun build:pkg && bun --filter 'next*' dev",
-    "web:extract": "DISABLE_EXTRACTION=false bun --fitler 'next*' dev",
-    "web:prod": "bun build:pkg && bun --filter 'next*' build",
-    "web:prod:serve": "bun --filter 'next*' serve"
+    "native": "bun --filter 'expo-app' start",
+    "postinstall": "bun run build",
+    "watch": "bun --filter '@my/ui' watch",
+    "web": "bun run build && bun --filter 'next-app' dev",
+    "web:extract": "DISABLE_EXTRACTION=false bun --fitler 'next-app' dev",
+    "web:prod": "bun run build && bun --filter 'next-app' build",
+    "web:prod:serve": "bun --filter 'next-app' serve"
   },
   "dependencies": {
     "react": "18.2.0",
@@ -27,8 +27,7 @@
   },
   "devDependencies": {
     "@babel/types": "^7.24.7",
-    "@tamagui/constants": "latest",
-    "@types/bun": "^1.1.3",
+    "@types/bun": "^1.1.5",
     "@types/react": "~18.2.79",
     "@types/react-native": "^0.73.0",
     "typescript": "~5.3.3"

@@ -26,6 +26,9 @@
     "tamagui": "latest"
   },
   "devDependencies": {
-    "@tamagui/build": "latest"
+    "@babel/core": "^7.24.7",
+    "@tamagui/build": "latest",
+    "expo": "51.0.15",
+    "react-native": "0.74.2"
   }
 }
