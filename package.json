@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@babel/types": "^7.24.7",
-    "@types/bun": "^1.1.5",
+    "@types/bun": "^1.1.6",
     "@types/react": "~18.2.79",
     "@types/react-native": "^0.73.0",
     "typescript": "~5.3.3"

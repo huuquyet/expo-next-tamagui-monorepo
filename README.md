@@ -68,9 +68,11 @@ If you're installing a JavaScript-only dependency that will be used across platf
 
 ```sh
 cd packages/app
-bun add date-fns
+bun add zustand
 cd ../..
 bun install
+# or
+bun --filter 'app' add zustand
 ```
 
 ### Native dependencies
@@ -82,6 +84,8 @@ cd apps/expo
 bun add react-native-reanimated
 cd ../..
 bun install
+# or
+bun --filter 'expo-app' add react-native-reanimated
 ```
 
 ## Update new dependencies
