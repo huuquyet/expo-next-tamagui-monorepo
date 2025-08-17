@@ -1,9 +1,9 @@
 import {
+  config,
   NativeToast,
   TamaguiProvider,
   type TamaguiProviderProps,
   ToastProvider,
-  config,
 } from '@my/ui'
 import { NextThemeProvider, useRootTheme, useThemeSetting } from '@tamagui/next-theme'
 import { type mode, useThemeStore } from 'app/zustand'

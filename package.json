@@ -2,7 +2,10 @@
   "name": "expo-next-tamagui-monorepo",
   "version": "0.3.1",
   "private": true,
-  "workspaces": ["./apps/*", "./packages/*"],
+  "workspaces": [
+    "./apps/*",
+    "./packages/*"
+  ],
   "scripts": {
     "android": "bun --filter 'expo-app' android",
     "build": "bun --filter '@my/ui' build",
@@ -20,16 +23,16 @@
     "web:prod:serve": "bun --filter 'next-app' serve"
   },
   "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-native": "0.74.5",
-    "react-native-web": "^0.19.12"
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-native": "0.79.5",
+    "react-native-web": "^0.21.0"
   },
   "devDependencies": {
-    "@babel/types": "^7.25.2",
-    "@types/bun": "^1.1.6",
-    "@types/react": "~18.2.79",
+    "@babel/types": "^7.28.2",
+    "@types/bun": "^1.2.20",
+    "@types/react": "~19.0.10",
     "@types/react-native": "^0.73.0",
-    "typescript": "~5.3.3"
+    "typescript": "~5.9.2"
   }
 }

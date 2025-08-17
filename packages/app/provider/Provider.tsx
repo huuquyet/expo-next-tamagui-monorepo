@@ -1,9 +1,9 @@
 import {
+  config,
   NativeToast,
   TamaguiProvider,
   type TamaguiProviderProps,
   ToastProvider,
-  config,
 } from '@my/ui'
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native'
 import { type mode, useThemeStore } from 'app/zustand'

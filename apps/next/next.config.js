@@ -49,6 +49,7 @@ let nextConfig = {
   experimental: {
     // optimizeCss: true,
     scrollRestoration: true,
+    globalNotFound: false,
   },
   reactStrictMode: true,
 }

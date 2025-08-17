@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   description: APP_DESCRIPTION,
   manifest: '/manifest.json',
-  metadataBase: new URL('https://${process.env.VERCEL_URL}'),
+  metadataBase: new URL(`https://${process.env.VERCEL_URL}`),
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',

@@ -1,20 +1,19 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
-  "organizeImports": {
-    "enabled": true
-  },
+  "$schema": "https://biomejs.dev/schemas/2.2.0/schema.json",
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
 
   "files": {
     "ignoreUnknown": true,
-    "ignore": [
-      "./.vercel",
-      "./**/node_modules",
-      "./**/.tamagui",
-      "./**/.next",
-      "./**/dist",
-      "./**/public",
-      "./**/android",
-      "./**/ios"
+    "includes": [
+      "**",
+      "!.vercel",
+      "!**/node_modules",
+      "!**/.tamagui",
+      "!**/.next",
+      "!**/dist",
+      "!**/public",
+      "!**/android",
+      "!**/ios"
     ]
   },
   "linter": {
@@ -39,7 +38,7 @@
     "indentStyle": "space",
     "indentWidth": 2,
     "lineWidth": 100,
-    "ignore": []
+    "includes": ["**"]
   },
   "javascript": {
     "formatter": {

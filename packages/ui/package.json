@@ -5,30 +5,35 @@
   "main": "./src/index.tsx",
   "types": "./src",
   "module:jsx": "./src",
-  "files": ["types", "dist"],
-  "sideEffects": ["*.css"],
+  "files": [
+    "types",
+    "dist"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
   "scripts": {
     "build": "bunx tamagui-build --skip-types",
     "watch": "bunx tamagui-build --skip-types --watch"
   },
   "dependencies": {
-    "@tamagui/animations-moti": "latest",
-    "@tamagui/font-inter": "latest",
-    "@tamagui/react-native-media-driver": "latest",
-    "@tamagui/shorthands": "latest",
-    "@tamagui/themes": "latest",
-    "@tamagui/toast": "latest",
-    "expo-constants": "^16.0.2",
-    "moti": "^0.29.0",
-    "react": "18.2.0",
-    "react-native-reanimated": "~3.10.1",
-    "solito": "^4.2.2",
-    "tamagui": "latest"
+    "@tamagui/animations-moti": "^1.132.20",
+    "@tamagui/font-inter": "^1.132.20",
+    "@tamagui/react-native-media-driver": "^1.132.20",
+    "@tamagui/shorthands": "^1.132.20",
+    "@tamagui/themes": "^1.132.20",
+    "@tamagui/toast": "^1.132.20",
+    "expo-constants": "^17.1.7",
+    "moti": "^0.30.0",
+    "react": "19.0.0",
+    "react-native-reanimated": "~3.17.4",
+    "solito": "^4.4.1",
+    "tamagui": "^1.132.20"
   },
   "devDependencies": {
-    "@babel/core": "^7.25.2",
-    "@tamagui/build": "latest",
-    "expo": "51.0.26",
-    "react-native": "0.74.5"
+    "@babel/core": "^7.28.3",
+    "@tamagui/build": "^1.132.20",
+    "expo": "53.0.20",
+    "react-native": "0.79.5"
   }
 }

@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === 'production') {
 
 export function NextTamaguiProvider({ children }: { children: ReactNode }) {
   useServerInsertedHTML(() => {
-    // @ts-ignore
+    // @ts-expect-error
     const rnwStyle = StyleSheet.getSheet()
     return (
       <>
